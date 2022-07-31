@@ -17,8 +17,8 @@ title: Inform 7
 email: graham.nelson@mod-langs.ox.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
   Inform is a natural-language-based programming language for writers of interactive fiction.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/inform-website" # the subpath of your site, e.g. /blog
+url: "https://ganelson.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  ganelson
 
 # Build settings
