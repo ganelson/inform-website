@@ -9,19 +9,19 @@ _This is the talk and slides from the June 2018 [London IF meetup](https://www.m
 
 _Some of the details about future plans have moved on: see the June 2019 [Narrascope talk](/talks/2019/06/14/narrascope.html) for an update._
 
-![Slide 001](/assets/images/IFMU/slide001.jpg)
+![Slide 001]({{ site.baseurl }}/assets/images/IFMU/slide001.jpg)
 
 Firstly, of course, thank you for coming out on a Saturday night. I’m really going to give two short talks, one after the other. In the first half, I want to give my own assessment of the Inform programming language, and you must allow for the fact that I am Inform’s creator, and not an unbiased commentator. In the second half, I will turn to what’s wrong with Inform as it stands, and what the plan is for its further development, and in general what I’ve been working on for the last three years, off and on. In that part of the evening, you’ll have to allow for the fact that I am Inform’s maintainer, and therefore in a permanent state of guilt and anxiety about it.
 
-![Slide 002](/assets/images/IFMU/slide002.jpg)
+![Slide 002]({{ site.baseurl }}/assets/images/IFMU/slide002.jpg)
 
 Inform is a domain-specific language, and its domain is the creation of interactive fiction. When it began in 1993, Inform was simply a new hacker tool for making what we used to call adventure games: that is, textual games with a turn cycle in which the player typed commands and the game then revealed an appropriate piece of story — a story partly generated dynamically, but partly following a narrative already laid out by the author. This is a genre of writing which began with recreational computing in the 1970s, then passed through a commercial phase in the 1980s. Inform is called Inform in part because of the classic works of a company called Infocom:
 
-![Slide 003](/assets/images/IFMU/slide003.jpg)
+![Slide 003]({{ site.baseurl }}/assets/images/IFMU/slide003.jpg)
 
 The best of their roughly 35 interactive fictions, a term that Infocom coined, remain enjoyable today. They are pleasing as a piece of Americana — like the movie <i>Back to the Future</i>, the Space Shuttle or the first Apple Mac, Infocom is a slice of the America of the Reagan administration — but they are also, on a good day, successful both as games and as art.
 
-![Slide 004](/assets/images/IFMU/slide004.jpg)
+![Slide 004]({{ site.baseurl }}/assets/images/IFMU/slide004.jpg)
 
 The rise of graphics hardware and a downward slide in the average age of games players made the text adventure commercially extinct by 1990, but this was both an end and a beginning. The countervailing factor was the rise of networking: University student access, home dial-up, bulletin boards, Usenet, magazine cover discs, the web, home broadband, and so on. At the earliest possible opportunity, hobbyists, for want of a better word, took up the practice of writing and sharing interactive fiction of their own. By 1993, a home PC could just about compile a work of IF of the size and complexity of the works which Infocom had needed a mainframe for in 1983. All that was needed was a compiler.
 
@@ -29,23 +29,23 @@ The 1990s were a propitious time for this sort of hobby computing. There were re
 
 Not much about the original Inform language was original. It was a C-like language with classes whose compiler could have been a summer project for a graduate student, which is what I was in 1993. Still, it was shaped by the experiences of real users, and iterated rapidly through versions 1 to 5, stabilising as Inform 6 in 1996. When, in 2003, I returned to the problem of making IF, I threw away the entire Inform language and began again, but called the result Inform 7, the next available major version number. I slightly regret that now, in the same way that Apple came to regret calling Mac OS X simply version 10 of their famous operating system, when in fact it was a whole different thing. But it was probably a good decision at the time. ‘Inform’ was my brand, and making it ‘Inform 7’ was a way of declaring that Inform 6 was officially over. (This didn’t work for Larry Wall when he tried to replace Perl 5 with Perl 6, but that was because Larry hadn’t actually written Perl 6 at the time.) At any rate, Inform 7 had its first public release in 2006. It was heavily shaped not only by me, but also by Andrew Plotkin, a long-time member of the Boston IF scene, whom some of you may know, and by Emily Short, our host tonight.
 
-![Slide 005](/assets/images/IFMU/slide005.jpg)
+![Slide 005]({{ site.baseurl }}/assets/images/IFMU/slide005.jpg)
 
 So, then, Inform is available for Linux, Mac OS X, Windows and Android. Apple’s rules exclude it from iOS, but it has otherwise been on more or less every platform. The Mac App Store version gets about 2000 downloads a month, to give some idea of scale. If we look at the TIOBE index, a measure of usage and influence among programming languages, Inform’s best result was 49th, in 2015: just above Mathematica, and just behind FORTRAN. (For comparison, the 49th most spoken natural language is Romanian.)
 
 Being in front of a large number of users means that your software has a large number of bugs, in the sense that a bug is a defect you actually know about. The more people participate, the more bug reports you get. My favourite was turned in by the Canadian computer scientist Daniel Fremont, whose research is in finding software defects, and who managed to crash Inform in 2014 by fuzzing it with a program consisting of the sentence ‘Foo is a room.’ repeated 117,030 times. (Other numbers of repetitions didn’t work.)
 
-![Slide 006](/assets/images/IFMU/slide006.jpg)
+![Slide 006]({{ site.baseurl }}/assets/images/IFMU/slide006.jpg)
 
 At certain times of year, fixing that kind of thing is how I spend my evenings and weekends. There’s always a tension between making forward progress on the software or fixing bugs, and to some extent, you have to ask what benefits actual users the most. But a crash is a crash. I did fix Daniel’s bug.
 
-![Slide 007](/assets/images/IFMU/slide007.jpg)
+![Slide 007]({{ site.baseurl }}/assets/images/IFMU/slide007.jpg)
 
 The chief originality of Inform 7 is that it is based entirely on natural language. I want to sketch out some of the motivation for that, and some of the benefits that come from it.
 
 To compare programming languages with natural languages is a little heretical in computer science, but I’m not sure why that is. The development of the theory of programming languages was, after all, spurred on by the early work of Noam Chomsky.
 
-![Slide 008](/assets/images/IFMU/slide008.jpg)
+![Slide 008]({{ site.baseurl }}/assets/images/IFMU/slide008.jpg)
 
 Thus, for example, Donald Knuth took Chomsky’s book on structural linguistics with him on his honeymoon. In spite of this Don is still married to Jill, 45 years later: when you have dinner with the Knuths you talk more about quilting and printing Lutheran bibles than programming, but it all seems of a piece.
 
@@ -53,23 +53,23 @@ I mention Knuth because, of all the Old Masters of computer science, he is the o
 
 A cynical answer might be that if program source codes are texts, why can’t you buy them in a bookshop?
 
-![Slide 009](/assets/images/IFMU/slide009.jpg)
+![Slide 009]({{ site.baseurl }}/assets/images/IFMU/slide009.jpg)
 
 In fact, annotated editions of a handful of programs have indeed been published, most notably TeX and version 6 of the Unix operating system. Two large-scale Inform programs have also been printed in book form. Modern programs can be enormous, of course, and would be unwieldy as a physical book, but even these are often freely readable at repositories such as Github. So I don’t think it could be said that programs aren’t read as texts because they aren’t available.
 
 The problem is rather that source-code spelunking, as it’s sometimes called, is so unrewarding. You pick a file from a mass of files, hoping to get your bearings, but open it to find endless low-level manouevres. There are some suggestive class or function names but it’s hard to get a sense of even the basic plan of how it works.
 
-![Slide 010](/assets/images/IFMU/slide010.jpg)
+![Slide 010]({{ site.baseurl }}/assets/images/IFMU/slide010.jpg)
 
 This problem is made worse, I think, by the aesthetics, or perhaps I should say the ideology, of many working programmers. All programming languages provide for comments, but coders often want to purge this marginalia, disliking any verbose comment as a form of ‘cruft’. It violates, they would say, the ‘Don’t Repeat Yourself’ maxim.
 
-![Slide 011](/assets/images/IFMU/slide011.jpg)
+![Slide 011]({{ site.baseurl }}/assets/images/IFMU/slide011.jpg)
 
 ‘Don’t Repeat Yourself’, or DRY, is taught by many make-yourself-a-better-programmer books — a genre of publishing which always reminds me of relationship self-help books. DRY says that the same concept shouldn’t be given more than one expression in the code. But taken to extremes, DRY means that any comment saying what a program is trying to do is redundant, because a program is by definition already a statement of what it does. Don’t repeat yourself, in other words, can be taken to mean: never explain yourself.
 
 I am a contrarian on this. My own programs are written using the doctrine of ‘literate programming’ — an unhelpful name today, implying a bit aggressively that everybody else is illiterate. The name comes because Knuth propounded the idea as a sort of rejoinder, or qualification, to the rise of ‘structured programming’, a practice advocated by the European school of computer science: Edsger Dijkstra, who was Dutch, Niklaus Wirth, who was Swiss, Tony Hoare, who was English. Structured programming calls for programs to be organised into modular parts, rather than being one big soup of instructions. Knuth didn’t disagree, but he seems to have felt that this took away from the sense of a program having a narrative, what we might call a linear plot. In older programs, a human reader could often start at the top, see how it begins, what it does, and how it finishes, following its execution in sequence. By contrast, one reason it’s hard to figure out what’s going on in a big modern program is that it’s more like a landscape than a story. It’s an expanse you can wander about in any direction, never being quite sure what is collectively achieved by the too many components, or in what order. This is not to say that structured programming is a bad thing: I believe it’s essential. But it is not self-explanatory.
 
-![Slide 012](/assets/images/IFMU/slide012.jpg)
+![Slide 012]({{ site.baseurl }}/assets/images/IFMU/slide012.jpg)
 
 Knuth proposed literate programming as a way to explicate programs. He gave an elegant statement of this dogma in 1992, when invited to write an encyclopaedia entry on programming. I like this quote, because it’s so antithetical to what almost everybody in computer science thinks, with a few honourable exceptions (some tools for Haskell, for example, are influenced by literate programming).
 
@@ -79,55 +79,55 @@ How did literate programming influence Inform? Well, one answer is that is that 
 
 But the deeper answer is that Inform aims to go further by merging the commentary on a program, written in English, with the program itself: it uses natural language throughout. Inform is of course Turing-complete, but it’s not primarily intended to solve conventional tasks: it’s for the creation of simulations of human situations — which, at some level, is a definition of art.
 
-![Slide 013](/assets/images/IFMU/slide013.jpg)
+![Slide 013]({{ site.baseurl }}/assets/images/IFMU/slide013.jpg)
 
 So let’s now take a look at Inform from a natural language point of view, and start with nouns. Here is a rather minimal Inform program:
 
-![Slide 014](/assets/images/IFMU/slide014.jpg)
+![Slide 014]({{ site.baseurl }}/assets/images/IFMU/slide014.jpg)
 
 Of course the result is not a rich interactive experience, but we’re just getting going.
 
-![Slide 015](/assets/images/IFMU/slide015.jpg)
+![Slide 015]({{ site.baseurl }}/assets/images/IFMU/slide015.jpg)
 
 Now we have a proper noun, Snell Library, and a common noun, student. Proper and common nouns appear in regular programming languages as instances and classes. Languages like C++ or Java aim to police the boundaries of class definitions, and as computer scientists we seem always to want stricter policing, even though we also want to have it both ways with dodges like generics or protocols. Work in linguistics might suggest that we should be less doctrinaire about common nouns and what they describe. In Inform, the concept of ‘kind’ approximates ‘class’, but it was also motivated by the work of the great Polish linguist Anna Wierzbicka. Wierzbicka studies how people make, and then selectively break, categories. A famous example is her definition of the common noun ‘bird’:
 
-![Slide 016](/assets/images/IFMU/slide016.jpg)
+![Slide 016]({{ site.baseurl }}/assets/images/IFMU/slide016.jpg)
 
 Of course an ostrich or a penguin is a bird which doesn’t fly. For Wierzbicka, there’s no contradiction in that: people naturally make semantic categories and yet allow members which violate one of the defining characteristics. You can see something similar in this fragment of Inform:
 
-![Slide 017](/assets/images/IFMU/slide017.jpg)
+![Slide 017]({{ site.baseurl }}/assets/images/IFMU/slide017.jpg)
 
 Note the word ‘usually’. I would suggest that work like Wierzbicka’s might shed some light on long-standing controversies about single versus multiple inheritance in object-oriented languages.
 
 Let’s go back to the simple-looking sentence ‘There are ten students in the Library’, which has quite a lot going on. For one thing, the ‘there’ is a defective form in English, like the ‘it’ in ‘it is raining’, except to emphasise that an existential statement is being made. Inform internally reduces this sentence to predicate calculus, which serves as what linguists call our ‘discourse representation’.
 
-![Slide 018](/assets/images/IFMU/slide018.jpg)
+![Slide 018]({{ site.baseurl }}/assets/images/IFMU/slide018.jpg)
 
 Here I follow an important early-1980s paper of Barwise and Cooper which observes that the basic logical quantifiers ‘there exists’ and ‘for all’ are inadequate for any sensible representation of natural language: Barwise and Cooper added new quantifiers such as ‘there exist 10’, or ‘for most’. Anyway, the proposition says that there are 10 different values of x for which ‘student(x)’, x is a student, and ‘inside(x, Library)’, x is physically located inside the Snell Library.
 
-![Slide 019](/assets/images/IFMU/slide019.jpg)
+![Slide 019]({{ site.baseurl }}/assets/images/IFMU/slide019.jpg)
 
 These basic factual statements, like ‘student(x)’, are predicates. If they involve only one value, like ‘student(x)’ or ‘evasive(x)’, they’re unary predicates; if they involve two, like ‘inside(x, y)’, they’re binary. Skating over some grammatical niceties about common nouns and prepositions, unary predicates are adjectives and binary predicates are verbs. 
 
 Given that almost all of the meaning of natural language is conveyed by binary predicates — verbs, that is — it’s striking how much traditional programming languages downplay them. Object-oriented languages, in particular, greatly over-favour unary predicates at the expense of binary. To explain what I mean by this, consider the following piece of Inform:
 
-![Slide 020](/assets/images/IFMU/slide020.jpg)
+![Slide 020]({{ site.baseurl }}/assets/images/IFMU/slide020.jpg)
 
 These few sentences do quite a lot of work. ‘Sophie likes purple’, for example, creates both the person Sophie and the colour purple, whose existence Inform has deduced from the fact that they are connected by the binary predicate ‘liking(x, y)’. In a typical Java or Python program, you would have to simulate this either by putting lots of code about colours into your definition of people, or vice versa, which is a convoluted way of trying to use unary predicates instead: either ‘sophie-likes(x)’ for x = purple, or ‘purple-is-liked-by(x)’ for x = Sophie. Either way round, that’s unnatural, I think. Inform sees binary predicates like ‘liking’ as being first-class concepts in themselves, not as behaviours of either participant.
 
 I think it’s striking, too, that most programming languages have a muddy understanding of adjectives — properties that things either have or don’t have. These tend to be boolean flags attached to objects, making them values as though they are the result of calculations, or else are awkwardly accessed by methods like these:
 
-![Slide 021](/assets/images/IFMU/slide021.jpg)
+![Slide 021]({{ site.baseurl }}/assets/images/IFMU/slide021.jpg)
 
 Which often read ambiguously: does ‘F.atEndOfFile’ change the state, or test it? Are there side-effects? Programmers can often only express these important distinctions by choosing method names carefully — all large companies have a style guide with rules like that — but because this is not a feature of the programming language, compilers don’t police it, and many mistakes are made as a result.
 
 In Inform, on the other hand, one would test or change with syntax such as:
 
-![Slide 022](/assets/images/IFMU/slide022.jpg)
+![Slide 022]({{ site.baseurl }}/assets/images/IFMU/slide022.jpg)
 
 And in general, the syntax to make something happen is the same as the syntax to test it, but using ‘now’ instead of ‘if’. For example:
 
-![Slide 023](/assets/images/IFMU/slide023.jpg)
+![Slide 023]({{ site.baseurl }}/assets/images/IFMU/slide023.jpg)
 
 Note the way that such conditions, by including determiners such as ‘all’, can avoid the need to create and name spurious loop variables. ‘now all of the students are in the Library’ is easier to understand than making a repeat loop, with a necessary but in some sense meaningless variable called S. Anything which reduces the stock of nouns in play makes code easier to understand.
 
@@ -135,17 +135,17 @@ As will have been evident, a guiding design principle for Inform was to imitate 
 
 With only a handful of exceptions, natural language uses raw numbers only to count things. We say ‘I am 176cm tall’, not ‘I am 176 tall’. We say ‘My car weighs 1.4 tonnes’, not ‘My car weighs 1.4’. In Inform, you can say something like this:
 
-![Slide 024](/assets/images/IFMU/slide024.jpg)
+![Slide 024]({{ site.baseurl }}/assets/images/IFMU/slide024.jpg)
 
 Moreover Inform uses dimensional analysis to stop you muddling up numbers in ways which wouldn’t mean anything. You can’t add a length to a mass, for example. Nor can you use a mass where you need an number. If you want the mass of the Clio as a number, divide it by 1kg. You can only multiply if you’ve clearly explained what that would mean. For example, write:
 
-![Slide 025](/assets/images/IFMU/slide025.jpg)
+![Slide 025]({{ site.baseurl }}/assets/images/IFMU/slide025.jpg)
 
 and then you’re allowed to multiply them. It was quite a fun bit of physics-nerdery to work these algorithms out. I don’t think I had ever realised that voltage, for example, is not a fundamental unit and that the ‘volt’ is only a sort of verbal shorthand. When your smoke detector runs down, you do not think ‘where have I put my 9 m^2 kg per amp per second cubed batteries’.
 
 Inform also follows natural language conventions as seen in printed texts. You can lay out equations the way they would appear in a textbook, for example; or consider this rather minimal simulation of the Tour de France:
 
-![Slide 026](/assets/images/IFMU/slide026.jpg)
+![Slide 026]({{ site.baseurl }}/assets/images/IFMU/slide026.jpg)
 
 Here we see square brackets used to mean text which isn’t a verbatim quotation, and we have a table of data laid out just as it would be in a book. Tables do not serve every need — Inform also has lists, for example. But I think tables are a form of data structure immediately comprehensible to a human reader, in a way that arrays are not.
 
@@ -153,17 +153,17 @@ Most programming languages have nothing analogous to tenses: everything happens 
 
 Inform suggests that there are partial gains to be made by supporting past tenses in the language. For example, in Inform we can write:
 
-![Slide 027](/assets/images/IFMU/slide027.jpg)
+![Slide 027]({{ site.baseurl }}/assets/images/IFMU/slide027.jpg)
 
 The compiler takes care of all of the supporting code and storage needed — we need nothing other than that line. In effect this line is equivalent to writing separate code, elsewhere in the program, which reads:
 
-![Slide 028](/assets/images/IFMU/slide028.jpg)
+![Slide 028]({{ site.baseurl }}/assets/images/IFMU/slide028.jpg)
 
 At any rate, Inform provides what amounts to a fourth boolean operator to modify conditions, beyond the usual and, or and not: an operator placing the condition in a past tense.
 
 However, I said this was only a partial win. As linguistics people have realised since the pioneering work of the Danish linguist Otto Jespersen, resolving a name — in effect, dereferencing a pointer — has different results at different times. This leads to ambiguity.
 
-![Slide 029](/assets/images/IFMU/slide029.jpg)
+![Slide 029]({{ site.baseurl }}/assets/images/IFMU/slide029.jpg)
 
 The problem here is that ‘the President’ is a variable, reflecting that the Presidency is held by different people at different times. We must evaluate this variable. But when? If we evaluate it in the past, the condition means ‘if the sitting President has ever been ill while in office’, and will be true if Dwight Eisenhower caught cold in 1955. If we evaluate it in the present, the condition means ‘if the current President has at any point in his past been ill’, and will be true if, for example, Donald Trump had measles in 1975.
 
@@ -171,13 +171,13 @@ But this latter interpretation has serious consequences. When we are able to per
 
 I want to mention one other aspect of natural language which can be troublesome for programming: punctuation. 
 
-![Slide 030](/assets/images/IFMU/slide030.jpg)
+![Slide 030]({{ site.baseurl }}/assets/images/IFMU/slide030.jpg)
 
 Conventional programming languages, such as C, are aggressively punctuated. By this I mean not only that C code is replete with commas, brackets, braces, semicolons, and colons, but that other requirements — such as that identifiers cannot contain whitespace or use reserved words — combine to produce an apparently unambiguous language. And this has many advantages.
 
 But at first sight, natural language seems almost completely the opposite: it is riddled with ambiguities.
 
-![Slide 031](/assets/images/IFMU/slide031.jpg)
+![Slide 031]({{ site.baseurl }}/assets/images/IFMU/slide031.jpg)
 
 My favourite was an actual headline in the local newspaper in my home town, the Oxford Mail: HEATWAVE BONE BREAKS CLOG HOSPITAL, which is what linguists call an a garden path sentence; or there’s the famous antanaclasis ‘Time flies like an arrow; fruit flies like a banana’. If English had a form of punctuation marking which words are verbs, such ambiguities would be impossible.
 
@@ -185,7 +185,7 @@ And because of this, many computer scientists are wary of natural language as a 
 
 To conclude this first half of my talk: did natural language turn out to be a good way to write a computer program?
 
-![Slide 032](/assets/images/IFMU/slide032.jpg)
+![Slide 032]({{ site.baseurl }}/assets/images/IFMU/slide032.jpg)
 
 The merits are: familiarity; a low barrier to entry, so that novices, even schoolkids, can get at least something to work quickly; conciseness, in that a lot of boring code becomes unnecessary; and perhaps a greater ease of expressiveness, because the lineaments of the language more closely follow our cognitive habits than would be true of, say, C++.
 
@@ -193,11 +193,11 @@ The demerits are: unfamiliarity, in that we’re not used to coding in prose; a 
 
 So I freely acknowledge that the benefits are double-edged. But they are real.
 
-![Slide 033](/assets/images/IFMU/slide033.jpg)
+![Slide 033]({{ site.baseurl }}/assets/images/IFMU/slide033.jpg)
 
 Let’s look at the Inform project as it stood in 2015. As has been widely noted, it hasn’t been updated in the last three years, and the reasons for this will become clear in the second half of my talk. If we stood back in 2015 and asked, is Inform successful?, what should we say? Here's the optimistic view first.
 
-![Slide 034](/assets/images/IFMU/slide034.jpg)
+![Slide 034]({{ site.baseurl }}/assets/images/IFMU/slide034.jpg)
 
 With all due modesty, I think I can claim three successes for Inform.
 
@@ -209,11 +209,11 @@ With all due modesty, I think I can claim three successes for Inform.
 
 Now I’m going to say what I think is seriously wrong with Inform in its current public release. It was very well tested and is widely used, but that is often true of software in need of generational change. As I looked at Inform in 2015, I saw a number of existential crises facing it — by which I mean, issues that threatened to end its life for all but antiquarian purposes.
 
-![Slide 035](/assets/images/IFMU/slide035.jpg)
+![Slide 035]({{ site.baseurl }}/assets/images/IFMU/slide035.jpg)
 
 One thing to remember that I am a self-taught amateur programmer...
 
-![Slide 036](/assets/images/IFMU/slide036.jpg)
+![Slide 036]({{ site.baseurl }}/assets/images/IFMU/slide036.jpg)
 
 ...and that I have a day job, actually two day jobs. I can’t devote my whole attention to Inform. But that said, I do continue to work on it, and rumours that it is rusting forgotten in a tool shed are exaggerated.
 
@@ -221,7 +221,7 @@ One thing to remember that I am a self-taught amateur programmer...
 
 With that disclaimer made, I'm going to get into the internals, just as I knew what I were doing. I talk about Inform being in crisis, I should first say how Inform worked in 2015. The user sees a friendly Mac, Windows or Linux app, but that's really just a wrapper on top of some lower-level tools. When you click ‘Go’, the source text is translated into a website or story file by a series of programs, each transforming it in turn:
 
-![Slide 037](/assets/images/IFMU/slide037.jpg)
+![Slide 037]({{ site.baseurl }}/assets/images/IFMU/slide037.jpg)
 
 So what was wrong with that? Well, plenty:
 
@@ -239,37 +239,37 @@ So, then, a number of calamities.
 
 This last part of my talk is a secret history of the last three years, and what I’ve been working on to address these issues.
 
-![Slide 038](/assets/images/IFMU/slide038.jpg)
+![Slide 038]({{ site.baseurl }}/assets/images/IFMU/slide038.jpg)
 
 Step 1 was to adapt inweb, the literate programming tool used for Inform, so that it could break projects up into modules. I then began moving the lowest-level code from inform7 into a module called ‘foundation’: memory management, filenames and pathnames, dealing with the command line, string handling, HTML and Javascript, making EPUB books, and so on. In the process, I abolished all use of C-style strings, migrated to wchar_t characters, and removed all fixed-sized arrays.
 
 Step 2. All of the outlying Inform command-line tools were rewritten as inweb projects using this common foundation module. The complete suite is now as shown. inform6 is off to the side because it’s a separately written open-source tool: I haven’t altered it and don’t for the moment intend to.
 
-![Slide 039](/assets/images/IFMU/slide039.jpg)
+![Slide 039]({{ site.baseurl }}/assets/images/IFMU/slide039.jpg)
 
 ‘intest’, which started as a hacky tool for running test cases through Inform, is worth mentioning as a tool which has been completely rewritten. It’s now quite a capable tool for testing any command-line app with broadly textual output: a mini-language enables the user to set up and automate batches of tests, spread them across processors, collate the results, and so on. I’ve used this to define test cases for all of the tools above.
 
-![Slide 040](/assets/images/IFMU/slide040.jpg)
+![Slide 040]({{ site.baseurl }}/assets/images/IFMU/slide040.jpg)
 
 As this little screenshot from the Terminal shows, the whole Inform infrastructure now works fine at the command-line, and doesn’t need a whole lot of other software already installed before you can use it (Perl, for example).
 
 Step 3 was to further subdivided inform7 into modules, as shown here.
 
-![Slide 041](/assets/images/IFMU/slide041.jpg)
+![Slide 041]({{ site.baseurl }}/assets/images/IFMU/slide041.jpg)
 
 These modules have mutual dependencies, but it’s possible now to compile some of the input end of Inform on its own, which has potential for making hybrid compilers in future. For example, compiling just foundation plus words gives a program which reads in source text, breaks it into words, works out the vocabulary used and stores it all efficiently: you take it from there. Adding the syntax module lets you breaks down into sentences, identifying the verb, and so on. (This is in fact done in order to unit-test portions of the compiler when building Inform.)
 
-![Slide 042](/assets/images/IFMU/slide042.jpg)
+![Slide 042]({{ site.baseurl }}/assets/images/IFMU/slide042.jpg)
 
 Step 4 is probably the most significant thing I’ve done: ‘inter’. The new process for compiling a story with Inform is now one step longer, as this diagram shows. ‘inter’ is intermediate between I7 and I6. For efficiency’s sake, it can be compiled either as part of a larger program (so that it needn’t be launched as a process), or as a stand-alone tool. It takes as its input a new low-level but abstract definition of a story, and outputs Inform 6 code ready to pass along.
 
 This abstract definition, called inter code, can exist either as bytecode in memory, or written out longhand in text, and the ‘inter’ tool can convert in both directions. Inter is quite readable in text form:
 
-![Slide 044](/assets/images/IFMU/slide044.jpg)
+![Slide 044]({{ site.baseurl }}/assets/images/IFMU/slide044.jpg)
 
 When compiling an Inform story in the GUI, all inter code normally exists only as bytecode in memory, for speed, but for example you could instead at the command line do something like this.
 
-![Slide 043](/assets/images/IFMU/slide043.jpg)
+![Slide 043]({{ site.baseurl }}/assets/images/IFMU/slide043.jpg)
 
 Why is this a good idea?
 
@@ -285,19 +285,19 @@ So where have I got to, as of today?
 
 Well: there’s much more work to do on inter. What I’ve got does everything described above, but too much I6 generation still happens inside I7 and not inter. For example, a typical rule is generated to inter like this, with a huge wodge of I6 passed essentially verbatim.
 
-![Slide 045](/assets/images/IFMU/slide045.jpg)
+![Slide 045]({{ site.baseurl }}/assets/images/IFMU/slide045.jpg)
 
 This makes use of a necessary, if regrettable, feature of inter, allowing it to be passed raw I6 code in a ‘splat’. There was a similar feature at one time for values, called a ‘glob’: it was a milestone when inform7 no longer produced any globs, and it will be a bigger one when inform7 can do without splats.
 
 Here’s inform7 producing rather better inter code:
 
-![Slide 046](/assets/images/IFMU/slide046.jpg)
+![Slide 046]({{ site.baseurl }}/assets/images/IFMU/slide046.jpg)
 
 As can be seen, inter, like all low-level languages, is verbose. It is designed to be written by other programs, not by people.
 
 This major restructuring of Inform, which has taken three years to carry through, aims to address four of my five existential crises. It’s now making real progress, I think, and my plan is to make a public release later in 2018 which pushes some of this new code out to real users. If all goes well, they won’t notice the difference at all. That’s the life of the software developer.
 
-![Slide 047](/assets/images/IFMU/slide047.jpg)
+![Slide 047]({{ site.baseurl }}/assets/images/IFMU/slide047.jpg)
 
 All of that sounds like worthy software engineering, or I hope so. But how does it help with my fifth crisis: the need to make more flexible forms of interactive fiction, and to break away from command-line interfaces as the only paradigm?
 
@@ -315,13 +315,13 @@ Let's look at what Inform might be like to write, for different UIs.
 
 — Using a touch-based UI, the source text will need to define what options are available at any given time.
 
-![Slide 048](/assets/images/IFMU/slide048.jpg)
+![Slide 048]({{ site.baseurl }}/assets/images/IFMU/slide048.jpg)
 
 The UI would then, in some way, offer touchable buttons for whatever options are available.
 
 — Using a hypertext UI, the author would instead write something like:
 
-![Slide 049](/assets/images/IFMU/slide049.jpg)
+![Slide 049]({{ site.baseurl }}/assets/images/IFMU/slide049.jpg)
 
 At the normal point where a command-parser IF would produce the prompt and wait for the keyboard command, a hypertext IF would simply wait for the player to click one of the links currently exposed on screen.
 

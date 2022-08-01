@@ -22,7 +22,7 @@ eligible if you are working for a company with a matching-donations scheme,
 where the employer donates alongside the employee, thus doubling the money.
 But of course anybody can chip in, by PayPal.
 
-[![IFTF logo](/assets/images/iftf.svg)](https://iftechfoundation.org/give/)
+[![IFTF logo]({{ site.baseurl }}/assets/images/iftf.svg)](https://iftechfoundation.org/give/)
 
 The IFTF does many invaluable things, but among those is to provide support
 infrastructure for the major IF projects, Inform included. So you'd be
