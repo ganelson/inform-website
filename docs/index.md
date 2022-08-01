@@ -7,7 +7,7 @@ layout: home
 
 # A Design System for Interactive Fiction
 
-<img src="/assets/images/icon.png" alt="Inform icon" width="700" height="450" />
+<img src="{{ site.baseurl }}/assets/images/icon.png" alt="Inform icon" width="700" height="450" />
 
 Inform is a free app for creating works of interactive fiction, available for
 MacOS, Windows, Linux and Android. Inside it is a powerful programming
