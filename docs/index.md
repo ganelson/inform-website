@@ -5,14 +5,18 @@
 layout: home
 ---
 
-# A Design System for Interactive Fiction
-
 <img src="{{ site.baseurl }}/assets/images/icon.png" alt="Inform icon" width="700" height="450" />
+
+Note: The Inform 7 website is migrating to be served by Github Pages rather
+than Dreamhost, as at present. The pages here are under construction for now
+and may exhibit all kinds of glitches. [The original inform7.com](http://inform7.com)
+will remain online until the domain name is transferred here.
+
+The Inform source repository is now public and is [here](https://github.com/ganelson/inform).
 
 Inform is a free app for creating works of interactive fiction, available for
 MacOS, Windows, Linux and Android. Inside it is a powerful programming
-language based on English language text. This redesigned website is part
-of the [preparations for open-sourcing the software](/talks/2019/06/14/narrascope.html).
+language based on English language text.
 
 Many Inform authors also [write with Twine](http://twinery.org), and vice versa.
 Inform topics are frequently aired at the [Interactive Fiction Community Forum](https://intfiction.org).
