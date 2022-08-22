@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -137,13 +137,13 @@
     </blockquote>
     <!--END CODE-->
     <p>And this is neater because it won't produce a pointless &quot;You close the front door.&quot; message.</p>
-    <p class="crossreference"><a href="WI_12_20.html" class="xreflink"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/xref.png" />&#160;<i>See </i><b>Stored actions</b></a><i> for how to store up actions as values and try those, too, so that isn't necessary to name the action as literally as in the examples above</i></p>
+    <p class="crossreference"><a href="WI_12_20.html" class="xreflink"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/xref.png" />&#160;<i>See </i><b>Stored actions</b></a><i> for how to store up actions as values and try those, too, so that isn't necessary to name the action as literally as in the examples above</i></p>
     <hr>
     <div class="roadsigns">
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_7_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_7_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_7_1.html" class="standardlink">Start of Chapter 7: Basic Actions</a>
@@ -151,7 +151,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_7_3.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_7_3.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_7_3.html" class="standardlink">Back to §7.3. Before rules</a>
@@ -159,7 +159,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_7_5.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_7_5.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_7_5.html" class="standardlink">Onward to §7.5. After rules</a>
@@ -179,7 +179,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example143'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Fine Laid</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example143'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Fine Laid</span></b></a><br>
                     Making writing that can be separately examined from the paper on which it appears, but which directs all other actions to the paper.</p>
 
                 </td>
@@ -197,7 +197,7 @@
             <p>Sometimes it is useful to direct all -- or almost all -- actions from one object to another. For the sake of argument, say we have a sheet of paper with writing on it, and (because we're very meticulous) we want to let the player examine the writing and get a customized response, different from when he just examines the sheet of paper. But for all other purposes -- say, TAKE or TASTE -- we want the two objects to be treated as one.</p>
             <p>Here, we approach the problem by changing the noun and/or the second noun of the current action, then issuing a new command to &quot;try the current action&quot;. Because we've changed the noun and second noun, the &quot;current action&quot; at this point is different from the one generated originally by the player's command.</p>
             <!--START CODE "c1340_143"-->
-            <blockquote class="code"><p class="quoted"><a id="c1340_143"></a><a href="javascript:pasteCode(' [=0x0022=]Fine Laid[=0x0022=][=0x000A=][=0x000A=]High Street Stationer is a room.[=0x000A=][=0x000A=]The sheet of paper is a thing in High Street Stationer. The writing is part of the sheet of paper.[=0x000A=][=0x000A=]The description of the sheet of paper is [=0x0022=]A beautiful sheet of heavy cream paper.[=0x0022=] The description of the writing is [=0x0022=]Delicate and spidery.[=0x0022=][=0x000A=][=0x000A=]Instead of tasting the sheet of paper, say [=0x0022=]You might need more fiber in your diet, but this isn[=0x0027=]t the way.[=0x0022=].[=0x000A=][=0x000A=]Before doing something other than examining when the current action involves the writing:[=0x000A=][=0x0009=]if the writing is the noun, now the noun is the sheet of paper;[=0x000A=][=0x0009=]if the writing is the second noun, now the second noun is the sheet of paper;[=0x000A=][=0x0009=]try the current action instead.[=0x000A=][=0x000A=]Test me with [=0x0022=]examine sheet of paper / examine writing / get writing / taste writing[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a>  &quot;Fine Laid&quot;
+            <blockquote class="code"><p class="quoted"><a id="c1340_143"></a><a href="javascript:pasteCode(' [=0x0022=]Fine Laid[=0x0022=][=0x000A=][=0x000A=]High Street Stationer is a room.[=0x000A=][=0x000A=]The sheet of paper is a thing in High Street Stationer. The writing is part of the sheet of paper.[=0x000A=][=0x000A=]The description of the sheet of paper is [=0x0022=]A beautiful sheet of heavy cream paper.[=0x0022=] The description of the writing is [=0x0022=]Delicate and spidery.[=0x0022=][=0x000A=][=0x000A=]Instead of tasting the sheet of paper, say [=0x0022=]You might need more fiber in your diet, but this isn[=0x0027=]t the way.[=0x0022=].[=0x000A=][=0x000A=]Before doing something other than examining when the current action involves the writing:[=0x000A=][=0x0009=]if the writing is the noun, now the noun is the sheet of paper;[=0x000A=][=0x0009=]if the writing is the second noun, now the second noun is the sheet of paper;[=0x000A=][=0x0009=]try the current action instead.[=0x000A=][=0x000A=]Test me with [=0x0022=]examine sheet of paper / examine writing / get writing / taste writing[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a>  &quot;Fine Laid&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -249,7 +249,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example357'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Hayseed</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example357'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Hayseed</span></b></a><br>
                     A refinement of our staircase kind which can be climbed.</p>
 
                 </td>
@@ -266,7 +266,7 @@
         <div class="egpanel" id="example357" style="display: none;">
             <p>Presumably all staircase-type connections between rooms should respond when the player says CLIMB STAIRS (or the equivalent). So</p>
             <!--START CODE "c1347_357"-->
-            <blockquote class="code"><p class="quoted"><a id="c1347_357"></a><a href="javascript:pasteCode('[=0x0022=]Hayseed[=0x0022=][=0x000A=][=0x000A=]A staircase is a kind of door. A staircase is usually open. A staircase is seldom openable.[=0x000A=][=0x000A=]The ladder is a staircase. It is above the Barn and below the Hayloft.[=0x000A=][=0x000A=]Instead of climbing a staircase:[=0x000A=][=0x0009=]try entering the noun.[=0x000A=][=0x000A=]Test me with [=0x0022=]climb ladder / g[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Hayseed&quot;
+            <blockquote class="code"><p class="quoted"><a id="c1347_357"></a><a href="javascript:pasteCode('[=0x0022=]Hayseed[=0x0022=][=0x000A=][=0x000A=]A staircase is a kind of door. A staircase is usually open. A staircase is seldom openable.[=0x000A=][=0x000A=]The ladder is a staircase. It is above the Barn and below the Hayloft.[=0x000A=][=0x000A=]Instead of climbing a staircase:[=0x000A=][=0x0009=]try entering the noun.[=0x000A=][=0x000A=]Test me with [=0x0022=]climb ladder / g[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Hayseed&quot;
             </p>
             </blockquote>
             <!--END CODE-->

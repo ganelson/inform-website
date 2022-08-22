@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -254,7 +254,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_5_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_5_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_5_1.html" class="standardlink">Start of Chapter 5: Text</a>
@@ -262,7 +262,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_5_7.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_5_7.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_5_7.html" class="standardlink">Back to §5.7. Text with random alternatives</a>
@@ -270,7 +270,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_5_9.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_5_9.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_5_9.html" class="standardlink">Onward to §5.9. Text with type styles</a>
@@ -290,7 +290,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example340'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Beekeeper's Apprentice</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example340'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Beekeeper's Apprentice</span></b></a><br>
                     Making the SEARCH command examine all the scenery in the current location.</p>
 
                 </td>
@@ -307,7 +307,7 @@
         <div class="egpanel" id="example340" style="display: none;">
             <p>We have to create a suitable action and say what it does, and to repeat what we do through all the scenery items. That needs material from subsequent chapters, but is quite ordinary Inform all the same:</p>
             <!--START CODE "c961_340"-->
-            <blockquote class="code"><p class="quoted"><a id="c961_340"></a><a href="javascript:pasteCode('[=0x0022=]Beekeeper[=0x0027=]s Apprentice[=0x0022=][=0x000A=][=0x000A=]Studying the vicinity is an action applying to nothing.[=0x000A=][=0x000A=]Report studying the vicinity:[=0x000A=][=0x0009=]if the location does not contain something which is scenery:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]There[=0x0027=]s little of interest in the [location].[=0x0022=] instead;[=0x000A=][=0x0009=]repeat with point of interest running through scenery in the location:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=][point of interest]: [run paragraph on][=0x0022=];[=0x000A=][=0x0009=][=0x0009=]try examining the point of interest.[=0x000A=][=0x000A=]Understand [=0x0022=]search[=0x0022=] as studying the vicinity.[=0x000A=][=0x000A=]The Yard is a room.[=0x000A=][=0x000A=]The hive and the honey are scenery things in the Yard. The description of the hive is [=0x0022=]The honeycombed hive is all around you, thrumming with life.[=0x0022=] The description of the honey is [=0x0022=]Wax-sealed honey has been cached in many of the hexagonal nurseries.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]search[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Beekeeper's Apprentice&quot;
+            <blockquote class="code"><p class="quoted"><a id="c961_340"></a><a href="javascript:pasteCode('[=0x0022=]Beekeeper[=0x0027=]s Apprentice[=0x0022=][=0x000A=][=0x000A=]Studying the vicinity is an action applying to nothing.[=0x000A=][=0x000A=]Report studying the vicinity:[=0x000A=][=0x0009=]if the location does not contain something which is scenery:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]There[=0x0027=]s little of interest in the [location].[=0x0022=] instead;[=0x000A=][=0x0009=]repeat with point of interest running through scenery in the location:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=][point of interest]: [run paragraph on][=0x0022=];[=0x000A=][=0x0009=][=0x0009=]try examining the point of interest.[=0x000A=][=0x000A=]Understand [=0x0022=]search[=0x0022=] as studying the vicinity.[=0x000A=][=0x000A=]The Yard is a room.[=0x000A=][=0x000A=]The hive and the honey are scenery things in the Yard. The description of the hive is [=0x0022=]The honeycombed hive is all around you, thrumming with life.[=0x0022=] The description of the honey is [=0x0022=]Wax-sealed honey has been cached in many of the hexagonal nurseries.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]search[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Beekeeper's Apprentice&quot;
             </p>
             </blockquote>
             <!--END CODE-->

@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -126,7 +126,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_13_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_13_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_13_1.html" class="standardlink">Start of Chapter 13: Relations</a>
@@ -134,7 +134,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_13_11.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_13_11.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_13_11.html" class="standardlink">Back to §13.11. Indirect relations</a>
@@ -142,7 +142,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_13_13.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_13_13.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_13_13.html" class="standardlink">Onward to §13.13. Relations involving values</a>
@@ -162,7 +162,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example417'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Wainwright Acts</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example417'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Wainwright Acts</span></b></a><br>
                     A technical note about checking the location of door objects when characters other than the player are interacting with them.</p>
 
                 </td>
@@ -202,7 +202,7 @@
             <!--END CODE-->
             <p>And this allows us to write rules that have characters interacting with doors even in the player's absence:</p>
             <!--START CODE "c4184_417"-->
-            <blockquote class="code"><p class="quoted"><a id="c4184_417"></a><a href="javascript:pasteCode('[=0x0022=]Wainwright Acts[=0x0022=][=0x000A=][=0x000A=]The Waiting Room is a room. The waiting room door is west of the Waiting Room and east of the Gents[=0x0027=] Loo. The Waiting Room door is an open door. [=0x0022=]The waiting room door [if open]stands open[otherwise]is shut firmly[end if].[=0x0022=][=0x000A=][=0x000A=]Sir Humphrey is a man in the Gents[=0x0027=] Loo.[=0x000A=][=0x000A=]Liminality relates a door (called X) to a room (called Y) when the front side of X is Y or the back side of X is Y. The verb to be a threshold of means the liminality relation.[=0x000A=][=0x000A=]Definition: a person is other if he is not the player.[=0x000A=][=0x000A=]Every turn:[=0x000A=][=0x0009=]repeat with indiscreet one running through other people:[=0x000A=][=0x0009=][=0x0009=]repeat with port running through open doors that are a threshold of the location of the indiscreet one:[=0x000A=][=0x0009=][=0x0009=][=0x0009=]if the port is a threshold of the location and the indiscreet one is not in the location:[=0x000A=][=0x0009=][=0x0009=][=0x0009=][=0x0009=]say [=0x0022=]Through [the port], you overhear [the indiscreet one] discussing [one of]his hopes for your imminent resignation[or]your wife[=0x0027=]s infidelity[or]your financially straitened circumstances[or]ways to avoid attending your birthday party[or]your halitosis[as decreasingly likely outcomes].[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]z / z / z / w / z / e / close door / z[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Wainwright Acts&quot;
+            <blockquote class="code"><p class="quoted"><a id="c4184_417"></a><a href="javascript:pasteCode('[=0x0022=]Wainwright Acts[=0x0022=][=0x000A=][=0x000A=]The Waiting Room is a room. The waiting room door is west of the Waiting Room and east of the Gents[=0x0027=] Loo. The Waiting Room door is an open door. [=0x0022=]The waiting room door [if open]stands open[otherwise]is shut firmly[end if].[=0x0022=][=0x000A=][=0x000A=]Sir Humphrey is a man in the Gents[=0x0027=] Loo.[=0x000A=][=0x000A=]Liminality relates a door (called X) to a room (called Y) when the front side of X is Y or the back side of X is Y. The verb to be a threshold of means the liminality relation.[=0x000A=][=0x000A=]Definition: a person is other if he is not the player.[=0x000A=][=0x000A=]Every turn:[=0x000A=][=0x0009=]repeat with indiscreet one running through other people:[=0x000A=][=0x0009=][=0x0009=]repeat with port running through open doors that are a threshold of the location of the indiscreet one:[=0x000A=][=0x0009=][=0x0009=][=0x0009=]if the port is a threshold of the location and the indiscreet one is not in the location:[=0x000A=][=0x0009=][=0x0009=][=0x0009=][=0x0009=]say [=0x0022=]Through [the port], you overhear [the indiscreet one] discussing [one of]his hopes for your imminent resignation[or]your wife[=0x0027=]s infidelity[or]your financially straitened circumstances[or]ways to avoid attending your birthday party[or]your halitosis[as decreasingly likely outcomes].[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]z / z / z / w / z / e / close door / z[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Wainwright Acts&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -256,7 +256,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example38'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">A Humble Wayside Flower</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example38'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">A Humble Wayside Flower</span></b></a><br>
                     Relations track the relationships between one character and another. Whenever the player meets a relative of someone he already knows, he receives a brief introduction.</p>
 
                 </td>
@@ -273,7 +273,7 @@
         <div class="egpanel" id="example38" style="display: none;">
             <p>First we define the relationships we choose to acknowledge:</p>
             <!--START CODE "c4191_38"-->
-            <blockquote class="code"><p class="quoted"><a id="c4191_38"></a><a href="javascript:pasteCode('[=0x0022=]A Humble Wayside Flower[=0x0022=][=0x000A=][=0x000A=]Marriage relates one person to another (called the spouse). The verb to be married to means the marriage relation.[=0x000A=][=0x000A=]Fatherhood relates one person (called father) to various people. The verb to engender means the fatherhood relation.[=0x000A=][=0x000A=][For brevity, we will ignore the existence of mothers. It is a sad world.][=0x000A=][=0x000A=]Siblinghood relates a person (called A) to a person (called B) when a person who engenders A engenders B. The verb to be sibling to means the siblinghood relation.[=0x000A=][=0x000A=]Family relates a person (called A) to a person (called B) when A is married to B or A engenders B or B engenders A or A is sibling to B. The verb to be related to means the family relation.[=0x000A=][=0x000A=]A person can be known or unknown. After printing the name of an unknown person (called the alien):[=0x000A=][=0x0009=]if a known person (called the contact) is related to the alien:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=] ([relation between alien and contact] of [the contact])[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]now the alien is known;[=0x000A=][=0x0009=][=0x0009=]rule succeeds.[=0x000A=][=0x000A=]To say relation between (first party - a person) and (second party - a person):[=0x000A=][=0x0009=]if the first party is married to the second party:[=0x000A=][=0x0009=][=0x0009=]if the first party is female, say [=0x0022=]wife[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]otherwise say [=0x0022=]husband[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]rule succeeds;[=0x000A=][=0x0009=]if the first party is sibling to the second party:[=0x000A=][=0x0009=][=0x0009=]if the first party is female, say [=0x0022=]sister[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]otherwise say [=0x0022=]brother[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]rule succeeds;[=0x000A=][=0x0009=]if the first party engenders the second party:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]father[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]rule succeeds;[=0x000A=][=0x0009=]if the second party is the father of the first party:[=0x000A=][=0x0009=][=0x0009=]if the first party is female, say [=0x0022=]daughter[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]otherwise say [=0x0022=]son[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]rule succeeds.[=0x000A=][=0x000A=]Pere Blanchard[=0x0027=]s Hut is a room. Percival Blakeney is a known man in the Hut. Marguerite is a woman in the Hut. Percival is married to Marguerite. Outside from the Hut is the Garden. Louise is a woman in the Garden. The Road to Paris is west of the Garden. Armand St Just is a man in the Road. Louise is married to Armand. Monsieur St Just is a man. He engenders Armand and Marguerite.[=0x000A=][=0x000A=]Test me with [=0x0022=]out / west / east / west[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;A Humble Wayside Flower&quot;
+            <blockquote class="code"><p class="quoted"><a id="c4191_38"></a><a href="javascript:pasteCode('[=0x0022=]A Humble Wayside Flower[=0x0022=][=0x000A=][=0x000A=]Marriage relates one person to another (called the spouse). The verb to be married to means the marriage relation.[=0x000A=][=0x000A=]Fatherhood relates one person (called father) to various people. The verb to engender means the fatherhood relation.[=0x000A=][=0x000A=][For brevity, we will ignore the existence of mothers. It is a sad world.][=0x000A=][=0x000A=]Siblinghood relates a person (called A) to a person (called B) when a person who engenders A engenders B. The verb to be sibling to means the siblinghood relation.[=0x000A=][=0x000A=]Family relates a person (called A) to a person (called B) when A is married to B or A engenders B or B engenders A or A is sibling to B. The verb to be related to means the family relation.[=0x000A=][=0x000A=]A person can be known or unknown. After printing the name of an unknown person (called the alien):[=0x000A=][=0x0009=]if a known person (called the contact) is related to the alien:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=] ([relation between alien and contact] of [the contact])[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]now the alien is known;[=0x000A=][=0x0009=][=0x0009=]rule succeeds.[=0x000A=][=0x000A=]To say relation between (first party - a person) and (second party - a person):[=0x000A=][=0x0009=]if the first party is married to the second party:[=0x000A=][=0x0009=][=0x0009=]if the first party is female, say [=0x0022=]wife[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]otherwise say [=0x0022=]husband[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]rule succeeds;[=0x000A=][=0x0009=]if the first party is sibling to the second party:[=0x000A=][=0x0009=][=0x0009=]if the first party is female, say [=0x0022=]sister[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]otherwise say [=0x0022=]brother[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]rule succeeds;[=0x000A=][=0x0009=]if the first party engenders the second party:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]father[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]rule succeeds;[=0x000A=][=0x0009=]if the second party is the father of the first party:[=0x000A=][=0x0009=][=0x0009=]if the first party is female, say [=0x0022=]daughter[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]otherwise say [=0x0022=]son[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]rule succeeds.[=0x000A=][=0x000A=]Pere Blanchard[=0x0027=]s Hut is a room. Percival Blakeney is a known man in the Hut. Marguerite is a woman in the Hut. Percival is married to Marguerite. Outside from the Hut is the Garden. Louise is a woman in the Garden. The Road to Paris is west of the Garden. Armand St Just is a man in the Road. Louise is married to Armand. Monsieur St Just is a man. He engenders Armand and Marguerite.[=0x000A=][=0x000A=]Test me with [=0x0022=]out / west / east / west[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;A Humble Wayside Flower&quot;
             </p>
             </blockquote>
             <!--END CODE-->

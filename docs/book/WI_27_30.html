@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -136,7 +136,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_27_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_27_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_27_1.html" class="standardlink">Start of Chapter 27: Extensions</a>
@@ -144,7 +144,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_27_29.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_27_29.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_27_29.html" class="standardlink">Back to §27.29. Invocation labels, counters and storage</a>
@@ -164,7 +164,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example40'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Blink</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example40'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Blink</span></b></a><br>
                     Making a "by atmosphere" token, allowing us to design our own text variations such as "[one of]normal[or]gloomy[or]scary[by atmosphere]".</p>
 
                 </td>
@@ -181,7 +181,7 @@
         <div class="egpanel" id="example40" style="display: none;">
             <p>Suppose we are writing a game in which the mood of the piece changes, and we would like to have lots of descriptions that vary according to its current state. We might in that case want to create our own &quot;by atmosphere&quot; token, to control text variations, like this:</p>
             <!--START CODE "c9262_40"-->
-            <blockquote class="code"><p class="quoted"><a id="c9262_40"></a><a href="javascript:pasteCode('[=0x0022=]Blink[=0x0022=][=0x000A=][=0x000A=]Atmosphere is a kind of value. The atmospheres are normal, melancholy, and creepy.[=0x000A=][=0x000A=]The current atmosphere is an atmosphere that varies.[=0x000A=]The current atmosphere variable translates into I6 as [=0x0022=]current_atmosphere[=0x0022=].[=0x000A=][=0x000A=]To say by atmosphere -- ending say_one_of with marker I7_SOO_ATM:[=0x000A=][=0x0009=](- {-close-brace} -).[=0x000A=][=0x000A=][Since we[=0x0027=]re operating within the untyped Inform 6, we can make use of the fact that kinds of value are (internally) just constants, enumerated in the same order in which they were originally defined. In other words, [=0x0022=]normal[=0x0022=] at the I6 level translates to 1, [=0x0022=]melancholy[=0x0022=] to 2, and [=0x0022=]creepy[=0x0022=] to 3; so we can return the value of the current atmosphere, and thereby select option 1, 2, or 3:][=0x000A=][=0x000A=]Include (-[=0x000A=]Global current_atmosphere = 1;[=0x000A=][ I7_SOO_ATM oldval count;[=0x000A=][=0x0009=]if (count [=0x003C=] current_atmosphere) return count;[=0x000A=][=0x0009=]return current_atmosphere; ];[=0x000A=]-)[=0x000A=][=0x000A=][And that concludes the hard part. Now to test that it works:][=0x000A=][=0x000A=]The Flat is a room. [=0x0022=]A small [one of]but cozy[or]depressing[or]imprisoning[by atmosphere] flat. Outside the window, the sun is [one of][or][or]apparently [by atmosphere]shining and there is a brisk breeze through the leaves of the birch trees. [one of]It would be quite nice weather for a walk[or]The rest of the world apparently has no appreciation of what you suffer[or]It all looks deceptively normal[by atmosphere].[=0x0022=][=0x000A=][=0x000A=]Instead of waiting when the current atmosphere is normal:[=0x000A=][=0x0009=]say [=0x0022=]Everything stretches wide and flat for just a moment, as though all the world around you were painted on a thin rubber sheet that is being [italic type]stretched[roman type]. Then it snaps back into place, leaving your ears ringing. But that little glitch was enough to warn you. Someone is tampering with space-time again. Someone very close by.[=0x0022=];[=0x000A=][=0x0009=]now the current atmosphere is creepy.[=0x000A=][=0x000A=]Test me with [=0x0022=]look / z / look[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Blink&quot;
+            <blockquote class="code"><p class="quoted"><a id="c9262_40"></a><a href="javascript:pasteCode('[=0x0022=]Blink[=0x0022=][=0x000A=][=0x000A=]Atmosphere is a kind of value. The atmospheres are normal, melancholy, and creepy.[=0x000A=][=0x000A=]The current atmosphere is an atmosphere that varies.[=0x000A=]The current atmosphere variable translates into I6 as [=0x0022=]current_atmosphere[=0x0022=].[=0x000A=][=0x000A=]To say by atmosphere -- ending say_one_of with marker I7_SOO_ATM:[=0x000A=][=0x0009=](- {-close-brace} -).[=0x000A=][=0x000A=][Since we[=0x0027=]re operating within the untyped Inform 6, we can make use of the fact that kinds of value are (internally) just constants, enumerated in the same order in which they were originally defined. In other words, [=0x0022=]normal[=0x0022=] at the I6 level translates to 1, [=0x0022=]melancholy[=0x0022=] to 2, and [=0x0022=]creepy[=0x0022=] to 3; so we can return the value of the current atmosphere, and thereby select option 1, 2, or 3:][=0x000A=][=0x000A=]Include (-[=0x000A=]Global current_atmosphere = 1;[=0x000A=][ I7_SOO_ATM oldval count;[=0x000A=][=0x0009=]if (count [=0x003C=] current_atmosphere) return count;[=0x000A=][=0x0009=]return current_atmosphere; ];[=0x000A=]-)[=0x000A=][=0x000A=][And that concludes the hard part. Now to test that it works:][=0x000A=][=0x000A=]The Flat is a room. [=0x0022=]A small [one of]but cozy[or]depressing[or]imprisoning[by atmosphere] flat. Outside the window, the sun is [one of][or][or]apparently [by atmosphere]shining and there is a brisk breeze through the leaves of the birch trees. [one of]It would be quite nice weather for a walk[or]The rest of the world apparently has no appreciation of what you suffer[or]It all looks deceptively normal[by atmosphere].[=0x0022=][=0x000A=][=0x000A=]Instead of waiting when the current atmosphere is normal:[=0x000A=][=0x0009=]say [=0x0022=]Everything stretches wide and flat for just a moment, as though all the world around you were painted on a thin rubber sheet that is being [italic type]stretched[roman type]. Then it snaps back into place, leaving your ears ringing. But that little glitch was enough to warn you. Someone is tampering with space-time again. Someone very close by.[=0x0022=];[=0x000A=][=0x0009=]now the current atmosphere is creepy.[=0x000A=][=0x000A=]Test me with [=0x0022=]look / z / look[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Blink&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -252,7 +252,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example397'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Uncommon Ground</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example397'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Uncommon Ground</span></b></a><br>
                     Making a "by viewpoint" token, allowing us to design our own text variations such as "[show to yourself]quaint[to Lolita]thrilling[to everyone else]squalid[end show]" depending on the identity of the player at the moment.</p>
 
                 </td>
@@ -291,7 +291,7 @@
             </blockquote>
             <!--END CODE-->
             <!--START CODE "c9272_397"-->
-            <blockquote class="code"><p class="quoted"><a id="c9272_397"></a><a href="javascript:pasteCode('[=0x0022=]Uncommon Ground[=0x0022=][=0x000A=][=0x000A=]The Mud Village is a room. [=0x0022=]You stand at the center of a [show to yourself]quaint[to Lolita]thrilling[to everyone else]squalid[end show] mud village.[=0x0022=][=0x000A=][=0x000A=]Leforge is a man in the Mud Village. Lolita is a woman in the Mud Village.[=0x000A=][=0x000A=]Instead of waiting:[=0x000A=][=0x0009=]if the player is Lolita, now the player is Leforge;[=0x000A=][=0x0009=]if the player is yourself, now the player is Lolita;[=0x000A=][=0x0009=]say [=0x0022=]You jump bodies. Whoops![=0x0022=][=0x000A=][=0x000A=]To say show to (N - a person) -- beginning say_seen_by:[=0x000A=][=0x0009=](-[=0x000A=][=0x0009=][=0x0009=]switch(player)[=0x000A=][=0x0009=][=0x0009=]{-open-brace}[=0x000A=][=0x0009=][=0x0009=]{N}:[=0x000A=][=0x0009=]-).[=0x000A=][=0x000A=]To say to (N - a person) -- continuing say_seen_by:[=0x000A=][=0x0009=](-[=0x000A=][=0x0009=][=0x0009=]{N}:[=0x000A=][=0x0009=]-).[=0x000A=][=0x000A=]To say to everyone else -- continuing say_seen_by:[=0x000A=][=0x0009=](-[=0x000A=][=0x0009=][=0x0009=]default:[=0x000A=][=0x0009=]-)[=0x000A=][=0x000A=]To say end show -- ending say_seen_by:[=0x000A=][=0x0009=](-[=0x000A=][=0x0009=][=0x0009=]{-close-brace}[=0x000A=][=0x0009=]-)[=0x000A=][=0x000A=]Test me with [=0x0022=]look / z / look / z / look[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Uncommon Ground&quot;
+            <blockquote class="code"><p class="quoted"><a id="c9272_397"></a><a href="javascript:pasteCode('[=0x0022=]Uncommon Ground[=0x0022=][=0x000A=][=0x000A=]The Mud Village is a room. [=0x0022=]You stand at the center of a [show to yourself]quaint[to Lolita]thrilling[to everyone else]squalid[end show] mud village.[=0x0022=][=0x000A=][=0x000A=]Leforge is a man in the Mud Village. Lolita is a woman in the Mud Village.[=0x000A=][=0x000A=]Instead of waiting:[=0x000A=][=0x0009=]if the player is Lolita, now the player is Leforge;[=0x000A=][=0x0009=]if the player is yourself, now the player is Lolita;[=0x000A=][=0x0009=]say [=0x0022=]You jump bodies. Whoops![=0x0022=][=0x000A=][=0x000A=]To say show to (N - a person) -- beginning say_seen_by:[=0x000A=][=0x0009=](-[=0x000A=][=0x0009=][=0x0009=]switch(player)[=0x000A=][=0x0009=][=0x0009=]{-open-brace}[=0x000A=][=0x0009=][=0x0009=]{N}:[=0x000A=][=0x0009=]-).[=0x000A=][=0x000A=]To say to (N - a person) -- continuing say_seen_by:[=0x000A=][=0x0009=](-[=0x000A=][=0x0009=][=0x0009=]{N}:[=0x000A=][=0x0009=]-).[=0x000A=][=0x000A=]To say to everyone else -- continuing say_seen_by:[=0x000A=][=0x0009=](-[=0x000A=][=0x0009=][=0x0009=]default:[=0x000A=][=0x0009=]-)[=0x000A=][=0x000A=]To say end show -- ending say_seen_by:[=0x000A=][=0x0009=](-[=0x000A=][=0x0009=][=0x0009=]{-close-brace}[=0x000A=][=0x0009=]-)[=0x000A=][=0x000A=]Test me with [=0x0022=]look / z / look / z / look[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Uncommon Ground&quot;
             </p>
             </blockquote>
             <!--END CODE-->

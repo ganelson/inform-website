@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -123,7 +123,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_6_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_6_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_6_1.html" class="standardlink">Start of Chapter 6: Descriptions</a>
@@ -131,7 +131,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_6_4.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_6_4.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_6_4.html" class="standardlink">Back to §6.4. Defining new adjectives</a>
@@ -139,7 +139,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_6_6.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_6_6.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_6_6.html" class="standardlink">Onward to §6.6. Whereabouts on a scale?</a>
@@ -159,7 +159,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example351'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Only You...</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example351'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Only You...</span></b></a><br>
                     Smoke which spreads through the rooms of the map, but only every other turn.</p>
 
                 </td>
@@ -176,7 +176,7 @@
         <div class="egpanel" id="example351" style="display: none;">
             <p>Suppose we want to have smoke that spreads from room to room, gradually filling the entire map with a clogging smoke. Having it spread every single turn would make for a pretty rapid diffusion, so we temper this by having it spread only on even-numbered turns, instead. Conveniently, Inform by default already knows about even and odd numbers, so we can write:</p>
             <!--START CODE "c1070_351"-->
-            <blockquote class="code"><p class="quoted"><a id="c1070_351"></a><a href="javascript:pasteCode('[=0x0022=]Only You...[=0x0022=][=0x000A=][=0x000A=]Section 1 - The Procedure[=0x000A=][=0x000A=]Every turn when the turn count is even:[=0x000A=][=0x0009=]if every room is smoky, make no decision;[=0x000A=][=0x0009=]let previously smoky be whether or not the location is smoky;[=0x000A=][=0x0009=]repeat with area running through smoky rooms:[=0x000A=][=0x0009=][=0x0009=]now every room which is adjacent to the area is smoky;[=0x000A=][=0x0009=]if previously smoky is false and the location is smoky:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=][The location] is filling rapidly with smoke.[=0x0022=][=0x000A=][=0x000A=]A room can be smoky or unsmoky.[=0x000A=][=0x000A=]Some air is a backdrop. Air is everywhere. Instead of doing something other than examining or smelling to air: say [=0x0022=]It[=0x0027=]s just air.[=0x0022=] Understand [=0x0022=]smoke[=0x0022=] as the air when the location is smoky.[=0x000A=][=0x000A=]Instead of examining the air in a smoky room: say [=0x0022=]A thick layer of smoke lies just under the ceiling.[=0x0022=][=0x000A=][=0x000A=]Instead of smelling the air in a smoky room: say [=0x0022=]Agh, acrid.[=0x0022=] Instead of smelling a smoky room: try smelling the air.[=0x000A=][=0x000A=]After looking in a smoky room: say [=0x0022=]A thick layer of smoke has gathered under the ceiling.[=0x0022=][=0x000A=][=0x000A=]Section 2 - The Scenario[=0x000A=][=0x000A=]The Guide Lodge is a room. [=0x0022=]A very spacious room capable of containing several hundred girls while they eat, talk, or do crafts. It is constructed in a not-unappealing rustic style, with floor-to-ceiling windows overlooking the lake below, and a fieldstone hearth at the center.[=0x0022=] The Guide Lodge is smoky.[=0x000A=][=0x000A=]The Kitchen is north of the Guide Lodge. [=0x0022=]Multiple eight-burner ranges, ovens, and a walk-in refrigerator: you know the sort of thing.[=0x0022=][=0x000A=][=0x000A=]The Industrial Pantry is east of the Kitchen. [=0x0022=]Awe-inspiring quantities of food line every shelf, from the three-gallon tub of mayonnaise to the 50-pound tub of rice. Perhaps the most astonishing item is a bag of marshmallows big enough to double as a futon.[=0x0022=][=0x000A=][=0x000A=]The player is in the Pantry.[=0x000A=][=0x000A=]The Hallway is west of the Guide Lodge. The description of the Hallway is [=0x0022=]A perpetually-crammed hallway which has to handle the overflow line for the toilets.[=0x0022=] A singed sign is fixed in place in the Hallway. The description of the sign is [=0x0022=]Where the edge of the sign has not been burnt, the legible words are [=0x0027=]...Can Prevent Forest Fires[=0x0027=].[=0x0022=][=0x000A=][=0x000A=]The Toilets are north of the Hallway. [=0x0022=]Always in full use, at least when the 12-to-15s are here.[=0x0022=][=0x000A=][=0x000A=]The Coat Closet is south of the Hallway. [=0x0022=]Muddy boots may not be worn inside the lodge; instead, about 250 pair are piled here, along with their owners[=0x0027=] damp parkas and umbrellas.[=0x0022=][=0x000A=][=0x000A=]The Craft Supply Room is west of the Hallway. [=0x0022=]A holding-depot for jugs of white glue and popsicle sticks.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]x smoke / z / z / z / z / x smoke / look[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Only You...&quot;
+            <blockquote class="code"><p class="quoted"><a id="c1070_351"></a><a href="javascript:pasteCode('[=0x0022=]Only You...[=0x0022=][=0x000A=][=0x000A=]Section 1 - The Procedure[=0x000A=][=0x000A=]Every turn when the turn count is even:[=0x000A=][=0x0009=]if every room is smoky, make no decision;[=0x000A=][=0x0009=]let previously smoky be whether or not the location is smoky;[=0x000A=][=0x0009=]repeat with area running through smoky rooms:[=0x000A=][=0x0009=][=0x0009=]now every room which is adjacent to the area is smoky;[=0x000A=][=0x0009=]if previously smoky is false and the location is smoky:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=][The location] is filling rapidly with smoke.[=0x0022=][=0x000A=][=0x000A=]A room can be smoky or unsmoky.[=0x000A=][=0x000A=]Some air is a backdrop. Air is everywhere. Instead of doing something other than examining or smelling to air: say [=0x0022=]It[=0x0027=]s just air.[=0x0022=] Understand [=0x0022=]smoke[=0x0022=] as the air when the location is smoky.[=0x000A=][=0x000A=]Instead of examining the air in a smoky room: say [=0x0022=]A thick layer of smoke lies just under the ceiling.[=0x0022=][=0x000A=][=0x000A=]Instead of smelling the air in a smoky room: say [=0x0022=]Agh, acrid.[=0x0022=] Instead of smelling a smoky room: try smelling the air.[=0x000A=][=0x000A=]After looking in a smoky room: say [=0x0022=]A thick layer of smoke has gathered under the ceiling.[=0x0022=][=0x000A=][=0x000A=]Section 2 - The Scenario[=0x000A=][=0x000A=]The Guide Lodge is a room. [=0x0022=]A very spacious room capable of containing several hundred girls while they eat, talk, or do crafts. It is constructed in a not-unappealing rustic style, with floor-to-ceiling windows overlooking the lake below, and a fieldstone hearth at the center.[=0x0022=] The Guide Lodge is smoky.[=0x000A=][=0x000A=]The Kitchen is north of the Guide Lodge. [=0x0022=]Multiple eight-burner ranges, ovens, and a walk-in refrigerator: you know the sort of thing.[=0x0022=][=0x000A=][=0x000A=]The Industrial Pantry is east of the Kitchen. [=0x0022=]Awe-inspiring quantities of food line every shelf, from the three-gallon tub of mayonnaise to the 50-pound tub of rice. Perhaps the most astonishing item is a bag of marshmallows big enough to double as a futon.[=0x0022=][=0x000A=][=0x000A=]The player is in the Pantry.[=0x000A=][=0x000A=]The Hallway is west of the Guide Lodge. The description of the Hallway is [=0x0022=]A perpetually-crammed hallway which has to handle the overflow line for the toilets.[=0x0022=] A singed sign is fixed in place in the Hallway. The description of the sign is [=0x0022=]Where the edge of the sign has not been burnt, the legible words are [=0x0027=]...Can Prevent Forest Fires[=0x0027=].[=0x0022=][=0x000A=][=0x000A=]The Toilets are north of the Hallway. [=0x0022=]Always in full use, at least when the 12-to-15s are here.[=0x0022=][=0x000A=][=0x000A=]The Coat Closet is south of the Hallway. [=0x0022=]Muddy boots may not be worn inside the lodge; instead, about 250 pair are piled here, along with their owners[=0x0027=] damp parkas and umbrellas.[=0x0022=][=0x000A=][=0x000A=]The Craft Supply Room is west of the Hallway. [=0x0022=]A holding-depot for jugs of white glue and popsicle sticks.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]x smoke / z / z / z / z / x smoke / look[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Only You...&quot;
             </p>
             </blockquote>
             <!--END CODE-->

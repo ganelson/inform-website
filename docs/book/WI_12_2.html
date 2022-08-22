@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -65,7 +65,7 @@
 
     <p class="sectionheading">§12.2. How actions are processed</p>
     <p>The following flow chart shows the natural course of events when Inform deals with a new action - a &quot;taking&quot; action in the case drawn. For quite a long time, the action may still fail, and it may be that nothing actually happens: but eventually a deciding line is crossed, and once that happens the action will certainly succeed.</p>
-    <p><img alt="achart.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/achart.png" /></p>
+    <p><img alt="achart.png" src="/inform-website/assets/images/doc_images/achart.png" /></p>
     <p>The coloured boxes on this chart represent &quot;rulebooks&quot;, that is, collections of rules with a common purpose. The orange boxes for Before, Instead and After were covered in the Basic Actions chapter, but the blue boxes are new. The orange boxes are where we put rules to handle unusual situations, or unexpected events: special rules to cover the opening of a container which happens to be booby-trapped, or walking through a doorway into a room where a surprise party is about to be sprung.</p>
     <p>Blue boxes hold the mundane, everyday rules - the generic ways that particular actions behave. Every action provides these: &quot;Check&quot; rules, to see if it makes sense - for instance, to see that the player is not trying to take his or her own body, or a whole room, or something he or she already has; then &quot;Carry out&quot; rules, to actually do what the action is supposed to do - in the case of taking, to move an object into the player's possession; and finally &quot;Report&quot; rules, which tell the player what has happened - perhaps printing up &quot;Taken.&quot;</p>
     <p>When we create a new action, we add a new column to the blue rows in this diagram. As we shall see, we can also put new rules into the existing blue boxes: for instance, if we wanted to increase physical realism by forbidding the player to carry more than a certain weight, we would want to add a new &quot;check taking&quot; rule, and this is entirely legal.</p>
@@ -75,7 +75,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_12_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_12_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_12_1.html" class="standardlink">Start of Chapter 12: Advanced Actions</a>
@@ -83,7 +83,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_12_1.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_12_1.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_12_1.html" class="standardlink">Back to §12.1. A recap of actions</a>
@@ -91,7 +91,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_12_3.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_12_3.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_12_3.html" class="standardlink">Onward to §12.3. Giving instructions to other people</a>

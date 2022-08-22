@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -180,7 +180,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_11_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_11_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_11_1.html" class="standardlink">Start of Chapter 11: Phrases</a>
@@ -188,7 +188,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_11_7.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_11_7.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_11_7.html" class="standardlink">Back to §11.7. Begin and end</a>
@@ -196,7 +196,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_11_9.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_11_9.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_11_9.html" class="standardlink">Onward to §11.9. While</a>
@@ -216,7 +216,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example371'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Numberless</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example371'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Numberless</span></b></a><br>
                     A simple exercise in printing the names of random numbers, comparing the use of "otherwise if...", a switch statement, or a table-based alternative.</p>
 
                 </td>
@@ -232,7 +232,7 @@
 
         <div class="egpanel" id="example371" style="display: none;">
             <!--START CODE "c2934_371"-->
-            <blockquote class="code"><p class="quoted"><a id="c2934_371"></a><a href="javascript:pasteCode('[=0x0022=]Numberless[=0x0022=][=0x000A=][=0x000A=]The Rambling Warren is a room.[=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]let N be a random number between 1 and 5;[=0x000A=][=0x0009=]if N is 1:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]N is one.[=0x0022=];[=0x000A=][=0x0009=]otherwise if N is 2:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]N is two.[=0x0022=];[=0x000A=][=0x0009=]otherwise if N is 3:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]N is three.[=0x0022=];[=0x000A=][=0x0009=]otherwise:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]N is more than the number of your toes.[=0x0022=][=0x000A=][=0x000A=][The final [=0x0022=]otherwise[=0x0022=] here will fire only if none of the earlier conditions applies; we could leave it out and print nothing in the case that N is 4 or 5.][=0x000A=][=0x000A=][The more compact way to do this is to create a list of values that our number could match; in many programming languages this is called a switch statement. For example:][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]let Y be a random number between 6 and 10;[=0x000A=][=0x0009=]if Y is:[=0x000A=][=0x0009=][=0x0009=]-- 6: say [=0x0022=]Six is the magic number![=0x0022=];[=0x000A=][=0x0009=][=0x0009=]-- 7: say [=0x0022=]The number of the day is seven![=0x0022=];[=0x000A=][=0x0009=][=0x0009=]-- otherwise: say [=0x0022=]Today[=0x0027=]s magic number is boring.[=0x0022=][=0x000A=][=0x000A=][=0x000A=][As a final option, we can use a construction we[=0x0027=]ve seen only briefly before now: a table. The use of tables will be explained more fully in their own chapter, but here we see in brief that we can assign a number of values to one column of a table and then use that table to look up output:][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]let X be a random number between 11 and 14;[=0x000A=][=0x0009=]if X is a number listed in the Table of Switching, say [=0x0022=][output entry][paragraph break][=0x0022=];[=0x000A=][=0x0009=]otherwise say [=0x0022=]X is greater than the number of your noses![=0x0022=][=0x000A=][=0x000A=]Table of Switching[=0x000A=]number[=0x0009=]output[=0x000A=]11[=0x0009=][=0x0022=]X is eleven![=0x0022=][=0x000A=]12[=0x0009=][=0x0022=]X is twelve![=0x0022=][=0x000A=]13[=0x0009=][=0x0022=]X is thirteen![=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]z[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Numberless&quot;
+            <blockquote class="code"><p class="quoted"><a id="c2934_371"></a><a href="javascript:pasteCode('[=0x0022=]Numberless[=0x0022=][=0x000A=][=0x000A=]The Rambling Warren is a room.[=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]let N be a random number between 1 and 5;[=0x000A=][=0x0009=]if N is 1:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]N is one.[=0x0022=];[=0x000A=][=0x0009=]otherwise if N is 2:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]N is two.[=0x0022=];[=0x000A=][=0x0009=]otherwise if N is 3:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]N is three.[=0x0022=];[=0x000A=][=0x0009=]otherwise:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]N is more than the number of your toes.[=0x0022=][=0x000A=][=0x000A=][The final [=0x0022=]otherwise[=0x0022=] here will fire only if none of the earlier conditions applies; we could leave it out and print nothing in the case that N is 4 or 5.][=0x000A=][=0x000A=][The more compact way to do this is to create a list of values that our number could match; in many programming languages this is called a switch statement. For example:][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]let Y be a random number between 6 and 10;[=0x000A=][=0x0009=]if Y is:[=0x000A=][=0x0009=][=0x0009=]-- 6: say [=0x0022=]Six is the magic number![=0x0022=];[=0x000A=][=0x0009=][=0x0009=]-- 7: say [=0x0022=]The number of the day is seven![=0x0022=];[=0x000A=][=0x0009=][=0x0009=]-- otherwise: say [=0x0022=]Today[=0x0027=]s magic number is boring.[=0x0022=][=0x000A=][=0x000A=][=0x000A=][As a final option, we can use a construction we[=0x0027=]ve seen only briefly before now: a table. The use of tables will be explained more fully in their own chapter, but here we see in brief that we can assign a number of values to one column of a table and then use that table to look up output:][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]let X be a random number between 11 and 14;[=0x000A=][=0x0009=]if X is a number listed in the Table of Switching, say [=0x0022=][output entry][paragraph break][=0x0022=];[=0x000A=][=0x0009=]otherwise say [=0x0022=]X is greater than the number of your noses![=0x0022=][=0x000A=][=0x000A=]Table of Switching[=0x000A=]number[=0x0009=]output[=0x000A=]11[=0x0009=][=0x0022=]X is eleven![=0x0022=][=0x000A=]12[=0x0009=][=0x0022=]X is twelve![=0x0022=][=0x000A=]13[=0x0009=][=0x0022=]X is thirteen![=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]z[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Numberless&quot;
             </p>
             </blockquote>
             <!--END CODE-->

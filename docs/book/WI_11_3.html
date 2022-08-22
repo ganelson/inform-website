@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -92,7 +92,7 @@
     <!--END CODE-->
     <p>mean. Unless some other definition sorts the matter out, Inform will reply to uses like this with a Problem message:</p>
     <!--START CODE "c2828"-->
-    <blockquote class="code"><p class="quoted"><a id="c2828"></a><span class="boldface">Problem.</span> You wrote 'admire 63' <img alt="Reveal.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/Reveal.png" />, but '63' has the wrong kind of value: a number rather than an object.
+    <blockquote class="code"><p class="quoted"><a id="c2828"></a><span class="boldface">Problem.</span> You wrote 'admire 63' <img alt="Reveal.png" src="/inform-website/assets/images/doc_images/Reveal.png" />, but '63' has the wrong kind of value: a number rather than an object.
     </p>
     </blockquote>
     <!--END CODE-->
@@ -187,7 +187,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_11_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_11_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_11_1.html" class="standardlink">Start of Chapter 11: Phrases</a>
@@ -195,7 +195,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_11_2.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_11_2.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_11_2.html" class="standardlink">Back to §11.2. The phrasebook</a>
@@ -203,7 +203,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_11_4.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_11_4.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_11_4.html" class="standardlink">Onward to §11.4. The showme phrase</a>
@@ -223,7 +223,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example3'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Ahem</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example3'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Ahem</span></b></a><br>
                     Writing a phrase, with several variant forms, whose function is to follow a rule several times.</p>
 
                 </td>
@@ -254,7 +254,7 @@
             <!--END CODE-->
             <p>In general, we probably don't need to make our phrase definitions quite so flexible as this, but it's a good idea to account for &quot;a&quot; vs. &quot;the&quot;, and for the possibility of using singular and plural forms, especially when writing extensions or other source to be shared.</p>
             <!--START CODE "c2842_3"-->
-            <blockquote class="code"><p class="quoted"><a id="c2842_3"></a><a href="javascript:pasteCode(' [=0x0022=]Ahem[=0x0022=][=0x000A=][=0x000A=]To do/follow (chosen rule - a rule) exactly/precisely/just (N - a number) time/times:[=0x000A=][=0x0009=]repeat with index running from 1 to N:[=0x000A=][=0x0009=][=0x0009=]follow chosen rule.[=0x000A=][=0x000A=]This is the throat-clearing rule:[=0x000A=][=0x0009=]say [=0x0022=][=0x0027=]Ahem,[=0x0027=] says [a random visible person who is not the player].[=0x0022=][=0x000A=][=0x000A=]After waiting:[=0x000A=][=0x0009=]do the throat-clearing rule just one time.[=0x000A=][=0x000A=]Instead of listening:[=0x000A=][=0x0009=]follow the throat-clearing rule precisely three times.[=0x000A=][=0x000A=]Instead of smelling:[=0x000A=][=0x0009=]follow the throat-clearing rule exactly 2 times.[=0x000A=][=0x000A=]Chateau Marmont is a room. Tom, Jack, Zsa-Zsa, and Wilma-Faye are people in the Chateau. Zsa-Zsa and Wilma-Faye are women.[=0x000A=][=0x000A=]Test me with [=0x0022=]wait / smell / listen[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a>  &quot;Ahem&quot;
+            <blockquote class="code"><p class="quoted"><a id="c2842_3"></a><a href="javascript:pasteCode(' [=0x0022=]Ahem[=0x0022=][=0x000A=][=0x000A=]To do/follow (chosen rule - a rule) exactly/precisely/just (N - a number) time/times:[=0x000A=][=0x0009=]repeat with index running from 1 to N:[=0x000A=][=0x0009=][=0x0009=]follow chosen rule.[=0x000A=][=0x000A=]This is the throat-clearing rule:[=0x000A=][=0x0009=]say [=0x0022=][=0x0027=]Ahem,[=0x0027=] says [a random visible person who is not the player].[=0x0022=][=0x000A=][=0x000A=]After waiting:[=0x000A=][=0x0009=]do the throat-clearing rule just one time.[=0x000A=][=0x000A=]Instead of listening:[=0x000A=][=0x0009=]follow the throat-clearing rule precisely three times.[=0x000A=][=0x000A=]Instead of smelling:[=0x000A=][=0x0009=]follow the throat-clearing rule exactly 2 times.[=0x000A=][=0x000A=]Chateau Marmont is a room. Tom, Jack, Zsa-Zsa, and Wilma-Faye are people in the Chateau. Zsa-Zsa and Wilma-Faye are women.[=0x000A=][=0x000A=]Test me with [=0x0022=]wait / smell / listen[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a>  &quot;Ahem&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -317,7 +317,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example138'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Ferragamo Again</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example138'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Ferragamo Again</span></b></a><br>
                     Using the same phrase to produce different results with different characters.</p>
 
                 </td>
@@ -334,7 +334,7 @@
         <div class="egpanel" id="example138" style="display: none;">
             <p>Here we use phrases that match individual items where possible, and the general kind otherwise:</p>
             <!--START CODE "c2850_138"-->
-            <blockquote class="code"><p class="quoted"><a id="c2850_138"></a><a href="javascript:pasteCode('[=0x0022=]Ferragamo Again[=0x0022=][=0x000A=][=0x000A=]The Break Room is a room. Vanessa, Tina, and Lisa are women in the Break Room. Mark and Holman are men in the Break Room.[=0x000A=][=0x000A=]Understand the commands [=0x0022=]ask[=0x0022=] and [=0x0022=]tell[=0x0022=] and [=0x0022=]answer[=0x0022=] as something new.[=0x000A=][=0x000A=]Understand [=0x0022=]talk about [any subject][=0x0022=] as talking about. Talking about is an action applying to one visible thing.[=0x000A=][=0x000A=]Understand [=0x0022=]talk about [text][=0x0022=] as talking randomly about. Talking randomly about is an action applying to one topic. Carry out talking randomly about: say [=0x0022=]Mostly you[=0x0027=]re interested in [the list of subjects].[=0x0022=][=0x000A=][=0x000A=]Carry out talking about something:[=0x000A=][=0x0009=]now the previous subject is the noun.[=0x000A=][=0x000A=]Report talking about something:[=0x000A=][=0x0009=]say [=0x0022=]You chat for a while about [the noun].[=0x0022=][=0x000A=][=0x000A=]A subject is a kind of thing. Assyrian vowel sounds, designer handbags, and instant run-off voting are subjects. Understand [=0x0022=]linguistics[=0x0022=] and [=0x0022=]mute[=0x0022=] and [=0x0022=]stop[=0x0022=] as sounds. Understand [=0x0022=]prada[=0x0022=] and [=0x0022=]tods[=0x0022=] and [=0x0022=]coach[=0x0022=] and [=0x0022=]carmen marc valvo[=0x0022=] as designer handbags. Understand [=0x0022=]reform[=0x0022=] and [=0x0022=]election[=0x0022=] and [=0x0022=]election fraud[=0x0022=] and [=0x0022=]two-party system[=0x0022=] and [=0x0022=]Diebold[=0x0022=] as instant run-off voting.[=0x000A=][=0x000A=]To say (annoyed-person - a person) gestures in irritation:[=0x000A=][=0x0009=]say [=0x0022=][The annoyed-person] sighs heavily. [run paragraph on][=0x0022=][=0x000A=][=0x000A=]To say (annoyed-person - Vanessa) gestures in irritation:[=0x000A=][=0x0009=]say [=0x0022=][The annoyed-person] takes off her glasses and polishes them on her sleeve. [run paragraph on][=0x0022=].[=0x000A=][=0x000A=]To say (annoyed-person - Holman) gestures in irritation:[=0x000A=][=0x0009=]say [=0x0022=]Holman bobs his head. [run paragraph on][=0x0022=][=0x000A=][=0x000A=]The previous subject is a subject that varies.[=0x000A=][=0x000A=]Instead of talking about something for more than one turn:[=0x000A=][=0x0009=]if the noun is the previous subject, say [=0x0022=][a random visible person who is not the player gestures in irritation]Maybe you should let this one go.[line break][paragraph break][=0x0022=];[=0x000A=][=0x0009=]otherwise continue the action.[=0x000A=][=0x000A=]Test me with [=0x0022=]talk about chocolate / talk about vowel sounds / g / talk about handbags / talk about prada / talk about tods[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Ferragamo Again&quot;
+            <blockquote class="code"><p class="quoted"><a id="c2850_138"></a><a href="javascript:pasteCode('[=0x0022=]Ferragamo Again[=0x0022=][=0x000A=][=0x000A=]The Break Room is a room. Vanessa, Tina, and Lisa are women in the Break Room. Mark and Holman are men in the Break Room.[=0x000A=][=0x000A=]Understand the commands [=0x0022=]ask[=0x0022=] and [=0x0022=]tell[=0x0022=] and [=0x0022=]answer[=0x0022=] as something new.[=0x000A=][=0x000A=]Understand [=0x0022=]talk about [any subject][=0x0022=] as talking about. Talking about is an action applying to one visible thing.[=0x000A=][=0x000A=]Understand [=0x0022=]talk about [text][=0x0022=] as talking randomly about. Talking randomly about is an action applying to one topic. Carry out talking randomly about: say [=0x0022=]Mostly you[=0x0027=]re interested in [the list of subjects].[=0x0022=][=0x000A=][=0x000A=]Carry out talking about something:[=0x000A=][=0x0009=]now the previous subject is the noun.[=0x000A=][=0x000A=]Report talking about something:[=0x000A=][=0x0009=]say [=0x0022=]You chat for a while about [the noun].[=0x0022=][=0x000A=][=0x000A=]A subject is a kind of thing. Assyrian vowel sounds, designer handbags, and instant run-off voting are subjects. Understand [=0x0022=]linguistics[=0x0022=] and [=0x0022=]mute[=0x0022=] and [=0x0022=]stop[=0x0022=] as sounds. Understand [=0x0022=]prada[=0x0022=] and [=0x0022=]tods[=0x0022=] and [=0x0022=]coach[=0x0022=] and [=0x0022=]carmen marc valvo[=0x0022=] as designer handbags. Understand [=0x0022=]reform[=0x0022=] and [=0x0022=]election[=0x0022=] and [=0x0022=]election fraud[=0x0022=] and [=0x0022=]two-party system[=0x0022=] and [=0x0022=]Diebold[=0x0022=] as instant run-off voting.[=0x000A=][=0x000A=]To say (annoyed-person - a person) gestures in irritation:[=0x000A=][=0x0009=]say [=0x0022=][The annoyed-person] sighs heavily. [run paragraph on][=0x0022=][=0x000A=][=0x000A=]To say (annoyed-person - Vanessa) gestures in irritation:[=0x000A=][=0x0009=]say [=0x0022=][The annoyed-person] takes off her glasses and polishes them on her sleeve. [run paragraph on][=0x0022=].[=0x000A=][=0x000A=]To say (annoyed-person - Holman) gestures in irritation:[=0x000A=][=0x0009=]say [=0x0022=]Holman bobs his head. [run paragraph on][=0x0022=][=0x000A=][=0x000A=]The previous subject is a subject that varies.[=0x000A=][=0x000A=]Instead of talking about something for more than one turn:[=0x000A=][=0x0009=]if the noun is the previous subject, say [=0x0022=][a random visible person who is not the player gestures in irritation]Maybe you should let this one go.[line break][paragraph break][=0x0022=];[=0x000A=][=0x0009=]otherwise continue the action.[=0x000A=][=0x000A=]Test me with [=0x0022=]talk about chocolate / talk about vowel sounds / g / talk about handbags / talk about prada / talk about tods[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Ferragamo Again&quot;
             </p>
             </blockquote>
             <!--END CODE-->

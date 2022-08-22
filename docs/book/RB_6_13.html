@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -71,7 +71,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="RB_6_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="RB_6_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="RB_6_1.html" class="standardlink">Start of Chapter 6: Commands</a>
@@ -79,7 +79,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="RB_6_12.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="RB_6_12.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="RB_6_12.html" class="standardlink">Back to §6.12. Other Built-In Actions</a>
@@ -87,7 +87,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="RB_6_14.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="RB_6_14.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="RB_6_14.html" class="standardlink">Onward to §6.14. Remembering, Converting and Combining Actions</a>
@@ -107,7 +107,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example446'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">XYZZY</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example446'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">XYZZY</span></b></a><br>
                     Basics of adding a new command reviewed, for the case of the simple magic word XYZZY.</p>
 
                 </td>
@@ -124,7 +124,7 @@
         <div class="egpanel" id="example446" style="display: none;">
             <p>We have seen before how to define a new action from scratch, but we may want to review here, using a simple command that requires no objects.</p>
             <!--START CODE "c11849_446"-->
-            <blockquote class="code"><p class="quoted"><a id="c11849_446"></a><a href="javascript:pasteCode('[=0x0022=]XYZZY[=0x0022=][=0x000A=][=0x000A=]Understand [=0x0022=]xyzzy[=0x0022=] or [=0x0022=]say xyzzy[=0x0022=] or [=0x0022=]cast xyzzy[=0x0022=] as casting xyzzy.[=0x000A=][=0x000A=]Casting xyzzy is an action applying to nothing.[=0x000A=][=0x000A=]Check casting xyzzy:[=0x000A=][=0x0009=]if the player does not wear the amulet of elocution, say [=0x0022=]You are unable to articulate the second [=0x0027=]z[=0x0027=] separately from the first, and the spell fails in a disdainful puff. Must be Parisian magic.[=0x0022=] instead;[=0x000A=][=0x0009=]if the player has the plate, say [=0x0022=]The plate of cheeses twitches uncomfortably, aware that it should be doing something, but not sure what.[=0x0022=] instead.[=0x000A=][=0x000A=]Carry out casting xyzzy:[=0x000A=][=0x0009=]move the plate to the player.[=0x000A=][=0x000A=]Report casting xyzzy:[=0x000A=][=0x0009=]say [=0x0022=]Under the influence of the Amulet of Elocution, you pronounce this as Xhi-zee. And lo, from nowhere, a [plate] appears![=0x0022=][=0x000A=][=0x000A=]The amulet of elocution is a wearable thing. It is carried by the player. The description is [=0x0022=]A heavy gold ring on a chain. If heated in an ordinary house fire, it glows with the words, [=0x0027=]Moses Supposes His Toeses Are Roses.[=0x0027=][=0x0022=][=0x000A=][=0x000A=]The plate is a portable supporter. On the plate is a very ripe ooze. Instead of smelling the ooze, say [=0x0022=]It smells like socks. This is going to be wonderful.[=0x0022=] The ooze is edible. The printed name of the plate is [=0x0022=]plate[if the plate supports the ooze] of cheese[end if][=0x0022=]. The description of the ooze is [=0x0022=]Definitely genuinely cheese.[=0x0022=] Understand [=0x0022=]cheese[=0x0022=] as the ooze.[=0x000A=][=0x000A=]Instead of eating the ooze: now the ooze is nowhere; say [=0x0022=]You are transported...[=0x0022=]; move the player to Paradise.[=0x000A=][=0x000A=]The Cheez Factory is a room. [=0x0022=]All around you are squares of pressed orange polymer, or possibly cheez. Your only hope is the magic word your uncle taught you: XYZZY.[=0x0022=] The squares of pressed orange polymer are scenery in the Factory. The description is [=0x0022=]You see nothing special about the squares of pressed orange polymer. Nothing special at all.[=0x0022=] Understand [=0x0022=]square[=0x0022=] or [=0x0022=]cheez[=0x0022=] as the squares.[=0x000A=][=0x000A=]Paradise is a room. The description is [=0x0022=]Well, it might just be one of the posh upper rings of purgatory, if you[=0x0027=]re entirely honest with yourself.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]x squares / x amulet / x cheese / xyzzy / wear amulet / xyzzy / x ooze / smell ooze /  eat ooze[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;XYZZY&quot;
+            <blockquote class="code"><p class="quoted"><a id="c11849_446"></a><a href="javascript:pasteCode('[=0x0022=]XYZZY[=0x0022=][=0x000A=][=0x000A=]Understand [=0x0022=]xyzzy[=0x0022=] or [=0x0022=]say xyzzy[=0x0022=] or [=0x0022=]cast xyzzy[=0x0022=] as casting xyzzy.[=0x000A=][=0x000A=]Casting xyzzy is an action applying to nothing.[=0x000A=][=0x000A=]Check casting xyzzy:[=0x000A=][=0x0009=]if the player does not wear the amulet of elocution, say [=0x0022=]You are unable to articulate the second [=0x0027=]z[=0x0027=] separately from the first, and the spell fails in a disdainful puff. Must be Parisian magic.[=0x0022=] instead;[=0x000A=][=0x0009=]if the player has the plate, say [=0x0022=]The plate of cheeses twitches uncomfortably, aware that it should be doing something, but not sure what.[=0x0022=] instead.[=0x000A=][=0x000A=]Carry out casting xyzzy:[=0x000A=][=0x0009=]move the plate to the player.[=0x000A=][=0x000A=]Report casting xyzzy:[=0x000A=][=0x0009=]say [=0x0022=]Under the influence of the Amulet of Elocution, you pronounce this as Xhi-zee. And lo, from nowhere, a [plate] appears![=0x0022=][=0x000A=][=0x000A=]The amulet of elocution is a wearable thing. It is carried by the player. The description is [=0x0022=]A heavy gold ring on a chain. If heated in an ordinary house fire, it glows with the words, [=0x0027=]Moses Supposes His Toeses Are Roses.[=0x0027=][=0x0022=][=0x000A=][=0x000A=]The plate is a portable supporter. On the plate is a very ripe ooze. Instead of smelling the ooze, say [=0x0022=]It smells like socks. This is going to be wonderful.[=0x0022=] The ooze is edible. The printed name of the plate is [=0x0022=]plate[if the plate supports the ooze] of cheese[end if][=0x0022=]. The description of the ooze is [=0x0022=]Definitely genuinely cheese.[=0x0022=] Understand [=0x0022=]cheese[=0x0022=] as the ooze.[=0x000A=][=0x000A=]Instead of eating the ooze: now the ooze is nowhere; say [=0x0022=]You are transported...[=0x0022=]; move the player to Paradise.[=0x000A=][=0x000A=]The Cheez Factory is a room. [=0x0022=]All around you are squares of pressed orange polymer, or possibly cheez. Your only hope is the magic word your uncle taught you: XYZZY.[=0x0022=] The squares of pressed orange polymer are scenery in the Factory. The description is [=0x0022=]You see nothing special about the squares of pressed orange polymer. Nothing special at all.[=0x0022=] Understand [=0x0022=]square[=0x0022=] or [=0x0022=]cheez[=0x0022=] as the squares.[=0x000A=][=0x000A=]Paradise is a room. The description is [=0x0022=]Well, it might just be one of the posh upper rings of purgatory, if you[=0x0027=]re entirely honest with yourself.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]x squares / x amulet / x cheese / xyzzy / wear amulet / xyzzy / x ooze / smell ooze /  eat ooze[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;XYZZY&quot;
             </p>
             </blockquote>
             <!--END CODE-->

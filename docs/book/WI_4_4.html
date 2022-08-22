@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -100,7 +100,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_4_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_4_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_4_1.html" class="standardlink">Start of Chapter 4: Kinds</a>
@@ -108,7 +108,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_4_3.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_4_3.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_4_3.html" class="standardlink">Back to §4.3. Degrees of certainty</a>
@@ -116,7 +116,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_4_5.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_4_5.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_4_5.html" class="standardlink">Onward to §4.5. Kinds of value</a>
@@ -136,7 +136,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example111'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Get Me to the Church on Time</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example111'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Get Me to the Church on Time</span></b></a><br>
                     Using kinds of clothing to prevent the player from wearing several pairs of trousers at the same time.</p>
 
                 </td>
@@ -153,7 +153,7 @@
         <div class="egpanel" id="example111" style="display: none;">
             <p>Inform's default handling of wearable things does not make any rules about what can be worn together. Suppose, however, we have a game in which there are a large number of different garments, and we want to keep the player from wearing (say) more than one pair of pants at once:</p>
             <!--START CODE "c589_111"-->
-            <blockquote class="code"><p class="quoted"><a id="c589_111"></a><a href="javascript:pasteCode('[=0x0022=]Get Me to the Church on Time[=0x0022=][=0x000A=][=0x000A=]A pair of pants and a shirt are kinds of thing. A pair of pants and a shirt are usually wearable.[=0x000A=][=0x000A=]Some golf pants are a pair of pants. The description is [=0x0022=]Checked in red and green, with tiny frolicking gophers every few inches.[=0x0022=][=0x000A=][=0x000A=]Some tuxedo trousers are a pair of pants. The description is [=0x0022=]Black, pressed, and slimming.[=0x0022=][=0x000A=][=0x000A=]The frilly shirt is a shirt. The description of the frilly shirt is [=0x0022=]She insisted.[=0x0022=][=0x000A=][=0x000A=]The polo shirt is a shirt. The description is [=0x0022=]Turquoise and bright yellow, the colors selected by your golfing buddies.[=0x0022=][=0x000A=][=0x000A=]The player wears the golf pants and the polo shirt. The player carries the tuxedo trousers and the frilly shirt.[=0x000A=][=0x000A=]The Wedding Chapel Dressing Room is a room. [=0x0022=]The bride[=0x0027=]s dressing room is a lavish suite with closets, hangers, dressmaker[=0x0027=]s dummies, boxes of straight pins and sewing notions, combs, lotions, brushes, and hair fixatives, plus room for  fifteen female attendants and a photographer. Before they shoved you out of the room you even got a glimpse of a small reference library including [=0x0027=]1001 French Braids[=0x0027=] and [=0x0027=]Corset-Lacing For Beginners.[=0x0027=][=0x000A=][=0x000A=]This is the groom[=0x0027=]s dressing room. You get a framed photograph of Elvis, a dusty mirror, and the floor space of an average toilet stall.[=0x0022=][=0x000A=][=0x000A=]The dusty mirror and the photograph of Elvis are scenery in the Dressing Room. The description of the mirror is [=0x0022=]You can[=0x0027=]t really get more than a silhouette impression of yourself.[=0x0022=] The description of Elvis is [=0x0022=]He reminds you that you[=0x0027=]d better get out there before the organist switches to Hound Dog.[=0x0022=][=0x000A=][=0x000A=][And now the rule itself, borrowed from a later chapter:][=0x000A=][=0x000A=]Instead of wearing a pair of pants when the player is wearing a pair of pants (called the wrong trousers):[=0x000A=][=0x0009=]say [=0x0022=]You[=0x0027=]ll have to take off [the wrong trousers] first.[=0x0022=][=0x000A=][=0x000A=]Instead of wearing a shirt when the player is wearing a shirt (called the wrong top):[=0x000A=][=0x0009=]say [=0x0022=]You[=0x0027=]ll have to take off [the wrong top] first.[=0x0022=][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]say [=0x0022=]From the other side of the door, you hear the organist move on from his instrumental interpretation of [=0x0027=]I Wanna Hold Your Hand[=0x0027=] to a somewhat more spirited rendition of [=0x0027=]Help! I Need Somebody![=0x0027=]. Okay, okay, but you[=0x0027=]ve been rushing things along since the 16th fairway, and you can[=0x0027=]t be more than a half-hour late... Surely that mother of hers can[=0x0027=]t blame you for that?[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]i / x trousers / wear trousers / x golf pants / take off golf pants / wear trousers / x frilly shirt / x polo shirt / wear frilly shirt / doff polo shirt / wear frilly shirt[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Get Me to the Church on Time&quot;
+            <blockquote class="code"><p class="quoted"><a id="c589_111"></a><a href="javascript:pasteCode('[=0x0022=]Get Me to the Church on Time[=0x0022=][=0x000A=][=0x000A=]A pair of pants and a shirt are kinds of thing. A pair of pants and a shirt are usually wearable.[=0x000A=][=0x000A=]Some golf pants are a pair of pants. The description is [=0x0022=]Checked in red and green, with tiny frolicking gophers every few inches.[=0x0022=][=0x000A=][=0x000A=]Some tuxedo trousers are a pair of pants. The description is [=0x0022=]Black, pressed, and slimming.[=0x0022=][=0x000A=][=0x000A=]The frilly shirt is a shirt. The description of the frilly shirt is [=0x0022=]She insisted.[=0x0022=][=0x000A=][=0x000A=]The polo shirt is a shirt. The description is [=0x0022=]Turquoise and bright yellow, the colors selected by your golfing buddies.[=0x0022=][=0x000A=][=0x000A=]The player wears the golf pants and the polo shirt. The player carries the tuxedo trousers and the frilly shirt.[=0x000A=][=0x000A=]The Wedding Chapel Dressing Room is a room. [=0x0022=]The bride[=0x0027=]s dressing room is a lavish suite with closets, hangers, dressmaker[=0x0027=]s dummies, boxes of straight pins and sewing notions, combs, lotions, brushes, and hair fixatives, plus room for  fifteen female attendants and a photographer. Before they shoved you out of the room you even got a glimpse of a small reference library including [=0x0027=]1001 French Braids[=0x0027=] and [=0x0027=]Corset-Lacing For Beginners.[=0x0027=][=0x000A=][=0x000A=]This is the groom[=0x0027=]s dressing room. You get a framed photograph of Elvis, a dusty mirror, and the floor space of an average toilet stall.[=0x0022=][=0x000A=][=0x000A=]The dusty mirror and the photograph of Elvis are scenery in the Dressing Room. The description of the mirror is [=0x0022=]You can[=0x0027=]t really get more than a silhouette impression of yourself.[=0x0022=] The description of Elvis is [=0x0022=]He reminds you that you[=0x0027=]d better get out there before the organist switches to Hound Dog.[=0x0022=][=0x000A=][=0x000A=][And now the rule itself, borrowed from a later chapter:][=0x000A=][=0x000A=]Instead of wearing a pair of pants when the player is wearing a pair of pants (called the wrong trousers):[=0x000A=][=0x0009=]say [=0x0022=]You[=0x0027=]ll have to take off [the wrong trousers] first.[=0x0022=][=0x000A=][=0x000A=]Instead of wearing a shirt when the player is wearing a shirt (called the wrong top):[=0x000A=][=0x0009=]say [=0x0022=]You[=0x0027=]ll have to take off [the wrong top] first.[=0x0022=][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]say [=0x0022=]From the other side of the door, you hear the organist move on from his instrumental interpretation of [=0x0027=]I Wanna Hold Your Hand[=0x0027=] to a somewhat more spirited rendition of [=0x0027=]Help! I Need Somebody![=0x0027=]. Okay, okay, but you[=0x0027=]ve been rushing things along since the 16th fairway, and you can[=0x0027=]t be more than a half-hour late... Surely that mother of hers can[=0x0027=]t blame you for that?[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]i / x trousers / wear trousers / x golf pants / take off golf pants / wear trousers / x frilly shirt / x polo shirt / wear frilly shirt / doff polo shirt / wear frilly shirt[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Get Me to the Church on Time&quot;
             </p>
             </blockquote>
             <!--END CODE-->

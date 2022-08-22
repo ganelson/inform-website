@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -82,7 +82,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_7_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_7_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_7_1.html" class="standardlink">Start of Chapter 7: Basic Actions</a>
@@ -90,7 +90,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_7_4.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_7_4.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_7_4.html" class="standardlink">Back to §7.4. Try and try silently</a>
@@ -98,7 +98,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_7_6.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_7_6.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_7_6.html" class="standardlink">Onward to §7.6. Reading and talking</a>
@@ -118,7 +118,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example127'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Morning After</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example127'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Morning After</span></b></a><br>
                     When the player picks something up which he hasn't already examined, the object is described.</p>
 
                 </td>
@@ -135,7 +135,7 @@
         <div class="egpanel" id="example127" style="display: none;">
             <p>Suppose we want to make the player's life slightly easier by examining everything he picks up, if he hasn't already examined it.</p>
             <!--START CODE "c1354_127"-->
-            <blockquote class="code"><p class="quoted"><a id="c1354_127"></a><a href="javascript:pasteCode('[=0x0022=]Morning After[=0x0022=][=0x000A=][=0x000A=]A thing can be examined or unexamined.[=0x000A=][=0x000A=]After taking something unexamined:[=0x000A=][=0x0009=]say [=0x0022=]Taken. [run paragraph on][=0x0022=];[=0x000A=][=0x0009=]try examining the noun.[=0x000A=][=0x000A=]Carry out examining something:[=0x000A=][=0x0009=]now the noun is examined.[=0x000A=][=0x000A=][Carry out rules are explained in more detail in the chapter on advanced action handling. For now, it may be enough to know that what we put into this carry out rule for examining will happen any time anything is examined, but that it will not interfere with the rest of the predefined behavior of the action. The player will still see the object description and so on, as usual.][=0x000A=][=0x000A=]The Red Door Saloon is a room. [=0x0022=]This old place is in pretty bad shape since the mine shut down. Now there[=0x0027=]s not much to see but the pair of deep gouges in the floorboards where they dragged away the Sheriff[=0x0027=]s corpse with the spurs still on.[=0x0022=][=0x000A=][=0x000A=]Jed is a man in the Red Door Saloon. [=0x0022=]At 8:30 AM the only person around is old Jed, collecting his hangover cure.[=0x0022=][=0x000A=][=0x000A=]The pistol is a thing in the Red Door Saloon. The description of the pistol is [=0x0022=]It ain[=0x0027=]t too accurate, but for two dollars you can[=0x0027=]t expect much.[=0x0022=][=0x000A=][=0x000A=]The hangover cure is a thing in the Red Door Saloon. The description of the hangover cure is [=0x0022=]Two yellow egg-yolks unbroken in a red-brown liquid. Yep.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]x pistol / get all[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Morning After&quot;
+            <blockquote class="code"><p class="quoted"><a id="c1354_127"></a><a href="javascript:pasteCode('[=0x0022=]Morning After[=0x0022=][=0x000A=][=0x000A=]A thing can be examined or unexamined.[=0x000A=][=0x000A=]After taking something unexamined:[=0x000A=][=0x0009=]say [=0x0022=]Taken. [run paragraph on][=0x0022=];[=0x000A=][=0x0009=]try examining the noun.[=0x000A=][=0x000A=]Carry out examining something:[=0x000A=][=0x0009=]now the noun is examined.[=0x000A=][=0x000A=][Carry out rules are explained in more detail in the chapter on advanced action handling. For now, it may be enough to know that what we put into this carry out rule for examining will happen any time anything is examined, but that it will not interfere with the rest of the predefined behavior of the action. The player will still see the object description and so on, as usual.][=0x000A=][=0x000A=]The Red Door Saloon is a room. [=0x0022=]This old place is in pretty bad shape since the mine shut down. Now there[=0x0027=]s not much to see but the pair of deep gouges in the floorboards where they dragged away the Sheriff[=0x0027=]s corpse with the spurs still on.[=0x0022=][=0x000A=][=0x000A=]Jed is a man in the Red Door Saloon. [=0x0022=]At 8:30 AM the only person around is old Jed, collecting his hangover cure.[=0x0022=][=0x000A=][=0x000A=]The pistol is a thing in the Red Door Saloon. The description of the pistol is [=0x0022=]It ain[=0x0027=]t too accurate, but for two dollars you can[=0x0027=]t expect much.[=0x0022=][=0x000A=][=0x000A=]The hangover cure is a thing in the Red Door Saloon. The description of the hangover cure is [=0x0022=]Two yellow egg-yolks unbroken in a red-brown liquid. Yep.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]x pistol / get all[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Morning After&quot;
             </p>
             </blockquote>
             <!--END CODE-->

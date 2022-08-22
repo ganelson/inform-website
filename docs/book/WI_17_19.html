@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -148,7 +148,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_17_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_17_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_17_1.html" class="standardlink">Start of Chapter 17: Understanding</a>
@@ -156,7 +156,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_17_18.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_17_18.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_17_18.html" class="standardlink">Back to §17.18. Changing the meaning of pronouns</a>
@@ -164,7 +164,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_17_20.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_17_20.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_17_20.html" class="standardlink">Onward to §17.20. Multiple action processing</a>
@@ -184,7 +184,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example296'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Masochism Deli</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example296'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Masochism Deli</span></b></a><br>
                     Multiple potatoes, with rules to make the player drop the hot potato first and pick it up last.</p>
 
                 </td>
@@ -202,7 +202,7 @@
             <p>Here the player has several potatoes; we would like to make him more likely to drop the hot one, and more likely to pick up the cold one, all else being equal. At the same time, we want to phrase our rules so that they don't make the player try to take something he's already holding, or drop something he isn't.</p>
             <p>So:</p>
             <!--START CODE "c6115_296"-->
-            <blockquote class="code"><p class="quoted"><a id="c6115_296"></a><a href="javascript:pasteCode('[=0x0022=]Masochism Deli[=0x0022=][=0x000A=][=0x000A=]The Masochism Deli is a room. [=0x0022=]Recent restructurings of corporate policy restrict the [=0x0027=]lunch hour[=0x0027=] to exactly thirty-two minutes, which means that no one has time to go out. Instead, you and your coworkers eat here, in the company[=0x0027=]s very own themed lunch room.[=0x0022=][=0x000A=][=0x000A=]The plural of potato is potatoes. A potato is a kind of thing. A potato is edible.[=0x000A=][=0x000A=]Temperature is a kind of value. The temperatures are hot and cold. A potato has a temperature. A potato is usually cold.[=0x000A=][=0x000A=]Understand the temperature property as describing a potato. Before printing the name of a potato (called subject): say [=0x0022=][temperature of subject] [=0x0022=]. Before printing the plural name of a potato (called subject): say [=0x0022=][temperature of subject] [=0x0022=].[=0x000A=][=0x000A=]Does the player mean dropping a hot potato which is carried by the player: it is very likely.[=0x000A=][=0x000A=]Does the player mean taking a cold potato which is not carried by the player: it is very likely.[=0x000A=][=0x000A=]The player carries three potatoes.[=0x000A=][=0x000A=]After dropping a hot potato:[=0x000A=][=0x0009=]say [=0x0022=]The guy from Cube B sneers at your lack of potato-holding stamina.[=0x0022=][=0x000A=][=0x000A=]When play begins: now a random potato is hot.[=0x000A=][=0x000A=]Test me with [=0x0022=]inventory / drop potato / g / g / get potato / g / i / get potato[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Masochism Deli&quot;
+            <blockquote class="code"><p class="quoted"><a id="c6115_296"></a><a href="javascript:pasteCode('[=0x0022=]Masochism Deli[=0x0022=][=0x000A=][=0x000A=]The Masochism Deli is a room. [=0x0022=]Recent restructurings of corporate policy restrict the [=0x0027=]lunch hour[=0x0027=] to exactly thirty-two minutes, which means that no one has time to go out. Instead, you and your coworkers eat here, in the company[=0x0027=]s very own themed lunch room.[=0x0022=][=0x000A=][=0x000A=]The plural of potato is potatoes. A potato is a kind of thing. A potato is edible.[=0x000A=][=0x000A=]Temperature is a kind of value. The temperatures are hot and cold. A potato has a temperature. A potato is usually cold.[=0x000A=][=0x000A=]Understand the temperature property as describing a potato. Before printing the name of a potato (called subject): say [=0x0022=][temperature of subject] [=0x0022=]. Before printing the plural name of a potato (called subject): say [=0x0022=][temperature of subject] [=0x0022=].[=0x000A=][=0x000A=]Does the player mean dropping a hot potato which is carried by the player: it is very likely.[=0x000A=][=0x000A=]Does the player mean taking a cold potato which is not carried by the player: it is very likely.[=0x000A=][=0x000A=]The player carries three potatoes.[=0x000A=][=0x000A=]After dropping a hot potato:[=0x000A=][=0x0009=]say [=0x0022=]The guy from Cube B sneers at your lack of potato-holding stamina.[=0x0022=][=0x000A=][=0x000A=]When play begins: now a random potato is hot.[=0x000A=][=0x000A=]Test me with [=0x0022=]inventory / drop potato / g / g / get potato / g / i / get potato[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Masochism Deli&quot;
             </p>
             </blockquote>
             <!--END CODE-->

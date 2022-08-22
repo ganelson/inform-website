@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -116,7 +116,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_3_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_3_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_3_1.html" class="standardlink">Start of Chapter 3: Things</a>
@@ -124,7 +124,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_3_24.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_3_24.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_3_24.html" class="standardlink">Back to §3.24. Concealment</a>
@@ -132,7 +132,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_3_26.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_3_26.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_3_26.html" class="standardlink">Onward to §3.26. Directions</a>
@@ -152,7 +152,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example407'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Van Helsing</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example407'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Van Helsing</span></b></a><br>
                     A character who approaches the player, then follows him from room to room.</p>
 
                 </td>
@@ -170,7 +170,7 @@
             <p>Suppose we want to write a character who tries to be in the same room as the player. We will do this by testing every turn whether the character's location and the player's location are the same; if the answer is no, the character will look for a path to the player's location, then try to move along that path. (We will learn more about finding paths and giving characters instructions later.)</p>
             <p>The result will be that if the player ever moves to another location, the character will automatically pursue him.</p>
             <!--START CODE "c489_407"-->
-            <blockquote class="code"><p class="quoted"><a id="c489_407"></a><a href="javascript:pasteCode('[=0x0022=]Van Helsing[=0x0022=][=0x000A=][=0x000A=]The Drawbridge is a room. North of the Drawbridge is the Immensely Enormous Entry Hall. West of the Entry Hall is the Vast Dining Area. North of the Vast Dining Area is the Colossal Kitchen. The Spooky Guano-filled Attic is above the Entry Hall.[=0x000A=][=0x000A=]Count Dracula is a man in the Attic.[=0x000A=][=0x000A=][In the following condition, we could also have written [=0x0022=]if the location of Count Dracula is not the location[=0x0022=], because [=0x0022=]location[=0x0022=] by itself is always understood to be the player[=0x0027=]s location. But it seemed better for clarity to write it this way:][=0x000A=][=0x000A=]Every turn:[=0x000A=][=0x0009=]if the location of Count Dracula is not the location of the player:[=0x000A=][=0x0009=][=0x0009=]let the way be the best route from the location of Count Dracula to the location of the player, using doors;[=0x000A=][=0x0009=][=0x0009=]try Count Dracula going the way;[=0x000A=][=0x0009=]otherwise:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=][=0x0027=]Muhahaha,[=0x0027=] says Count Dracula.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]z / z / n / w / e / u / z / d[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Van Helsing&quot;
+            <blockquote class="code"><p class="quoted"><a id="c489_407"></a><a href="javascript:pasteCode('[=0x0022=]Van Helsing[=0x0022=][=0x000A=][=0x000A=]The Drawbridge is a room. North of the Drawbridge is the Immensely Enormous Entry Hall. West of the Entry Hall is the Vast Dining Area. North of the Vast Dining Area is the Colossal Kitchen. The Spooky Guano-filled Attic is above the Entry Hall.[=0x000A=][=0x000A=]Count Dracula is a man in the Attic.[=0x000A=][=0x000A=][In the following condition, we could also have written [=0x0022=]if the location of Count Dracula is not the location[=0x0022=], because [=0x0022=]location[=0x0022=] by itself is always understood to be the player[=0x0027=]s location. But it seemed better for clarity to write it this way:][=0x000A=][=0x000A=]Every turn:[=0x000A=][=0x0009=]if the location of Count Dracula is not the location of the player:[=0x000A=][=0x0009=][=0x0009=]let the way be the best route from the location of Count Dracula to the location of the player, using doors;[=0x000A=][=0x0009=][=0x0009=]try Count Dracula going the way;[=0x000A=][=0x0009=]otherwise:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=][=0x0027=]Muhahaha,[=0x0027=] says Count Dracula.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]z / z / n / w / e / u / z / d[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Van Helsing&quot;
             </p>
             </blockquote>
             <!--END CODE-->

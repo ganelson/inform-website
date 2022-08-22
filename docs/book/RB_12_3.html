@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -70,7 +70,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="RB_12_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="RB_12_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="RB_12_1.html" class="standardlink">Start of Chapter 12: Typography, Layout, and Multimedia Effects</a>
@@ -78,7 +78,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="RB_12_2.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="RB_12_2.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="RB_12_2.html" class="standardlink">Back to §12.2. The Status Line</a>
@@ -86,7 +86,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="RB_12_4.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="RB_12_4.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="RB_12_4.html" class="standardlink">Onward to §12.4. Timed Input</a>
@@ -106,7 +106,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example151'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Ibid.</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example151'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Ibid.</span></b></a><br>
                     A system which allows the author to assign footnotes to descriptions, and permits the player to retrieve them again by number, using "the number understood". Footnotes will automatically number themselves, according to the order in which the player discovers them.</p>
 
                 </td>
@@ -123,7 +123,7 @@
         <div class="egpanel" id="example151" style="display: none;">
             <p>&quot;Hitchhiker's Guide to the Galaxy&quot; introduced the idea of footnoted descriptions, and various IF games since have toyed with the idea. The recommended implementation in Inform 6 involved keeping an assortment of footnote objects around, but in Inform 7 the table is a much tidier way of handling the same problem.</p>
             <!--START CODE "c16521_151"-->
-            <blockquote class="code"><p class="quoted"><a id="c16521_151"></a><a href="javascript:pasteCode('[=0x0022=]Ibid.[=0x0022=][=0x000A=][=0x000A=]The Ship Inn is a room. [=0x0022=]Here you are in a lovely pub which your guidebook assures you is extremely authentic. [1 as a footnote].[=0x000A=][=0x000A=]To your left sits a party of Italians, with their guidebook.[=0x000A=][=0x000A=]To your right is a silent, but not unappealing, young man.[=0x0022=].[=0x000A=][=0x000A=]A party of Italians and a silent young man are people in the Ship Inn. The Italians and the young man are scenery.[=0x000A=][=0x000A=]The table is a supporter in the Ship Inn. On the table is a mysterious pie. The description of the pie is [=0x0022=]Your waitress told you it was the specialty of the day, Steak and Owl Pie. [2 as a footnote].[=0x0022=] The pie is edible.[=0x000A=][=0x000A=]Table of Footnotes[=0x000A=]assignment[=0x0009=]note[=0x000A=]a number[=0x0009=][=0x0022=]Francis Drake ate here, if the sign on the door is to be believed[=0x0022=][=0x000A=]--[=0x0009=][=0x0022=]this is unlikely, considering that owls are protected animals in England these days [3 as a footnote][=0x0022=][=0x000A=]--[=0x0009=][=0x0022=]moreover, you can[=0x0027=]t imagine that owl would be very tasty[=0x0022=][=0x000A=][=0x000A=]Footnotes mentioned is a number that varies.[=0x000A=][=0x000A=][Whenever we mention a footnote for the first time, we need to assign it a number, which we will use consistently thereafter. And it[=0x0027=]s probably a good idea to protect ourselves against the author accidentally using a number too large for the footnote table, too. So:][=0x000A=][=0x000A=]To say (footnote - a number) as a footnote:[=0x000A=][=0x0009=]if footnote [=0x003E=] number of filled rows in the Table of Footnotes:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]Programming error: footnote assignment out of range.[=0x0022=];[=0x000A=][=0x0009=]otherwise:[=0x000A=][=0x0009=][=0x0009=]choose row footnote in the Table of Footnotes;[=0x000A=][=0x0009=][=0x0009=]if there is an assignment entry:[=0x000A=][=0x0009=][=0x0009=][=0x0009=]say [=0x0022=]([assignment entry])[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]otherwise:[=0x000A=][=0x0009=][=0x0009=][=0x0009=]increment footnotes mentioned;[=0x000A=][=0x0009=][=0x0009=][=0x0009=]choose row footnote in the Table of Footnotes;[=0x000A=][=0x0009=][=0x0009=][=0x0009=]now assignment entry is footnotes mentioned;[=0x000A=][=0x0009=][=0x0009=][=0x0009=]say [=0x0022=]([assignment entry])[=0x0022=].[=0x000A=][=0x000A=][Now, in order to let the player view these footnotes, we[=0x0027=]ll need to parse numbers.][=0x000A=][=0x000A=]Understand [=0x0022=]footnote [number][=0x0022=] as looking up a footnote.[=0x000A=][=0x000A=]Looking up a footnote is an action applying to one number.[=0x000A=][=0x000A=]Check looking up a footnote:[=0x000A=][=0x0009=]if the number understood [=0x003E=] footnotes mentioned, say [=0x0022=]You haven[=0x0027=]t seen any such footnote.[=0x0022=] instead;[=0x000A=][=0x0009=]if the number understood [=0x003C=] 1, say [=0x0022=]Footnotes are numbered from 1.[=0x0022=] instead.[=0x000A=][=0x000A=]Carry out looking up a footnote:[=0x000A=][=0x0009=]choose row with assignment of number understood in the Table of Footnotes;[=0x000A=][=0x0009=]say [=0x0022=]([assignment entry]): [note entry].[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]footnote 1 / examine pie / footnote 2 / footnote 3[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Ibid.&quot;
+            <blockquote class="code"><p class="quoted"><a id="c16521_151"></a><a href="javascript:pasteCode('[=0x0022=]Ibid.[=0x0022=][=0x000A=][=0x000A=]The Ship Inn is a room. [=0x0022=]Here you are in a lovely pub which your guidebook assures you is extremely authentic. [1 as a footnote].[=0x000A=][=0x000A=]To your left sits a party of Italians, with their guidebook.[=0x000A=][=0x000A=]To your right is a silent, but not unappealing, young man.[=0x0022=].[=0x000A=][=0x000A=]A party of Italians and a silent young man are people in the Ship Inn. The Italians and the young man are scenery.[=0x000A=][=0x000A=]The table is a supporter in the Ship Inn. On the table is a mysterious pie. The description of the pie is [=0x0022=]Your waitress told you it was the specialty of the day, Steak and Owl Pie. [2 as a footnote].[=0x0022=] The pie is edible.[=0x000A=][=0x000A=]Table of Footnotes[=0x000A=]assignment[=0x0009=]note[=0x000A=]a number[=0x0009=][=0x0022=]Francis Drake ate here, if the sign on the door is to be believed[=0x0022=][=0x000A=]--[=0x0009=][=0x0022=]this is unlikely, considering that owls are protected animals in England these days [3 as a footnote][=0x0022=][=0x000A=]--[=0x0009=][=0x0022=]moreover, you can[=0x0027=]t imagine that owl would be very tasty[=0x0022=][=0x000A=][=0x000A=]Footnotes mentioned is a number that varies.[=0x000A=][=0x000A=][Whenever we mention a footnote for the first time, we need to assign it a number, which we will use consistently thereafter. And it[=0x0027=]s probably a good idea to protect ourselves against the author accidentally using a number too large for the footnote table, too. So:][=0x000A=][=0x000A=]To say (footnote - a number) as a footnote:[=0x000A=][=0x0009=]if footnote [=0x003E=] number of filled rows in the Table of Footnotes:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]Programming error: footnote assignment out of range.[=0x0022=];[=0x000A=][=0x0009=]otherwise:[=0x000A=][=0x0009=][=0x0009=]choose row footnote in the Table of Footnotes;[=0x000A=][=0x0009=][=0x0009=]if there is an assignment entry:[=0x000A=][=0x0009=][=0x0009=][=0x0009=]say [=0x0022=]([assignment entry])[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]otherwise:[=0x000A=][=0x0009=][=0x0009=][=0x0009=]increment footnotes mentioned;[=0x000A=][=0x0009=][=0x0009=][=0x0009=]choose row footnote in the Table of Footnotes;[=0x000A=][=0x0009=][=0x0009=][=0x0009=]now assignment entry is footnotes mentioned;[=0x000A=][=0x0009=][=0x0009=][=0x0009=]say [=0x0022=]([assignment entry])[=0x0022=].[=0x000A=][=0x000A=][Now, in order to let the player view these footnotes, we[=0x0027=]ll need to parse numbers.][=0x000A=][=0x000A=]Understand [=0x0022=]footnote [number][=0x0022=] as looking up a footnote.[=0x000A=][=0x000A=]Looking up a footnote is an action applying to one number.[=0x000A=][=0x000A=]Check looking up a footnote:[=0x000A=][=0x0009=]if the number understood [=0x003E=] footnotes mentioned, say [=0x0022=]You haven[=0x0027=]t seen any such footnote.[=0x0022=] instead;[=0x000A=][=0x0009=]if the number understood [=0x003C=] 1, say [=0x0022=]Footnotes are numbered from 1.[=0x0022=] instead.[=0x000A=][=0x000A=]Carry out looking up a footnote:[=0x000A=][=0x0009=]choose row with assignment of number understood in the Table of Footnotes;[=0x000A=][=0x0009=]say [=0x0022=]([assignment entry]): [note entry].[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]footnote 1 / examine pie / footnote 2 / footnote 3[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Ibid.&quot;
             </p>
             </blockquote>
             <!--END CODE-->

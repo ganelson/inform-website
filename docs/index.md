@@ -7,19 +7,41 @@ layout: home
 
 <img src="{{ site.baseurl }}/assets/images/icon.png" alt="Inform icon" width="700" height="450" />
 
-Note: The Inform 7 website is migrating to be served by Github Pages rather
+Inform is a programming language for creating interactive fiction, using natural
+language syntax. Using natural language and drawing on ideas from linguistics
+and from literate programming, Inform is widely used as a medium for literary
+writing, as a prototyping tool in the games industry, and in education, both at
+school and university level (where Inform is often assigned material for courses
+on digital narrative). It has several times ranked in the top 100 most
+influential programming languages according to the TIOBE index. Created in April
+2006, it was open-sourced in April 2022.
+
+News items appear below, and a copy of the [Inform language documentation is also on this website](doc/).
+Other useful resources on Inform include:
+
+* [The latest release of Inform, Version 10.1.1 (21 August 2022)](https://github.com/ganelson/inform/releases/tag/v10.1.1).
+Apps for MacOS and Windows are now available from that link, with Linux soon to follow.
+* [Proposals for evolution of Inform](https://github.com/ganelson/inform-evolution).
+* [The source code for Inform at GitHub](https://github.com/ganelson/inform).
+* [The source code published as a literate program](https://ganelson.github.io/inform/).
+* [The bug tracker at Jira](https://inform7.atlassian.net/jira/software/c/projects/I7/issues) is likely
+to migrate to GitHub Issues in the nearish future, but it's there now. The old Mantis
+bug tracker has closed, but all data from it was carried over.
+* [Inform topics](https://intfiction.org/c/authoring/inform-7/19) are frequently aired at the [Interactive Fiction Community Forum](https://intfiction.org).
+* In particular, the very useful [Inform 7 documentation and resources](https://intfiction.org/t/inform-7-documentation-and-resources/3311) post is there.
+* More than 1000 stories written with Inform are listed at the [Interactive Fiction Database](https://ifdb.org/search?sortby=ratu&newSortBy.x=0&newSortBy.y=0&searchfor=system%3AInform+7).
+* The Inform project supports the [Interactive Fiction Technology Foundation](https://iftechfoundation.org/).
+* The [Interactive Fiction Wiki](https://www.ifwiki.org/Main_Page) is vastly useful.
+* [IFComp](http://ifcomp.org), an annual event founded in 1995, and the more
+informal [Spring Thing](https://www.springthing.net/), founded 2002, have become
+part of our calendar.
+* The [Narrascope](https://narrascope.org) conferences bring industry, academia
+and independent writers together.
+* Many Inform authors also [write with Twine](http://twinery.org), and vice versa.
+* Lastly, [Emily Short's Interactive Storytelling](https://emshort.blog) contains
+some of the best writing about the genre today, and also hosts many more links.
+
+*Note*: The Inform 7 website is migrating to be served by Github Pages rather
 than Dreamhost, as at present. The pages here are under construction for now
 and may exhibit all kinds of glitches. [The original inform7.com](http://inform7.com)
 will remain online until the domain name is transferred here.
-
-The Inform source repository is now public and is [here](https://github.com/ganelson/inform).
-
-Inform is a free app for creating works of interactive fiction, available for
-MacOS, Windows, Linux and Android. Inside it is a powerful programming
-language based on English language text.
-
-Many Inform authors also [write with Twine](http://twinery.org), and vice versa.
-Inform topics are frequently aired at the [Interactive Fiction Community Forum](https://intfiction.org).
-The Inform project supports the [Interactive Fiction Technology Foundation](https://iftechfoundation.org/).
-Lastly, [Emily Short's Interactive Storytelling](https://emshort.blog) contains
-some of the best writing about the genre today, and also hosts many more links.

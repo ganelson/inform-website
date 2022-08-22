@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -146,7 +146,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_18_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_18_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_18_1.html" class="standardlink">Start of Chapter 18: Activities</a>
@@ -154,7 +154,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_18_14.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_18_14.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_18_14.html" class="standardlink">Back to §18.14. Grouping together something</a>
@@ -162,7 +162,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_18_16.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_18_16.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_18_16.html" class="standardlink">Onward to §18.16. Printing room description details of something</a>
@@ -182,7 +182,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example431'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Wesponses</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example431'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Wesponses</span></b></a><br>
                     Parser messages that are delivered with a speech impediment.</p>
 
                 </td>
@@ -200,7 +200,7 @@
             <p>If we want to change individual responses to player action, then the best thing to do is to use the response facility to modify those selections, as shown in the chapter on Responses.</p>
             <p>However, suppose what we want is to give the parser a speech impediment that slightly alters all of the responses it issues. For this purpose, we might need to do a bit of text replacement...</p>
             <!--START CODE "c6548_431"-->
-            <blockquote class="code"><p class="quoted"><a id="c6548_431"></a><a href="javascript:pasteCode('[=0x0022=]Wesponses[=0x0022=][=0x000A=][=0x000A=]The Office is a room. Barry Kripke is a man in the Office.[=0x000A=][=0x000A=]The response inhibition is initially false.[=0x000A=][=0x000A=]Rule for issuing the response text of a response (called R) when response inhibition is false:[=0x000A=][=0x0009=]now response inhibition is true;[=0x000A=][=0x0009=]let output be [=0x0022=][text of R][=0x0022=];[=0x000A=][=0x0009=]now response inhibition is false;[=0x000A=][=0x0009=]replace the text [=0x0022=]r[=0x0022=] in output with [=0x0022=]w[=0x0022=];[=0x000A=][=0x0009=]replace the text [=0x0022=]R[=0x0022=] in output with [=0x0022=]W[=0x0022=];[=0x000A=][=0x0009=]say [=0x0022=][output][=0x0022=].[=0x000A=][=0x000A=]Test me with [=0x0022=]i / x barry / listen / waffle / jump[=0x0022=][=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Wesponses&quot;
+            <blockquote class="code"><p class="quoted"><a id="c6548_431"></a><a href="javascript:pasteCode('[=0x0022=]Wesponses[=0x0022=][=0x000A=][=0x000A=]The Office is a room. Barry Kripke is a man in the Office.[=0x000A=][=0x000A=]The response inhibition is initially false.[=0x000A=][=0x000A=]Rule for issuing the response text of a response (called R) when response inhibition is false:[=0x000A=][=0x0009=]now response inhibition is true;[=0x000A=][=0x0009=]let output be [=0x0022=][text of R][=0x0022=];[=0x000A=][=0x0009=]now response inhibition is false;[=0x000A=][=0x0009=]replace the text [=0x0022=]r[=0x0022=] in output with [=0x0022=]w[=0x0022=];[=0x000A=][=0x0009=]replace the text [=0x0022=]R[=0x0022=] in output with [=0x0022=]W[=0x0022=];[=0x000A=][=0x0009=]say [=0x0022=][output][=0x0022=].[=0x000A=][=0x000A=]Test me with [=0x0022=]i / x barry / listen / waffle / jump[=0x0022=][=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Wesponses&quot;
             </p>
             </blockquote>
             <!--END CODE-->

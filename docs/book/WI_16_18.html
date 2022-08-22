@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -204,7 +204,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_16_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_16_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_16_1.html" class="standardlink">Start of Chapter 16: Tables</a>
@@ -212,7 +212,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_16_17.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_16_17.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_16_17.html" class="standardlink">Back to §16.17. Defining values with tables</a>
@@ -220,7 +220,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_16_19.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_16_19.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_16_19.html" class="standardlink">Onward to §16.19. Table amendments</a>
@@ -240,7 +240,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example246'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Food Network Interactive</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example246'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Food Network Interactive</span></b></a><br>
                     Using a menu system from an extension, but adding our own material to it for this game.</p>
 
                 </td>
@@ -257,7 +257,7 @@
         <div class="egpanel" id="example246" style="display: none;">
             <p>&quot;Basic Help Menu&quot; is an extension that uses tables to provide a menu of instructions. Suppose we wanted to include this menu in our own game, but add a few custom menu items of our own:</p>
             <!--START CODE "c5467_246"-->
-            <blockquote class="code"><p class="quoted"><a id="c5467_246"></a><a href="javascript:pasteCode('[=0x0022=]Food Network Interactive[=0x0022=][=0x000A=][=0x000A=]Include Basic Screen Effects by Emily Short. Include Menus by Emily Short. Include Basic Help Menu by Emily Short.[=0x000A=][=0x000A=]Table of Basic Help Options (continued)[=0x000A=]title[=0x0009=]subtable[=0x0009=]description[=0x0009=]toggle[=0x000A=][=0x0022=]Recipes in This Game[=0x0022=][=0x0009=]Table of Recipes[=0x0009=]--[=0x0009=]--[=0x000A=][=0x0022=]Contacting the Author[=0x0022=][=0x0009=]--[=0x0009=][=0x0022=]If you have any difficulties with [story title], please contact me at fakeaddress@gmail.com.[=0x0022=][=0x0009=]--[=0x000A=][=0x000A=][This table is one that is pre-defined by the extension. By continuing it, we add a few additional items to the list.][=0x000A=][=0x000A=][And since we[=0x0027=]ve promised a sub-menu of recipes:][=0x000A=][=0x000A=]Table of Recipes[=0x000A=]title[=0x0009=]subtable[=0x0009=]description[=0x0009=]toggle[=0x000A=][=0x0022=]Salmon Tartare[=0x0022=][=0x0009=]--[=0x0009=][=0x0022=]First, be sure to buy extremely fresh salmon. Raw fish should be served on the day it was caught, if possible. To guarantee this, visit an Asian supermarket or specialty store, and buy salmon marked [=0x0027=]sashimi grade[=0x0027=]...[=0x0022=][=0x0009=]--[=0x000A=][=0x0022=]Pecan Brownies[=0x0022=][=0x0009=]--[=0x0009=][=0x0022=]Begin by shelling half a pound of pecans...[=0x0022=][=0x0009=]--[=0x000A=][=0x000A=]Whole Foods is a room.[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Food Network Interactive&quot;
+            <blockquote class="code"><p class="quoted"><a id="c5467_246"></a><a href="javascript:pasteCode('[=0x0022=]Food Network Interactive[=0x0022=][=0x000A=][=0x000A=]Include Basic Screen Effects by Emily Short. Include Menus by Emily Short. Include Basic Help Menu by Emily Short.[=0x000A=][=0x000A=]Table of Basic Help Options (continued)[=0x000A=]title[=0x0009=]subtable[=0x0009=]description[=0x0009=]toggle[=0x000A=][=0x0022=]Recipes in This Game[=0x0022=][=0x0009=]Table of Recipes[=0x0009=]--[=0x0009=]--[=0x000A=][=0x0022=]Contacting the Author[=0x0022=][=0x0009=]--[=0x0009=][=0x0022=]If you have any difficulties with [story title], please contact me at fakeaddress@gmail.com.[=0x0022=][=0x0009=]--[=0x000A=][=0x000A=][This table is one that is pre-defined by the extension. By continuing it, we add a few additional items to the list.][=0x000A=][=0x000A=][And since we[=0x0027=]ve promised a sub-menu of recipes:][=0x000A=][=0x000A=]Table of Recipes[=0x000A=]title[=0x0009=]subtable[=0x0009=]description[=0x0009=]toggle[=0x000A=][=0x0022=]Salmon Tartare[=0x0022=][=0x0009=]--[=0x0009=][=0x0022=]First, be sure to buy extremely fresh salmon. Raw fish should be served on the day it was caught, if possible. To guarantee this, visit an Asian supermarket or specialty store, and buy salmon marked [=0x0027=]sashimi grade[=0x0027=]...[=0x0022=][=0x0009=]--[=0x000A=][=0x0022=]Pecan Brownies[=0x0022=][=0x0009=]--[=0x0009=][=0x0022=]Begin by shelling half a pound of pecans...[=0x0022=][=0x0009=]--[=0x000A=][=0x000A=]Whole Foods is a room.[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Food Network Interactive&quot;
             </p>
             </blockquote>
             <!--END CODE-->

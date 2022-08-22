@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = '/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -112,7 +112,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_3_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_3_1.html" class="standardlink"><img alt="arrow-up.png" src="/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_3_1.html" class="standardlink">Start of Chapter 3: Things</a>
@@ -120,7 +120,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_3_4.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_3_4.html" class="standardlink"><img alt="arrow-left.png" src="/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_3_4.html" class="standardlink">Back to §3.4. Regions and the index map</a>
@@ -128,7 +128,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_3_6.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_3_6.html" class="standardlink"><img alt="arrow-right.png" src="/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_3_6.html" class="standardlink">Onward to §3.6. Either/or properties</a>
@@ -148,7 +148,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example145'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">First Name Basis</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example145'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">First Name Basis</span></b></a><br>
                     Allowing the player to use different synonyms to refer to something.</p>
 
                 </td>
@@ -171,7 +171,7 @@
             <!--END CODE-->
             <p>to add extra names to the object we've defined.</p>
             <!--START CODE "c188_145"-->
-            <blockquote class="code"><p class="quoted"><a id="c188_145"></a><a href="javascript:pasteCode('[=0x0022=]First Name Basis[=0x0022=][=0x000A=][=0x000A=]The Crew Lounge is a room. [=0x0022=]Deliberately spartan: the crew feels weight restrictions here first, so there aren[=0x0027=]t any chairs, just a few thin pads on the ground.[=0x0022=][=0x000A=][=0x000A=]The holographic projector is a device in the Crew Lounge. [=0x0022=]The one major source of entertainment is the holographic projector, a top of the line Misthon 9000, on which you view every beam you can get.[=0x0022=] Understand [=0x0022=]holo[=0x0022=] or [=0x0022=]holograph[=0x0022=] or [=0x0022=]Misthon[=0x0022=] or [=0x0022=]9000[=0x0022=] as the projector.[=0x000A=][=0x000A=]The description of the projector is [=0x0022=][if switched on]The projector is now playing a documentary about the early politics of the Mars colony.[otherwise]The air above the projector is disappointingly clear.[end if][=0x0022=].[=0x000A=][=0x000A=][(This description is for local color; we will learn more about devices, and conditions like [=0x0022=]if switched on[=0x0022=], later in this chapter.)][=0x000A=][=0x000A=][By default, Inform does not understand the names of an object[=0x0027=]s kind as referring to that object, unless the object has no other name of its own. We can change this, if we like, by defining names that should be applied to everything of a given kind:][=0x000A=][=0x000A=]Lewis and Harper are men in the Crew Lounge. Understand [=0x0022=]man[=0x0022=] or [=0x0022=]guy[=0x0022=] or [=0x0022=]chap[=0x0022=] or [=0x0022=]lad[=0x0022=] or [=0x0022=]male[=0x0022=] as a man. Understand [=0x0022=]men[=0x0022=] or [=0x0022=]chaps[=0x0022=] or [=0x0022=]lads[=0x0022=] or [=0x0022=]guys[=0x0022=] or [=0x0022=]males[=0x0022=] as the plural of a man.[=0x000A=][=0x000A=]The description of Lewis is [=0x0022=]A wiry, excitable engineer who just signed aboard last week.[=0x0022=] The description of Harper is [=0x0022=]Harper[=0x0027=]s a good guy: taciturn when sober, affectionate when drunk, but rarely annoying in either state.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]x holo / x man / lewis / x guy / harper / turn on projector / x holo projector / get men[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;First Name Basis&quot;
+            <blockquote class="code"><p class="quoted"><a id="c188_145"></a><a href="javascript:pasteCode('[=0x0022=]First Name Basis[=0x0022=][=0x000A=][=0x000A=]The Crew Lounge is a room. [=0x0022=]Deliberately spartan: the crew feels weight restrictions here first, so there aren[=0x0027=]t any chairs, just a few thin pads on the ground.[=0x0022=][=0x000A=][=0x000A=]The holographic projector is a device in the Crew Lounge. [=0x0022=]The one major source of entertainment is the holographic projector, a top of the line Misthon 9000, on which you view every beam you can get.[=0x0022=] Understand [=0x0022=]holo[=0x0022=] or [=0x0022=]holograph[=0x0022=] or [=0x0022=]Misthon[=0x0022=] or [=0x0022=]9000[=0x0022=] as the projector.[=0x000A=][=0x000A=]The description of the projector is [=0x0022=][if switched on]The projector is now playing a documentary about the early politics of the Mars colony.[otherwise]The air above the projector is disappointingly clear.[end if][=0x0022=].[=0x000A=][=0x000A=][(This description is for local color; we will learn more about devices, and conditions like [=0x0022=]if switched on[=0x0022=], later in this chapter.)][=0x000A=][=0x000A=][By default, Inform does not understand the names of an object[=0x0027=]s kind as referring to that object, unless the object has no other name of its own. We can change this, if we like, by defining names that should be applied to everything of a given kind:][=0x000A=][=0x000A=]Lewis and Harper are men in the Crew Lounge. Understand [=0x0022=]man[=0x0022=] or [=0x0022=]guy[=0x0022=] or [=0x0022=]chap[=0x0022=] or [=0x0022=]lad[=0x0022=] or [=0x0022=]male[=0x0022=] as a man. Understand [=0x0022=]men[=0x0022=] or [=0x0022=]chaps[=0x0022=] or [=0x0022=]lads[=0x0022=] or [=0x0022=]guys[=0x0022=] or [=0x0022=]males[=0x0022=] as the plural of a man.[=0x000A=][=0x000A=]The description of Lewis is [=0x0022=]A wiry, excitable engineer who just signed aboard last week.[=0x0022=] The description of Harper is [=0x0022=]Harper[=0x0027=]s a good guy: taciturn when sober, affectionate when drunk, but rarely annoying in either state.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]x holo / x man / lewis / x guy / harper / turn on projector / x holo projector / get men[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;First Name Basis&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -220,7 +220,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example248'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Midsummer Day</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example248'); return false;"><img class="asterisk" alt="*" src="/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Midsummer Day</span></b></a><br>
                     A few sentences laying out a garden together with some things which might be found in it.</p>
 
                 </td>
@@ -236,7 +236,7 @@
 
         <div class="egpanel" id="example248" style="display: none;">
             <!--START CODE "c195_248"-->
-            <blockquote class="code"><p class="quoted"><a id="c195_248"></a><a href="javascript:pasteCode('[=0x0022=]Midsummer Day[=0x0022=][=0x000A=][=0x000A=]East of the Garden is the Gazebo. Above is the Treehouse. A billiards table is in the Gazebo. On it is a trophy cup. A starting pistol is in the cup. In the Treehouse is a container called a cardboard box.[=0x000A=][=0x000A=]Test me with [=0x0022=]up / x box / d / e / x table / x cup / x pistol / get cup[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Midsummer Day&quot;
+            <blockquote class="code"><p class="quoted"><a id="c195_248"></a><a href="javascript:pasteCode('[=0x0022=]Midsummer Day[=0x0022=][=0x000A=][=0x000A=]East of the Garden is the Gazebo. Above is the Treehouse. A billiards table is in the Gazebo. On it is a trophy cup. A starting pistol is in the cup. In the Treehouse is a container called a cardboard box.[=0x000A=][=0x000A=]Test me with [=0x0022=]up / x box / d / e / x table / x cup / x pistol / get cup[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/inform-website/assets/images/doc_images/paste.png"></a> &quot;Midsummer Day&quot;
             </p>
             </blockquote>
             <!--END CODE-->
