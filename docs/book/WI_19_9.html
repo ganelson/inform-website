@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,7 +60,7 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§19.9. Basis of a rulebook</p>
@@ -190,7 +190,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_19_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_19_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_19_1.html" class="standardlink">Start of Chapter 19: Rulebooks</a>
@@ -198,7 +198,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_19_8.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_19_8.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_19_8.html" class="standardlink">Back to §19.8. New rulebooks</a>
@@ -206,7 +206,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_19_10.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_19_10.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_19_10.html" class="standardlink">Onward to §19.10. Rulebook variables</a>
@@ -226,7 +226,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example147'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Flotation</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example147'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Flotation</span></b></a><br>
                     Objects that can sink or float in a well, depending on their own properties and the state of the surrounding environment.</p>
 
                 </td>
@@ -245,7 +245,7 @@
             <p>We also want a switch that can turn flotation off at will. The rule about the big switch will be observed before the others because the when... clause makes it more specific than the other rules in the flotation rulebook.</p>
             <p>If we wanted, we could also put these rules into a rulebook in an explicit order, overriding Inform's automatic sorting by specificity.</p>
             <!--START CODE "c7849_147"-->
-            <blockquote class="code"><p class="quoted"><a id="c7849_147"></a><a href="javascript:pasteCode('[=0x0022=]Flotation[=0x0022=][=0x000A=][=0x000A=]The Pumping House is a room.[=0x000A=][=0x000A=]A well is a fixed in place container in the Pumping House.[=0x000A=][=0x000A=]Instead of examining the well:[=0x000A=][=0x0009=]say [=0x0022=][if something is in the well]On the surface of the water you can see [a list of things in the well][otherwise]There is nothing on the surface of the water, nor can you see into the depths[end if].[=0x0022=][=0x000A=][=0x000A=]The well bottom is a container.[=0x000A=][=0x000A=]The cork, the rubber ring and a lead ingot are in the Pumping House.[=0x000A=][=0x000A=]A big switch is a fixed in place device in the Pumping House. [=0x0022=]A big switch labelled [=0x0027=]MAKE EVERYTHING SINK[=0x0027=] is mounted on one wall[if switched on]. It crackles with electricity[otherwise]. It is currently switched off and silent[end if].[=0x0022=][=0x000A=][=0x000A=]A thing can be inflated or uninflated. A thing is usually uninflated. Before printing the name of an inflated thing: say [=0x0022=]inflated [=0x0022=].[=0x000A=][=0x000A=]The rubber ring is inflated.[=0x000A=][=0x000A=]The flotation rules are an object-based rulebook.[=0x000A=][=0x000A=]A flotation rule for the cork: rule succeeds.[=0x000A=]A flotation rule for an inflated thing: rule succeeds.[=0x000A=]A flotation rule when the big switch is switched on: rule fails.[=0x000A=][=0x000A=]After inserting something into the well:[=0x000A=][=0x0009=]follow the flotation rules for the noun;[=0x000A=][=0x0009=]if the rule succeeded:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=][The noun] bobs on the surface.[=0x0022=];[=0x000A=][=0x0009=]otherwise:[=0x000A=][=0x0009=][=0x0009=]move the noun to the well bottom;[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=][The noun] sinks out of sight.[=0x0022=][=0x000A=][=0x000A=]A thing can be sinking, rising, or static. A thing is usually static.[=0x000A=][=0x000A=]Definition: a thing is wet:[=0x000A=][=0x0009=]if it is in the well, yes;[=0x000A=][=0x0009=]if it is in the well bottom, yes;[=0x000A=][=0x0009=]no.[=0x000A=][=0x000A=]Every turn:[=0x000A=][=0x0009=]now every thing is static;[=0x000A=][=0x0009=]repeat with item running through wet things:[=0x000A=][=0x0009=][=0x0009=]follow the flotation rules for the item;[=0x000A=][=0x0009=][=0x0009=]if the rule failed and the item is in the well, now the item is sinking;[=0x000A=][=0x0009=][=0x0009=]if the rule succeeded and the item is in the well bottom, now the item is rising;[=0x000A=][=0x0009=]now every rising thing is in the well;[=0x000A=][=0x0009=]now every sinking thing is in the well bottom;[=0x000A=][=0x0009=]if something is rising, say [=0x0022=][The list of rising things] rise[if the number of rising things is 1]s[end if] to the surface of the well.[=0x0022=];[=0x000A=][=0x0009=]if something is sinking, say [=0x0022=][The list of sinking things] sink[if the number of sinking things is 1]s[end if] out of sight.[=0x0022=][=0x000A=][=0x000A=][And finally a few description rules to make things look prettier:][=0x000A=][=0x000A=]Rule for writing a paragraph about the well when the well contains something:[=0x000A=][=0x0009=]say [=0x0022=]The chief feature of the room is a concrete-sided well in which there float[if the number of things in the well is 1]s[end if] [a list of things in the well].[=0x0022=][=0x000A=][=0x000A=]Rule for writing a paragraph about the well:[=0x000A=][=0x0009=]say [=0x0022=]The chief feature of the room is a concrete-sided well full of water.[=0x0022=][=0x000A=][=0x000A=][As we recall from the chapter on activities, [=0x0022=]writing a paragraph about...[=0x0022=] is an activity; activities are themselves structured as sets of object-based rulebooks. The activity [=0x0022=]writing a paragraph about[=0x0022=] uses three object-based rulebooks (before writing..., for writing..., after writing...). We could have made a flotation activity as well, but in general it is overkill to make an activity to make success/failure decisions. For that purpose an object-based rulebook is sufficient.][=0x000A=][=0x000A=]Test me with [=0x0022=]get all / put cork in well / put ring in well / put ingot in well / x well / get cork / get ring / switch switch on / put cork in well / put ring in well / x well / switch switch off / switch switch on[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Flotation&quot;
+            <blockquote class="code"><p class="quoted"><a id="c7849_147"></a><a href="javascript:pasteCode('[=0x0022=]Flotation[=0x0022=][=0x000A=][=0x000A=]The Pumping House is a room.[=0x000A=][=0x000A=]A well is a fixed in place container in the Pumping House.[=0x000A=][=0x000A=]Instead of examining the well:[=0x000A=][=0x0009=]say [=0x0022=][if something is in the well]On the surface of the water you can see [a list of things in the well][otherwise]There is nothing on the surface of the water, nor can you see into the depths[end if].[=0x0022=][=0x000A=][=0x000A=]The well bottom is a container.[=0x000A=][=0x000A=]The cork, the rubber ring and a lead ingot are in the Pumping House.[=0x000A=][=0x000A=]A big switch is a fixed in place device in the Pumping House. [=0x0022=]A big switch labelled [=0x0027=]MAKE EVERYTHING SINK[=0x0027=] is mounted on one wall[if switched on]. It crackles with electricity[otherwise]. It is currently switched off and silent[end if].[=0x0022=][=0x000A=][=0x000A=]A thing can be inflated or uninflated. A thing is usually uninflated. Before printing the name of an inflated thing: say [=0x0022=]inflated [=0x0022=].[=0x000A=][=0x000A=]The rubber ring is inflated.[=0x000A=][=0x000A=]The flotation rules are an object-based rulebook.[=0x000A=][=0x000A=]A flotation rule for the cork: rule succeeds.[=0x000A=]A flotation rule for an inflated thing: rule succeeds.[=0x000A=]A flotation rule when the big switch is switched on: rule fails.[=0x000A=][=0x000A=]After inserting something into the well:[=0x000A=][=0x0009=]follow the flotation rules for the noun;[=0x000A=][=0x0009=]if the rule succeeded:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=][The noun] bobs on the surface.[=0x0022=];[=0x000A=][=0x0009=]otherwise:[=0x000A=][=0x0009=][=0x0009=]move the noun to the well bottom;[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=][The noun] sinks out of sight.[=0x0022=][=0x000A=][=0x000A=]A thing can be sinking, rising, or static. A thing is usually static.[=0x000A=][=0x000A=]Definition: a thing is wet:[=0x000A=][=0x0009=]if it is in the well, yes;[=0x000A=][=0x0009=]if it is in the well bottom, yes;[=0x000A=][=0x0009=]no.[=0x000A=][=0x000A=]Every turn:[=0x000A=][=0x0009=]now every thing is static;[=0x000A=][=0x0009=]repeat with item running through wet things:[=0x000A=][=0x0009=][=0x0009=]follow the flotation rules for the item;[=0x000A=][=0x0009=][=0x0009=]if the rule failed and the item is in the well, now the item is sinking;[=0x000A=][=0x0009=][=0x0009=]if the rule succeeded and the item is in the well bottom, now the item is rising;[=0x000A=][=0x0009=]now every rising thing is in the well;[=0x000A=][=0x0009=]now every sinking thing is in the well bottom;[=0x000A=][=0x0009=]if something is rising, say [=0x0022=][The list of rising things] rise[if the number of rising things is 1]s[end if] to the surface of the well.[=0x0022=];[=0x000A=][=0x0009=]if something is sinking, say [=0x0022=][The list of sinking things] sink[if the number of sinking things is 1]s[end if] out of sight.[=0x0022=][=0x000A=][=0x000A=][And finally a few description rules to make things look prettier:][=0x000A=][=0x000A=]Rule for writing a paragraph about the well when the well contains something:[=0x000A=][=0x0009=]say [=0x0022=]The chief feature of the room is a concrete-sided well in which there float[if the number of things in the well is 1]s[end if] [a list of things in the well].[=0x0022=][=0x000A=][=0x000A=]Rule for writing a paragraph about the well:[=0x000A=][=0x0009=]say [=0x0022=]The chief feature of the room is a concrete-sided well full of water.[=0x0022=][=0x000A=][=0x000A=][As we recall from the chapter on activities, [=0x0022=]writing a paragraph about...[=0x0022=] is an activity; activities are themselves structured as sets of object-based rulebooks. The activity [=0x0022=]writing a paragraph about[=0x0022=] uses three object-based rulebooks (before writing..., for writing..., after writing...). We could have made a flotation activity as well, but in general it is overkill to make an activity to make success/failure decisions. For that purpose an object-based rulebook is sufficient.][=0x000A=][=0x000A=]Test me with [=0x0022=]get all / put cork in well / put ring in well / put ingot in well / x well / get cork / get ring / switch switch on / put cork in well / put ring in well / x well / switch switch off / switch switch on[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Flotation&quot;
             </p>
             </blockquote>
             <!--END CODE-->

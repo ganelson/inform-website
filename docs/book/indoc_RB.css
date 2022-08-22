@@ -151,7 +151,7 @@ td.egcellforoval {
 /* and, nested inside that, in a division which has both of these classes: */
 
 div.egovalfornumber {
-	background-image: url('/assets/images/doc_images/ovoid.png');
+	background-image: url('https:/ganelson.github.io/inform-website/assets/images/doc_images/ovoid.png');
 }
 
 div.overstruckimage {
@@ -238,7 +238,7 @@ td.egcrossref {
 box which has this and also the overstruckimage class: */
 
 div.egovalforxref {
-	background-image: url('/assets/images/doc_images/grey-ovoid.png');
+	background-image: url('https:/ganelson.github.io/inform-website/assets/images/doc_images/grey-ovoid.png');
 }
 
 /* ------------------------------------------------------------------------ */

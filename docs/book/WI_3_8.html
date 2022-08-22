@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,7 +60,7 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§3.8. Scenery</p>
@@ -102,7 +102,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_3_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_3_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_3_1.html" class="standardlink">Start of Chapter 3: Things</a>
@@ -110,7 +110,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_3_7.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_3_7.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_3_7.html" class="standardlink">Back to §3.7. Properties depend on kind</a>
@@ -118,7 +118,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_3_9.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_3_9.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_3_9.html" class="standardlink">Onward to §3.9. Backdrops</a>
@@ -138,7 +138,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example50'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Disenchantment Bay 2</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example50'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Disenchantment Bay 2</span></b></a><br>
                     Disenchantment Bay: creating some of the objects in the cabin's description.</p>
 
                 </td>
@@ -155,7 +155,7 @@
         <div class="egpanel" id="example50" style="display: none;">
             <p>If we compile our last version of the cabin, we get a room where the glass case and the bench are listed separately from the room description, even though they have already been mentioned once. We can prevent this by making the already-mentioned things scenery:</p>
             <!--START CODE "c223_50"-->
-            <blockquote class="code"><p class="quoted"><a id="c223_50"></a><a href="javascript:pasteCode('[=0x0022=]Disenchantment Bay[=0x0022=][=0x000A=][=0x000A=]The Cabin is a room.  [=0x0022=]The front of the small cabin is entirely occupied with navigational instruments, a radar display, and radios for calling back to shore. Along each side runs a bench with faded blue vinyl cushions, which can be lifted to reveal the storage space underneath. A glass case against the wall contains several fishing rods.[=0x000A=][=0x000A=]Scratched windows offer a view of the surrounding bay, and there is a door south to the deck. A sign taped to one wall announces the menu of tours offered by the Yakutat Charter Boat Company.[=0x0022=][=0x000A=][=0x000A=]The Cabin contains a glass case. In the glass case is a collection of fishing rods. The case is closed, transparent, and openable. The case is scenery.[=0x000A=][=0x000A=]The bench is in the cabin. On the bench are some blue vinyl cushions. The bench is enterable and scenery. The cushions are scenery.[=0x000A=][=0x000A=][Generally speaking, it is a good idea to recognize the player[=0x0027=]s attempts to interact with any objects mentioned in the room description, so we should also provide][=0x000A=][=0x000A=]Some navigational instruments, some scratched windows, a sign, a radar display, and some radios are scenery in the cabin.[=0x000A=][=0x000A=]Test me with [=0x0022=]examine instruments / x windows / x sign / x display / x radios[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Disenchantment Bay&quot;
+            <blockquote class="code"><p class="quoted"><a id="c223_50"></a><a href="javascript:pasteCode('[=0x0022=]Disenchantment Bay[=0x0022=][=0x000A=][=0x000A=]The Cabin is a room.  [=0x0022=]The front of the small cabin is entirely occupied with navigational instruments, a radar display, and radios for calling back to shore. Along each side runs a bench with faded blue vinyl cushions, which can be lifted to reveal the storage space underneath. A glass case against the wall contains several fishing rods.[=0x000A=][=0x000A=]Scratched windows offer a view of the surrounding bay, and there is a door south to the deck. A sign taped to one wall announces the menu of tours offered by the Yakutat Charter Boat Company.[=0x0022=][=0x000A=][=0x000A=]The Cabin contains a glass case. In the glass case is a collection of fishing rods. The case is closed, transparent, and openable. The case is scenery.[=0x000A=][=0x000A=]The bench is in the cabin. On the bench are some blue vinyl cushions. The bench is enterable and scenery. The cushions are scenery.[=0x000A=][=0x000A=][Generally speaking, it is a good idea to recognize the player[=0x0027=]s attempts to interact with any objects mentioned in the room description, so we should also provide][=0x000A=][=0x000A=]Some navigational instruments, some scratched windows, a sign, a radar display, and some radios are scenery in the cabin.[=0x000A=][=0x000A=]Test me with [=0x0022=]examine instruments / x windows / x sign / x display / x radios[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Disenchantment Bay&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -204,7 +204,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example270'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Replanting</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example270'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Replanting</span></b></a><br>
                     Changing the response when the player tries to take something that is scenery.</p>
 
                 </td>
@@ -221,7 +221,7 @@
         <div class="egpanel" id="example270" style="display: none;">
             <p>By default, &quot;TAKE OAK&quot; in the example above will produce the response &quot;That's hardly portable.&quot; This is fine under many circumstances, but also a bit generic, so we might want to override it for a specific game.</p>
             <!--START CODE "c230_270"-->
-            <blockquote class="code"><p class="quoted"><a id="c230_270"></a><a href="javascript:pasteCode('[=0x0022=]Replanting[=0x0022=][=0x000A=][=0x000A=]The Orchard is a room. [=0x0022=]Within this quadrille of pear trees, a single gnarled old oak remains as a memory of centuries past.[=0x0022=] The gnarled old oak tree is scenery in the Orchard.[=0x000A=][=0x000A=]Instead of taking some scenery: say [=0x0022=]You lack the hulk-like strength.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]take oak[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Replanting&quot;
+            <blockquote class="code"><p class="quoted"><a id="c230_270"></a><a href="javascript:pasteCode('[=0x0022=]Replanting[=0x0022=][=0x000A=][=0x000A=]The Orchard is a room. [=0x0022=]Within this quadrille of pear trees, a single gnarled old oak remains as a memory of centuries past.[=0x0022=] The gnarled old oak tree is scenery in the Orchard.[=0x000A=][=0x000A=]Instead of taking some scenery: say [=0x0022=]You lack the hulk-like strength.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]take oak[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Replanting&quot;
             </p>
             </blockquote>
             <!--END CODE-->

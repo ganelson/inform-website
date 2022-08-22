@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,7 +60,7 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§18.14. Grouping together something</p>
@@ -69,7 +69,7 @@
     <p><span class="boldface">2. The default behaviour.</span> The items grouped together are printed in an English phrase, such as &quot;egg, chicken and farmer&quot;. In particular, they are not split onto separate lines even if the rest of the list is. (See previous section.)</p>
     <p><span class="boldface">3. Examples.</span> (a) Here are Scrabble pieces which are described as &quot;the tile W from a Scrabble set&quot; or similar outside of lists, but which, when they turn up together in lists, are rolled together into &quot;the tiles A, B and D from a Scrabble set&quot;.</p>
     <!--START CODE "c6533"-->
-    <blockquote class="code"><p class="quoted"><a id="c6533"></a><a href="javascript:pasteCode('A Scrabble piece is a kind of thing. The X, the Y and the Z are Scrabble pieces.[=0x000A=][=0x000A=]Before listing contents: group Scrabble pieces together.[=0x000A=][=0x000A=]Before printing the name of a Scrabble piece while not grouping together, say [=0x0022=]tile [=0x0022=]. After printing the name of a Scrabble piece while not grouping together, say [=0x0022=] from a Scrabble set[=0x0022=].[=0x000A=][=0x000A=]Before grouping together Scrabble pieces, say [=0x0022=]the tiles [=0x0022=]. After grouping together Scrabble pieces, say [=0x0022=] from a Scrabble set[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> A Scrabble piece is a kind of thing. The X, the Y and the Z are Scrabble pieces.
+    <blockquote class="code"><p class="quoted"><a id="c6533"></a><a href="javascript:pasteCode('A Scrabble piece is a kind of thing. The X, the Y and the Z are Scrabble pieces.[=0x000A=][=0x000A=]Before listing contents: group Scrabble pieces together.[=0x000A=][=0x000A=]Before printing the name of a Scrabble piece while not grouping together, say [=0x0022=]tile [=0x0022=]. After printing the name of a Scrabble piece while not grouping together, say [=0x0022=] from a Scrabble set[=0x0022=].[=0x000A=][=0x000A=]Before grouping together Scrabble pieces, say [=0x0022=]the tiles [=0x0022=]. After grouping together Scrabble pieces, say [=0x0022=] from a Scrabble set[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> A Scrabble piece is a kind of thing. The X, the Y and the Z are Scrabble pieces.
     </p>
     </blockquote>
     <!--END CODE-->
@@ -90,7 +90,7 @@
     <!--END CODE-->
     <p>(b) Maybe we only want an abbreviated form when there are five or more tiles in one place:</p>
     <!--START CODE "c6537"-->
-    <blockquote class="code"><p class="quoted"><a id="c6537"></a><a href="javascript:pasteCode('A Scrabble piece is a kind of thing. The X, the W, the F, the Y and the Z are Scrabble pieces in the Lounge.[=0x000A=][=0x000A=]Before listing contents: group Scrabble pieces together.[=0x000A=][=0x000A=]Before grouping together Scrabble pieces when the listing group size is greater than 4:[=0x000A=][=0x0009=]say [=0x0022=]some [listing group size in words] tiles ([=0x0022=].[=0x000A=]After grouping together Scrabble pieces when the listing group size is greater than 4:[=0x000A=][=0x0009=]say [=0x0022=]) from a Scrabble set[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> A Scrabble piece is a kind of thing. The X, the W, the F, the Y and the Z are Scrabble pieces in the Lounge.
+    <blockquote class="code"><p class="quoted"><a id="c6537"></a><a href="javascript:pasteCode('A Scrabble piece is a kind of thing. The X, the W, the F, the Y and the Z are Scrabble pieces in the Lounge.[=0x000A=][=0x000A=]Before listing contents: group Scrabble pieces together.[=0x000A=][=0x000A=]Before grouping together Scrabble pieces when the listing group size is greater than 4:[=0x000A=][=0x0009=]say [=0x0022=]some [listing group size in words] tiles ([=0x0022=].[=0x000A=]After grouping together Scrabble pieces when the listing group size is greater than 4:[=0x000A=][=0x0009=]say [=0x0022=]) from a Scrabble set[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> A Scrabble piece is a kind of thing. The X, the W, the F, the Y and the Z are Scrabble pieces in the Lounge.
     </p>
     </blockquote>
     <!--END CODE-->
@@ -121,7 +121,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_18_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_18_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_18_1.html" class="standardlink">Start of Chapter 18: Activities</a>
@@ -129,7 +129,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_18_13.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_18_13.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_18_13.html" class="standardlink">Back to §18.13. Listing contents of something</a>
@@ -137,7 +137,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_18_15.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_18_15.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_18_15.html" class="standardlink">Onward to §18.15. Issuing the response text of something</a>

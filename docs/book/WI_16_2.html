@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,13 +60,13 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§16.2. Looking up entries</p>
     <p>The simplest way to access the information inside tables is to ask explicitly for it, specifying the row number, the column name and what table is to be consulted. So, given our example table</p>
     <!--START CODE "c5031"-->
-    <blockquote class="code"><p class="quoted"><a id="c5031"></a><a href="javascript:pasteCode('Table 2.1 - Selected Elements[=0x000A=]Element[=0x0009=]Symbol[=0x0009=]Atomic number[=0x0009=]Atomic weight[=0x000A=][=0x0022=]Hydrogen[=0x0022=][=0x0009=][=0x0022=]H[=0x0022=][=0x0009=]1[=0x0009=]1[=0x000A=][=0x0022=]Iron[=0x0022=][=0x0009=][=0x0022=]Fe[=0x0022=][=0x0009=]26[=0x0009=]56[=0x000A=][=0x0022=]Zinc[=0x0022=][=0x0009=][=0x0022=]Zn[=0x0022=][=0x0009=]30[=0x0009=]65[=0x000A=][=0x0022=]Uranium[=0x0022=][=0x0009=][=0x0022=]U[=0x0022=][=0x0009=]92[=0x0009=]238[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> Table 2.1 - Selected Elements
+    <blockquote class="code"><p class="quoted"><a id="c5031"></a><a href="javascript:pasteCode('Table 2.1 - Selected Elements[=0x000A=]Element[=0x0009=]Symbol[=0x0009=]Atomic number[=0x0009=]Atomic weight[=0x000A=][=0x0022=]Hydrogen[=0x0022=][=0x0009=][=0x0022=]H[=0x0022=][=0x0009=]1[=0x0009=]1[=0x000A=][=0x0022=]Iron[=0x0022=][=0x0009=][=0x0022=]Fe[=0x0022=][=0x0009=]26[=0x0009=]56[=0x000A=][=0x0022=]Zinc[=0x0022=][=0x0009=][=0x0022=]Zn[=0x0022=][=0x0009=]30[=0x0009=]65[=0x000A=][=0x0022=]Uranium[=0x0022=][=0x0009=][=0x0022=]U[=0x0022=][=0x0009=]92[=0x0009=]238[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> Table 2.1 - Selected Elements
     <br>
     </p>
     </blockquote>
@@ -173,7 +173,7 @@
     <!--END CODE-->
     <p>to produce the value &quot;Zn&quot;. Or the following will run off some chemical data:</p>
     <!--START CODE "c5033"-->
-    <blockquote class="code"><p class="quoted"><a id="c5033"></a><a href="javascript:pasteCode('repeat with N running from 1 to the number of rows in the Table of Selected Elements:[=0x000A=][=0x0009=]say [=0x0022=]The atomic weight of [element in row N of the Table of Selected Elements] is [atomic weight in row N of the Table of Selected Elements].[=0x0022=][=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> repeat with N running from 1 to the number of rows in the Table of Selected Elements:
+    <blockquote class="code"><p class="quoted"><a id="c5033"></a><a href="javascript:pasteCode('repeat with N running from 1 to the number of rows in the Table of Selected Elements:[=0x000A=][=0x0009=]say [=0x0022=]The atomic weight of [element in row N of the Table of Selected Elements] is [atomic weight in row N of the Table of Selected Elements].[=0x0022=][=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> repeat with N running from 1 to the number of rows in the Table of Selected Elements:
     <br>
     &#160;&#160;&#160;&#160;say &quot;The atomic weight of [element in row N of the Table of Selected Elements] is [atomic weight in row N of the Table of Selected Elements].&quot;
     </p>
@@ -214,7 +214,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_16_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_16_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_16_1.html" class="standardlink">Start of Chapter 16: Tables</a>
@@ -222,7 +222,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_16_1.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_16_1.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_16_1.html" class="standardlink">Back to §16.1. Laying out tables</a>
@@ -230,7 +230,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_16_3.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_16_3.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_16_3.html" class="standardlink">Onward to §16.3. Corresponding entries</a>

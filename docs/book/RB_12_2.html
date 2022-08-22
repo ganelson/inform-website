@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,7 +60,7 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§12.2. The Status Line</p>
@@ -74,13 +74,13 @@
     </blockquote>
     <!--END CODE-->
     <p>The examples below offer miscellaneous alternatives, and are fairly self-descriptive.</p>
-    <p class="crossreference"><a href="RB_5_6.html" class="xreflink"><img class="asterisk" alt="*" src="/assets/images/doc_images/xref.png" />&#160;<i>See </i><b>Viewpoint</b></a><i> for a way to make the status line list the player's current identity</i></p>
+    <p class="crossreference"><a href="RB_5_6.html" class="xreflink"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/xref.png" />&#160;<i>See </i><b>Viewpoint</b></a><i> for a way to make the status line list the player's current identity</i></p>
     <hr>
     <div class="roadsigns">
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="RB_12_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="RB_12_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="RB_12_1.html" class="standardlink">Start of Chapter 12: Typography, Layout, and Multimedia Effects</a>
@@ -88,7 +88,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="RB_12_1.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="RB_12_1.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="RB_12_1.html" class="standardlink">Back to §12.1. Typography</a>
@@ -96,7 +96,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="RB_12_3.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="RB_12_3.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="RB_12_3.html" class="standardlink">Onward to §12.3. Footnotes</a>
@@ -116,7 +116,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example360'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Politics as Usual</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example360'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Politics as Usual</span></b></a><br>
                     Have the status line indicate the current region of the map.</p>
 
                 </td>
@@ -133,7 +133,7 @@
         <div class="egpanel" id="example360" style="display: none;">
             <p>Suppose a game with a large map entirely subdivided into regions. We could define:</p>
             <!--START CODE "c16473_360"-->
-            <blockquote class="code"><p class="quoted"><a id="c16473_360"></a><a href="javascript:pasteCode('[=0x0022=]Politics as Usual[=0x0022=][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]now the right hand status line is [=0x0022=][map region of the location][=0x0022=].[=0x000A=][=0x000A=]Washington is west of Idaho.[=0x000A=][=0x000A=]Red is a region. Blue is a region. Idaho is in red. Washington is in blue.[=0x000A=][=0x000A=]Test me with [=0x0022=]e / w[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Politics as Usual&quot;
+            <blockquote class="code"><p class="quoted"><a id="c16473_360"></a><a href="javascript:pasteCode('[=0x0022=]Politics as Usual[=0x0022=][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]now the right hand status line is [=0x0022=][map region of the location][=0x0022=].[=0x000A=][=0x000A=]Washington is west of Idaho.[=0x000A=][=0x000A=]Red is a region. Blue is a region. Idaho is in red. Washington is in blue.[=0x000A=][=0x000A=]Test me with [=0x0022=]e / w[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Politics as Usual&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -173,7 +173,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example130'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Ways Out</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example130'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Ways Out</span></b></a><br>
                     A status line that lists the available exits from the current location.</p>
 
                 </td>
@@ -190,7 +190,7 @@
         <div class="egpanel" id="example130" style="display: none;">
             <p>A not-uncommon device in games with large maps is a list of available exits printed in the status bar. We might do this so:</p>
             <!--START CODE "c16478_130"-->
-            <blockquote class="code"><p class="quoted"><a id="c16478_130"></a><a href="javascript:pasteCode('[=0x0022=]Ways Out[=0x0022=][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]now left hand status line is [=0x0022=]Exits: [exit list][=0x0022=];[=0x000A=][=0x0009=]now right hand status line is [=0x0022=][location][=0x0022=].[=0x000A=][=0x000A=]To say exit list:[=0x000A=][=0x0009=]let place be location;[=0x000A=][=0x0009=]repeat with way running through directions:[=0x000A=][=0x0009=][=0x0009=]let place be the room way from the location;[=0x000A=][=0x0009=][=0x0009=]if place is a room, say [=0x0022=] [way][=0x0022=].[=0x000A=][=0x000A=][=0x000A=][We may find that printing out full directions makes the status line unpleasantly crowded. Fortunately, it isn[=0x0027=]t hard to provide a set of abbreviations to use in this context:][=0x000A=][=0x000A=]Rule for printing the name of a direction (called the way) while constructing the status line:[=0x000A=][=0x0009=]choose row with a heading of the way in the Table of Abbreviation;[=0x000A=][=0x0009=]say [=0x0022=][shortcut entry][=0x0022=].[=0x000A=][=0x000A=]Table of Abbreviation[=0x000A=]heading[=0x0009=]shortcut[=0x000A=]north[=0x0009=][=0x0022=]N[=0x0022=][=0x000A=]northeast[=0x0009=][=0x0022=]NE[=0x0022=][=0x000A=]northwest[=0x0009=][=0x0022=]NW[=0x0022=][=0x000A=]east[=0x0009=][=0x0022=]E[=0x0022=][=0x000A=]southeast[=0x0009=][=0x0022=]SE[=0x0022=][=0x000A=]south[=0x0009=][=0x0022=]S[=0x0022=][=0x000A=]southwest[=0x0009=][=0x0022=]SW[=0x0022=][=0x000A=]west[=0x0009=][=0x0022=]W[=0x0022=][=0x000A=]up[=0x0009=][=0x0022=]U[=0x0022=][=0x000A=]down[=0x0009=][=0x0022=]D[=0x0022=][=0x000A=]inside[=0x0009=][=0x0022=]IN[=0x0022=][=0x000A=]outside[=0x0009=][=0x0022=]OUT[=0x0022=][=0x000A=][=0x000A=]Dome is a room. North of Dome is North Chapel. South of the Dome is South Chapel. West of the Dome is Western End. Quiet Corner is northwest of the Dome, north of Western End, and west of North Chapel. Loud Corner is east of North Chapel, northeast of Dome, and north of Eastern End. Eastern End is north of Dim Corner and east of Dome. Dim Corner is southeast of Dome and east of South Chapel. Ruined Corner is southwest of Dome, west of South Chapel, and south of Western End.[=0x000A=][=0x000A=]The church door is east of Eastern End and west of the Courtyard. The church door is a door.[=0x000A=][=0x000A=]Test me with [=0x0022=]w / n / e / e / s / e[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Ways Out&quot;
+            <blockquote class="code"><p class="quoted"><a id="c16478_130"></a><a href="javascript:pasteCode('[=0x0022=]Ways Out[=0x0022=][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]now left hand status line is [=0x0022=]Exits: [exit list][=0x0022=];[=0x000A=][=0x0009=]now right hand status line is [=0x0022=][location][=0x0022=].[=0x000A=][=0x000A=]To say exit list:[=0x000A=][=0x0009=]let place be location;[=0x000A=][=0x0009=]repeat with way running through directions:[=0x000A=][=0x0009=][=0x0009=]let place be the room way from the location;[=0x000A=][=0x0009=][=0x0009=]if place is a room, say [=0x0022=] [way][=0x0022=].[=0x000A=][=0x000A=][=0x000A=][We may find that printing out full directions makes the status line unpleasantly crowded. Fortunately, it isn[=0x0027=]t hard to provide a set of abbreviations to use in this context:][=0x000A=][=0x000A=]Rule for printing the name of a direction (called the way) while constructing the status line:[=0x000A=][=0x0009=]choose row with a heading of the way in the Table of Abbreviation;[=0x000A=][=0x0009=]say [=0x0022=][shortcut entry][=0x0022=].[=0x000A=][=0x000A=]Table of Abbreviation[=0x000A=]heading[=0x0009=]shortcut[=0x000A=]north[=0x0009=][=0x0022=]N[=0x0022=][=0x000A=]northeast[=0x0009=][=0x0022=]NE[=0x0022=][=0x000A=]northwest[=0x0009=][=0x0022=]NW[=0x0022=][=0x000A=]east[=0x0009=][=0x0022=]E[=0x0022=][=0x000A=]southeast[=0x0009=][=0x0022=]SE[=0x0022=][=0x000A=]south[=0x0009=][=0x0022=]S[=0x0022=][=0x000A=]southwest[=0x0009=][=0x0022=]SW[=0x0022=][=0x000A=]west[=0x0009=][=0x0022=]W[=0x0022=][=0x000A=]up[=0x0009=][=0x0022=]U[=0x0022=][=0x000A=]down[=0x0009=][=0x0022=]D[=0x0022=][=0x000A=]inside[=0x0009=][=0x0022=]IN[=0x0022=][=0x000A=]outside[=0x0009=][=0x0022=]OUT[=0x0022=][=0x000A=][=0x000A=]Dome is a room. North of Dome is North Chapel. South of the Dome is South Chapel. West of the Dome is Western End. Quiet Corner is northwest of the Dome, north of Western End, and west of North Chapel. Loud Corner is east of North Chapel, northeast of Dome, and north of Eastern End. Eastern End is north of Dim Corner and east of Dome. Dim Corner is southeast of Dome and east of South Chapel. Ruined Corner is southwest of Dome, west of South Chapel, and south of Western End.[=0x000A=][=0x000A=]The church door is east of Eastern End and west of the Courtyard. The church door is a door.[=0x000A=][=0x000A=]Test me with [=0x0022=]w / n / e / e / s / e[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Ways Out&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -394,7 +394,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example39'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Blankness</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example39'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Blankness</span></b></a><br>
                     Emptying the status line during the first screen of the game.</p>
 
                 </td>
@@ -412,7 +412,7 @@
             <p>Occasionally we want to print something as our first screen and then pause the game. By default, Inform will print a rather odd status line, with &quot;You&quot; on the left side and &quot;0&quot; on the right. This is because the left hand status line is set to display the location, but (because we're not done with the when-play-begins rules) the player has not yet even been moved to a room.</p>
             <p>We can tidy this up in the &quot;starting the virtual machine&quot; activity, by temporarily changing the status line content. We will not provide game-pausing code here, because that is easily done by extension; so:</p>
             <!--START CODE "c16486_39"-->
-            <blockquote class="code"><p class="quoted"><a id="c16486_39"></a><a href="javascript:pasteCode('[=0x0022=]Blankness[=0x0022=][=0x000A=][=0x000A=]Include Basic Screen Effects by Emily Short.[=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]say [=0x0022=]take me home[=0x0022=];[=0x000A=][=0x0009=]wait for any key;[=0x000A=][=0x0009=]say [=0x0022=] yeah[=0x0022=];[=0x000A=][=0x0009=]wait for any key;[=0x000A=][=0x0009=]say [=0x0022=] yeah[=0x0022=];[=0x000A=][=0x0009=]pause the game;[=0x000A=][=0x0009=]now the left hand status line is [=0x0022=][location][=0x0022=];[=0x000A=][=0x0009=]now the right hand status line is [=0x0022=][turn count][=0x0022=].[=0x000A=][=0x000A=]Before starting the virtual machine:[=0x000A=][=0x0009=]now the left hand status line is [=0x0022=][=0x0022=];[=0x000A=][=0x0009=]now the right hand status line is [=0x0022=][=0x0022=].[=0x000A=][=0x000A=]Paradise City is a room. The description of Paradise City is [=0x0022=]The grass is green and the girls are pretty.[=0x0022=][=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Blankness&quot;
+            <blockquote class="code"><p class="quoted"><a id="c16486_39"></a><a href="javascript:pasteCode('[=0x0022=]Blankness[=0x0022=][=0x000A=][=0x000A=]Include Basic Screen Effects by Emily Short.[=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]say [=0x0022=]take me home[=0x0022=];[=0x000A=][=0x0009=]wait for any key;[=0x000A=][=0x0009=]say [=0x0022=] yeah[=0x0022=];[=0x000A=][=0x0009=]wait for any key;[=0x000A=][=0x0009=]say [=0x0022=] yeah[=0x0022=];[=0x000A=][=0x0009=]pause the game;[=0x000A=][=0x0009=]now the left hand status line is [=0x0022=][location][=0x0022=];[=0x000A=][=0x0009=]now the right hand status line is [=0x0022=][turn count][=0x0022=].[=0x000A=][=0x000A=]Before starting the virtual machine:[=0x000A=][=0x0009=]now the left hand status line is [=0x0022=][=0x0022=];[=0x000A=][=0x0009=]now the right hand status line is [=0x0022=][=0x0022=].[=0x000A=][=0x000A=]Paradise City is a room. The description of Paradise City is [=0x0022=]The grass is green and the girls are pretty.[=0x0022=][=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Blankness&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -469,7 +469,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example62'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Capital City</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example62'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Capital City</span></b></a><br>
                     To arrange that the location information normally given on the left-hand side of the status line appears in block capitals.</p>
 
                 </td>
@@ -486,7 +486,7 @@
         <div class="egpanel" id="example62" style="display: none;">
             <p>Not much is needed for this. The only noteworthy point is that it doesn't work by changing the LHSL to &quot;[the player's surroundings in upper case]&quot;: it cannot do this because &quot;the player's surroundings&quot; is not a value. Instead, &quot;[the player's surroundings]&quot; is a text substitution sometimes printing the name of a room, sometimes printing &quot;Darkness&quot;, and so on. We must therefore load it into a text first, and then apply &quot;...in upper case&quot;.</p>
             <!--START CODE "c16491_62"-->
-            <blockquote class="code"><p class="quoted"><a id="c16491_62"></a><a href="javascript:pasteCode('[=0x0022=]Capital City[=0x0022=][=0x000A=][=0x000A=]Capital City is a room. East is Lower Caissons. South of Lower Caissons[=0x000A=]is San Seriffe. East of San Seriffe is a dark room.[=0x000A=][=0x000A=]To say the player[=0x0027=]s capitalised surroundings:[=0x000A=][=0x0009=]let the masthead be [=0x0022=][the player[=0x0027=]s surroundings][=0x0022=] in upper case;[=0x000A=][=0x0009=]say the masthead.[=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]now the left hand status line is [=0x0022=][the player[=0x0027=]s capitalised surroundings][=0x0022=].[=0x000A=][=0x000A=]Test me with [=0x0022=]e / s / e[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Capital City&quot;
+            <blockquote class="code"><p class="quoted"><a id="c16491_62"></a><a href="javascript:pasteCode('[=0x0022=]Capital City[=0x0022=][=0x000A=][=0x000A=]Capital City is a room. East is Lower Caissons. South of Lower Caissons[=0x000A=]is San Seriffe. East of San Seriffe is a dark room.[=0x000A=][=0x000A=]To say the player[=0x0027=]s capitalised surroundings:[=0x000A=][=0x0009=]let the masthead be [=0x0022=][the player[=0x0027=]s surroundings][=0x0022=] in upper case;[=0x000A=][=0x0009=]say the masthead.[=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]now the left hand status line is [=0x0022=][the player[=0x0027=]s capitalised surroundings][=0x0022=].[=0x000A=][=0x000A=]Test me with [=0x0022=]e / s / e[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Capital City&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -530,7 +530,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example394'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Status line with centered text, the hard way</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example394'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Status line with centered text, the hard way</span></b></a><br>
                     A status line which has only the name of the location, centered.</p>
 
                 </td>
@@ -547,7 +547,7 @@
         <div class="egpanel" id="example394" style="display: none;">
             <p>Making major changes to display features, such as the construction of the status line, sometimes requires that we rely on Inform 6 in bulk; here is how we might produce the Trinity-style status line, with the location centered at the top center of the screen.</p>
             <!--START CODE "c16496_394"-->
-            <blockquote class="code"><p class="quoted"><a id="c16496_394"></a><a href="javascript:pasteCode('[=0x0022=]Corner of No and Where[=0x0022=][=0x000A=][=0x000A=]No is a room. Where is west of No.[=0x000A=][=0x000A=]Rule for constructing the status line:[=0x000A=][=0x0009=]print the location in the center of the status line;[=0x000A=][=0x0009=]rule succeeds.[=0x000A=][=0x000A=]To print the location in the center of the status line:[=0x000A=][=0x0009=](- PrintCenteredStatus(); -).[=0x000A=][=0x000A=]Include (-[=0x000A=][=0x000A=]Array printed_text --[=0x003E=] 64;[=0x000A=][=0x000A=][ PrintCenteredStatus i j;[=0x000A=][=0x0009=]@set_cursor 1 0;[=0x000A=][=0x0009=]i = 0-[=0x003E=]33;[=0x000A=][=0x0009=]spaces(i);[=0x000A=][=0x0009=]@output_stream 3 printed_text;[=0x000A=][=0x0009=]print (name) location;[=0x000A=][=0x0009=]@output_stream -3;[=0x000A=][=0x0009=]j = (i - (printed_text--[=0x003E=]0))/2;[=0x000A=][=0x0009=]@set_cursor 1 j;[=0x000A=][=0x0009=]print (name) location;[=0x000A=][=0x0009=]spaces j-1;[=0x000A=]];[=0x000A=][=0x000A=]-)[=0x000A=][=0x000A=]Test me with [=0x0022=]w / e[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Corner of No and Where&quot;
+            <blockquote class="code"><p class="quoted"><a id="c16496_394"></a><a href="javascript:pasteCode('[=0x0022=]Corner of No and Where[=0x0022=][=0x000A=][=0x000A=]No is a room. Where is west of No.[=0x000A=][=0x000A=]Rule for constructing the status line:[=0x000A=][=0x0009=]print the location in the center of the status line;[=0x000A=][=0x0009=]rule succeeds.[=0x000A=][=0x000A=]To print the location in the center of the status line:[=0x000A=][=0x0009=](- PrintCenteredStatus(); -).[=0x000A=][=0x000A=]Include (-[=0x000A=][=0x000A=]Array printed_text --[=0x003E=] 64;[=0x000A=][=0x000A=][ PrintCenteredStatus i j;[=0x000A=][=0x0009=]@set_cursor 1 0;[=0x000A=][=0x0009=]i = 0-[=0x003E=]33;[=0x000A=][=0x0009=]spaces(i);[=0x000A=][=0x0009=]@output_stream 3 printed_text;[=0x000A=][=0x0009=]print (name) location;[=0x000A=][=0x0009=]@output_stream -3;[=0x000A=][=0x0009=]j = (i - (printed_text--[=0x003E=]0))/2;[=0x000A=][=0x0009=]@set_cursor 1 j;[=0x000A=][=0x0009=]print (name) location;[=0x000A=][=0x0009=]spaces j-1;[=0x000A=]];[=0x000A=][=0x000A=]-)[=0x000A=][=0x000A=]Test me with [=0x0022=]w / e[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Corner of No and Where&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -632,7 +632,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example129'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Guided Tour</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example129'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Guided Tour</span></b></a><br>
                     A status line that lists the available exits from the current location, changing the names of these exits depending on whether the room has been visited or not.</p>
 
                 </td>
@@ -649,7 +649,7 @@
         <div class="egpanel" id="example129" style="display: none;">
             <p>It may sometimes be helpful to prompt the player with a list of exits printed up in the status line. For instance, here is a status line that will print the names of nearby rooms, as well as all the doors the player can see:</p>
             <!--START CODE "c16505_129"-->
-            <blockquote class="code"><p class="quoted"><a id="c16505_129"></a><a href="javascript:pasteCode('[=0x0022=]Guided Tour[=0x0022=][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]now left hand status line is [=0x0022=]Nearby: [if a room is adjacent][the list of adjacent rooms][end if][if a room is adjacent and a door is visible] and [end if][if a door is visible][the list of visible doors][end if][=0x0022=];[=0x000A=][=0x0009=]now right hand status line is [=0x0022=][=0x0022=].[=0x000A=][=0x000A=][Of course, we may not want to tell the player what glories are to be found in locations he hasn[=0x0027=]t yet explored.][=0x000A=][=0x000A=]Rule for printing the name of an unvisited room (called the target) while constructing the status line:[=0x000A=][=0x0009=]let aim be the best route from the location to the target;[=0x000A=][=0x0009=]say [=0x0022=]something [aim][=0x0022=].[=0x000A=][=0x000A=][Even when we have seen a room, we might still want a reminder about how to get there:][=0x000A=][=0x000A=]After printing the name of a visited room (called the target) while constructing the status line:[=0x000A=][=0x0009=]let aim be the best route from the location to the target;[=0x000A=][=0x0009=]say [=0x0022=] ([aim])[=0x0022=].[=0x000A=][=0x000A=][We may also find that printing out full directions makes the status line unpleasantly crowded. Fortunately, it isn[=0x0027=]t hard to provide a set of abbreviations to use in this context:][=0x000A=][=0x000A=]Rule for printing the name of a direction (called the aim) while constructing the status line:[=0x000A=][=0x0009=]choose row with a heading of the aim in the Table of Abbreviation;[=0x000A=][=0x0009=]say [=0x0022=][shortcut entry][=0x0022=].[=0x000A=][=0x000A=]Table of Abbreviation[=0x000A=]heading[=0x0009=]shortcut[=0x000A=]north[=0x0009=][=0x0022=]N[=0x0022=][=0x000A=]northeast[=0x0009=][=0x0022=]NE[=0x0022=][=0x000A=]northwest[=0x0009=][=0x0022=]NW[=0x0022=][=0x000A=]east[=0x0009=][=0x0022=]E[=0x0022=][=0x000A=]southeast[=0x0009=][=0x0022=]SE[=0x0022=][=0x000A=]south[=0x0009=][=0x0022=]S[=0x0022=][=0x000A=]southwest[=0x0009=][=0x0022=]SW[=0x0022=][=0x000A=]west[=0x0009=][=0x0022=]W[=0x0022=][=0x000A=]up[=0x0009=][=0x0022=]U[=0x0022=][=0x000A=]down[=0x0009=][=0x0022=]D[=0x0022=][=0x000A=]inside[=0x0009=][=0x0022=]in[=0x0022=][=0x000A=]outside[=0x0009=][=0x0022=]out[=0x0022=][=0x000A=][=0x000A=][Everywhere else, the names of directions will still be printed out in full in the usual way. And now we give it a little map to work with:][=0x000A=][=0x000A=]Dome is a room. North of Dome is North Chapel. South of the Dome is South Chapel. West of the Dome is Western End. Quiet Corner is northwest of the Dome, north of Western End, and west of North Chapel. Loud Corner is east of North Chapel, northeast of Dome, and north of Eastern End. Eastern End is north of Dim Corner and east of Dome. Dim Corner is southeast of Dome and east of South Chapel. Ruined Corner is southwest of Dome, west of South Chapel, and south of Western End.[=0x000A=][=0x000A=]The church door is east of Eastern End and west of the Courtyard. The church door is a door.[=0x000A=][=0x000A=]Test me with [=0x0022=]n / w / s[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Guided Tour&quot;
+            <blockquote class="code"><p class="quoted"><a id="c16505_129"></a><a href="javascript:pasteCode('[=0x0022=]Guided Tour[=0x0022=][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]now left hand status line is [=0x0022=]Nearby: [if a room is adjacent][the list of adjacent rooms][end if][if a room is adjacent and a door is visible] and [end if][if a door is visible][the list of visible doors][end if][=0x0022=];[=0x000A=][=0x0009=]now right hand status line is [=0x0022=][=0x0022=].[=0x000A=][=0x000A=][Of course, we may not want to tell the player what glories are to be found in locations he hasn[=0x0027=]t yet explored.][=0x000A=][=0x000A=]Rule for printing the name of an unvisited room (called the target) while constructing the status line:[=0x000A=][=0x0009=]let aim be the best route from the location to the target;[=0x000A=][=0x0009=]say [=0x0022=]something [aim][=0x0022=].[=0x000A=][=0x000A=][Even when we have seen a room, we might still want a reminder about how to get there:][=0x000A=][=0x000A=]After printing the name of a visited room (called the target) while constructing the status line:[=0x000A=][=0x0009=]let aim be the best route from the location to the target;[=0x000A=][=0x0009=]say [=0x0022=] ([aim])[=0x0022=].[=0x000A=][=0x000A=][We may also find that printing out full directions makes the status line unpleasantly crowded. Fortunately, it isn[=0x0027=]t hard to provide a set of abbreviations to use in this context:][=0x000A=][=0x000A=]Rule for printing the name of a direction (called the aim) while constructing the status line:[=0x000A=][=0x0009=]choose row with a heading of the aim in the Table of Abbreviation;[=0x000A=][=0x0009=]say [=0x0022=][shortcut entry][=0x0022=].[=0x000A=][=0x000A=]Table of Abbreviation[=0x000A=]heading[=0x0009=]shortcut[=0x000A=]north[=0x0009=][=0x0022=]N[=0x0022=][=0x000A=]northeast[=0x0009=][=0x0022=]NE[=0x0022=][=0x000A=]northwest[=0x0009=][=0x0022=]NW[=0x0022=][=0x000A=]east[=0x0009=][=0x0022=]E[=0x0022=][=0x000A=]southeast[=0x0009=][=0x0022=]SE[=0x0022=][=0x000A=]south[=0x0009=][=0x0022=]S[=0x0022=][=0x000A=]southwest[=0x0009=][=0x0022=]SW[=0x0022=][=0x000A=]west[=0x0009=][=0x0022=]W[=0x0022=][=0x000A=]up[=0x0009=][=0x0022=]U[=0x0022=][=0x000A=]down[=0x0009=][=0x0022=]D[=0x0022=][=0x000A=]inside[=0x0009=][=0x0022=]in[=0x0022=][=0x000A=]outside[=0x0009=][=0x0022=]out[=0x0022=][=0x000A=][=0x000A=][Everywhere else, the names of directions will still be printed out in full in the usual way. And now we give it a little map to work with:][=0x000A=][=0x000A=]Dome is a room. North of Dome is North Chapel. South of the Dome is South Chapel. West of the Dome is Western End. Quiet Corner is northwest of the Dome, north of Western End, and west of North Chapel. Loud Corner is east of North Chapel, northeast of Dome, and north of Eastern End. Eastern End is north of Dim Corner and east of Dome. Dim Corner is southeast of Dome and east of South Chapel. Ruined Corner is southwest of Dome, west of South Chapel, and south of Western End.[=0x000A=][=0x000A=]The church door is east of Eastern End and west of the Courtyard. The church door is a door.[=0x000A=][=0x000A=]Test me with [=0x0022=]n / w / s[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Guided Tour&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -861,7 +861,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example393'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Centered</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example393'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Centered</span></b></a><br>
                     Replacing the two-part status line with one that centers only the room name at the top of the screen.</p>
 
                 </td>
@@ -878,7 +878,7 @@
         <div class="egpanel" id="example393" style="display: none;">
             <p>If we want to lay out the status line in some other way than with left-hand and right-hand entries, it is possible to do this as well. Later we will learn about the &quot;rule for constructing the status line&quot;, but here is a basic effect using this rule and an Inform extension included as part of the standard distribution, called Basic Screen Effects.</p>
             <!--START CODE "c16514_393"-->
-            <blockquote class="code"><p class="quoted"><a id="c16514_393"></a><a href="javascript:pasteCode('[=0x0022=]Centered[=0x0022=][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]say [=0x0022=]After months of boring through the Earth[=0x0027=]s crust in this metal-jawed vehicle, you break through...[=0x0022=][=0x000A=][=0x000A=]The Hollow Core is a room. [=0x0022=]Truly a magnificent sight: the land curves up away from you in every direction, covered with the cities and fields of the Core People. Molten rock runs in the canals, bringing heat and light to every home.[=0x000A=][=0x000A=]At the center of the Earth hangs a dense black sun.[=0x0022=][=0x000A=][=0x000A=]Include Basic Screen Effects by Emily Short.[=0x000A=][=0x000A=]Rule for constructing the status line:[=0x000A=][=0x0009=]center [=0x0022=][location][=0x0022=] at row 1;[=0x000A=][=0x0009=]rule succeeds.[=0x000A=][=0x000A=]Test me with [=0x0022=]look[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Centered&quot;
+            <blockquote class="code"><p class="quoted"><a id="c16514_393"></a><a href="javascript:pasteCode('[=0x0022=]Centered[=0x0022=][=0x000A=][=0x000A=]When play begins:[=0x000A=][=0x0009=]say [=0x0022=]After months of boring through the Earth[=0x0027=]s crust in this metal-jawed vehicle, you break through...[=0x0022=][=0x000A=][=0x000A=]The Hollow Core is a room. [=0x0022=]Truly a magnificent sight: the land curves up away from you in every direction, covered with the cities and fields of the Core People. Molten rock runs in the canals, bringing heat and light to every home.[=0x000A=][=0x000A=]At the center of the Earth hangs a dense black sun.[=0x0022=][=0x000A=][=0x000A=]Include Basic Screen Effects by Emily Short.[=0x000A=][=0x000A=]Rule for constructing the status line:[=0x000A=][=0x0009=]center [=0x0022=][location][=0x0022=] at row 1;[=0x000A=][=0x0009=]rule succeeds.[=0x000A=][=0x000A=]Test me with [=0x0022=]look[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Centered&quot;
             </p>
             </blockquote>
             <!--END CODE-->

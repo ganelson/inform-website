@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,7 +60,7 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§8.15. Calling names</p>
@@ -97,13 +97,13 @@
     </blockquote>
     <!--END CODE-->
     <p>because there is too much potential ambiguity - are we trying to call the player something?</p>
-    <p class="crossreference"><a href="WI_11_11.html" class="xreflink"><img class="asterisk" alt="*" src="/assets/images/doc_images/xref.png" />&#160;<i>See </i><b>Repeat running through</b></a><i> for systematically working on everything matching a description</i></p>
+    <p class="crossreference"><a href="WI_11_11.html" class="xreflink"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/xref.png" />&#160;<i>See </i><b>Repeat running through</b></a><i> for systematically working on everything matching a description</i></p>
     <hr>
     <div class="roadsigns">
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_8_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_8_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_8_1.html" class="standardlink">Start of Chapter 8: Change</a>
@@ -111,7 +111,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_8_14.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_8_14.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_8_14.html" class="standardlink">Back to §8.14. More flexible descriptions of whereabouts</a>
@@ -119,7 +119,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_8_16.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_8_16.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_8_16.html" class="standardlink">Onward to §8.16. Counting the number of things</a>
@@ -139,7 +139,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example107'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Higher Calling</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example107'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Higher Calling</span></b></a><br>
                     All doors in the game automatically attempt to open if the player approaches them when they are closed.</p>
 
                 </td>
@@ -156,7 +156,7 @@
         <div class="egpanel" id="example107" style="display: none;">
             <p>&quot;Called&quot; is quite useful in the context of rules about going, since go rules often refer to things other than the noun the player typed. For instance, suppose we want to have doors which politely open when the player tries to pass through them:</p>
             <!--START CODE "c1977_107"-->
-            <blockquote class="code"><p class="quoted"><a id="c1977_107"></a><a href="javascript:pasteCode('[=0x0022=]Higher Calling[=0x0022=][=0x000A=][=0x000A=]Before going through a closed door (called the blocking door):[=0x000A=][=0x0009=]say [=0x0022=](first opening [the blocking door])[line break][=0x0022=];[=0x000A=][=0x0009=]silently try opening the blocking door;[=0x000A=][=0x0009=]if the blocking door is closed, stop the action.[=0x000A=][=0x000A=]Dome is a room. North of Dome is North Chapel. South of the Dome is South Chapel. West of the Dome is Western End. Quiet Corner is northwest of the Dome, north of Western End, and west of North Chapel. Loud Corner is east of North Chapel, northeast of Dome, and north of Eastern End. Eastern End is north of Dim Corner and east of Dome. Dim Corner is southeast of Dome and east of South Chapel. Ruined Corner is southwest of Dome, west of South Chapel, and south of Western End.[=0x000A=][=0x000A=]The church door is east of Eastern End and west of the Courtyard. The church door is a door.[=0x000A=][=0x000A=]Test me with [=0x0022=]e / e[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Higher Calling&quot;
+            <blockquote class="code"><p class="quoted"><a id="c1977_107"></a><a href="javascript:pasteCode('[=0x0022=]Higher Calling[=0x0022=][=0x000A=][=0x000A=]Before going through a closed door (called the blocking door):[=0x000A=][=0x0009=]say [=0x0022=](first opening [the blocking door])[line break][=0x0022=];[=0x000A=][=0x0009=]silently try opening the blocking door;[=0x000A=][=0x0009=]if the blocking door is closed, stop the action.[=0x000A=][=0x000A=]Dome is a room. North of Dome is North Chapel. South of the Dome is South Chapel. West of the Dome is Western End. Quiet Corner is northwest of the Dome, north of Western End, and west of North Chapel. Loud Corner is east of North Chapel, northeast of Dome, and north of Eastern End. Eastern End is north of Dim Corner and east of Dome. Dim Corner is southeast of Dome and east of South Chapel. Ruined Corner is southwest of Dome, west of South Chapel, and south of Western End.[=0x000A=][=0x000A=]The church door is east of Eastern End and west of the Courtyard. The church door is a door.[=0x000A=][=0x000A=]Test me with [=0x0022=]e / e[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Higher Calling&quot;
             </p>
             </blockquote>
             <!--END CODE-->

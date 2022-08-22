@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,7 +60,7 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§7.3. Before rules</p>
@@ -149,7 +149,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_7_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_7_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_7_1.html" class="standardlink">Start of Chapter 7: Basic Actions</a>
@@ -157,7 +157,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_7_2.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_7_2.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_7_2.html" class="standardlink">Back to §7.2. Instead rules</a>
@@ -165,7 +165,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_7_4.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_7_4.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_7_4.html" class="standardlink">Onward to §7.4. Try and try silently</a>
@@ -185,7 +185,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example306'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Democratic Process</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example306'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Democratic Process</span></b></a><br>
                     Make PUT and INSERT commands automatically take objects if the player is not holding them.</p>
 
                 </td>
@@ -202,7 +202,7 @@
         <div class="egpanel" id="example306" style="display: none;">
             <p>&quot;Stop&quot; and &quot;Continue&quot; are most useful when we need to write rules that will have to stop the action some of the time but at other times let it pass; so for instance:</p>
             <!--START CODE "c1319_306"-->
-            <blockquote class="code"><p class="quoted"><a id="c1319_306"></a><a href="javascript:pasteCode('[=0x0022=]Democratic Process[=0x0022=][=0x000A=][=0x000A=]Before inserting something which is not carried by the player into something:[=0x000A=][=0x0009=]if the noun is in the second noun, say [=0x0022=]Already done.[=0x0022=] instead;[=0x000A=][=0x0009=]say [=0x0022=](first taking [the noun])[line break][=0x0022=];[=0x000A=][=0x0009=]silently try taking the noun;[=0x000A=][=0x0009=]if the player is not holding the noun, stop the action.[=0x000A=][=0x000A=]Before putting something which is not carried by the player on something:[=0x000A=][=0x0009=]if the noun is on the second noun, say [=0x0022=]Already done.[=0x0022=] instead;[=0x000A=][=0x0009=]say [=0x0022=](first taking [the noun])[line break][=0x0022=];[=0x000A=][=0x0009=]silently try taking the noun;[=0x000A=][=0x0009=]if the player is not holding the noun, stop the action.[=0x000A=][=0x000A=]The Assembly Room is a room. [=0x0022=]On most days, this room is used for elementary school assemblies; at the moment, it serves as a voting place.[=0x0022=] The ballot is on the desk. The desk is in the Assembly Room.[=0x000A=][=0x000A=]The machine is a container in the Assembly Room. [=0x0022=]On the ballot machine is a sign which reads [=0x0027=]PUT BALLOTS IN ME :)[=0x0027=].[=0x0022=] Understand [=0x0022=]ballot machine[=0x0022=] as the machine.[=0x000A=][=0x000A=]Test me with [=0x0022=]put ballot in machine[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Democratic Process&quot;
+            <blockquote class="code"><p class="quoted"><a id="c1319_306"></a><a href="javascript:pasteCode('[=0x0022=]Democratic Process[=0x0022=][=0x000A=][=0x000A=]Before inserting something which is not carried by the player into something:[=0x000A=][=0x0009=]if the noun is in the second noun, say [=0x0022=]Already done.[=0x0022=] instead;[=0x000A=][=0x0009=]say [=0x0022=](first taking [the noun])[line break][=0x0022=];[=0x000A=][=0x0009=]silently try taking the noun;[=0x000A=][=0x0009=]if the player is not holding the noun, stop the action.[=0x000A=][=0x000A=]Before putting something which is not carried by the player on something:[=0x000A=][=0x0009=]if the noun is on the second noun, say [=0x0022=]Already done.[=0x0022=] instead;[=0x000A=][=0x0009=]say [=0x0022=](first taking [the noun])[line break][=0x0022=];[=0x000A=][=0x0009=]silently try taking the noun;[=0x000A=][=0x0009=]if the player is not holding the noun, stop the action.[=0x000A=][=0x000A=]The Assembly Room is a room. [=0x0022=]On most days, this room is used for elementary school assemblies; at the moment, it serves as a voting place.[=0x0022=] The ballot is on the desk. The desk is in the Assembly Room.[=0x000A=][=0x000A=]The machine is a container in the Assembly Room. [=0x0022=]On the ballot machine is a sign which reads [=0x0027=]PUT BALLOTS IN ME :)[=0x0027=].[=0x0022=] Understand [=0x0022=]ballot machine[=0x0022=] as the machine.[=0x000A=][=0x000A=]Test me with [=0x0022=]put ballot in machine[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Democratic Process&quot;
             </p>
             </blockquote>
             <!--END CODE-->
@@ -259,7 +259,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example307'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Sand</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example307'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Sand</span></b></a><br>
                     Extend PUT and INSERT handling to cases where multiple objects are intended at once.</p>
 
                 </td>
@@ -276,7 +276,7 @@
         <div class="egpanel" id="example307" style="display: none;">
             <p>The above example does not quite work when we want the player to be allowed to take multiple objects at once before putting them somewhere: we also need to add a couple of &quot;understand&quot; rules borrowed from many chapters later. While the reasons may not be immediately clear, we include the demonstration here for the sake of thoroughness:</p>
             <!--START CODE "c1325_307"-->
-            <blockquote class="code"><p class="quoted"><a id="c1325_307"></a><a href="javascript:pasteCode('[=0x0022=]Sand[=0x0022=][=0x000A=][=0x000A=]Before inserting something which is not carried by the player into something:[=0x000A=][=0x0009=]if the noun is in the second noun, say [=0x0022=]Already done.[=0x0022=] instead;[=0x000A=][=0x0009=]say [=0x0022=](first taking [the noun]) [=0x0022=];[=0x000A=][=0x0009=]silently try taking the noun;[=0x000A=][=0x0009=]if the player is not holding the noun, stop the action.[=0x000A=][=0x000A=]Before putting something which is not carried by the player on something:[=0x000A=][=0x0009=]if the noun is on the second noun, say [=0x0022=]Already done.[=0x0022=] instead;[=0x000A=][=0x0009=]say [=0x0022=](first taking [the noun])[line break][=0x0022=];[=0x000A=][=0x0009=]silently try taking the noun;[=0x000A=][=0x0009=]if the player is not holding the noun, stop the action.[=0x000A=][=0x000A=]Understand [=0x0022=]put [things] in [something][=0x0022=] as inserting it into. Understand [=0x0022=]put [things] on [something][=0x0022=] as putting it on.[=0x000A=][=0x000A=]The Closet is a room.[=0x000A=][=0x000A=]A lentil is a kind of thing. A black-eyed pea is a kind of thing. The closet contains 3 lentils. The Closet contains 14 black-eyed peas. The round tin is a container in the closet. The round tin contains 17 lentils. The square tin is a container in the Closet. The square tin contains 20 black-eyed peas.[=0x000A=][=0x000A=]Sorting is a scene. Sorting begins when play begins. Sorting ends when all the lentils are in the round tin and all the black-eyed peas are in the square tin. When Sorting ends, end the story finally.[=0x000A=][=0x000A=]When play begins: say [=0x0022=]Thanks to your cruel stepmother, you[=0x0027=]re not going anywhere until the lentils and peas are sorted.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]put peas in square tin / put lentils in round tin[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Sand&quot;
+            <blockquote class="code"><p class="quoted"><a id="c1325_307"></a><a href="javascript:pasteCode('[=0x0022=]Sand[=0x0022=][=0x000A=][=0x000A=]Before inserting something which is not carried by the player into something:[=0x000A=][=0x0009=]if the noun is in the second noun, say [=0x0022=]Already done.[=0x0022=] instead;[=0x000A=][=0x0009=]say [=0x0022=](first taking [the noun]) [=0x0022=];[=0x000A=][=0x0009=]silently try taking the noun;[=0x000A=][=0x0009=]if the player is not holding the noun, stop the action.[=0x000A=][=0x000A=]Before putting something which is not carried by the player on something:[=0x000A=][=0x0009=]if the noun is on the second noun, say [=0x0022=]Already done.[=0x0022=] instead;[=0x000A=][=0x0009=]say [=0x0022=](first taking [the noun])[line break][=0x0022=];[=0x000A=][=0x0009=]silently try taking the noun;[=0x000A=][=0x0009=]if the player is not holding the noun, stop the action.[=0x000A=][=0x000A=]Understand [=0x0022=]put [things] in [something][=0x0022=] as inserting it into. Understand [=0x0022=]put [things] on [something][=0x0022=] as putting it on.[=0x000A=][=0x000A=]The Closet is a room.[=0x000A=][=0x000A=]A lentil is a kind of thing. A black-eyed pea is a kind of thing. The closet contains 3 lentils. The Closet contains 14 black-eyed peas. The round tin is a container in the closet. The round tin contains 17 lentils. The square tin is a container in the Closet. The square tin contains 20 black-eyed peas.[=0x000A=][=0x000A=]Sorting is a scene. Sorting begins when play begins. Sorting ends when all the lentils are in the round tin and all the black-eyed peas are in the square tin. When Sorting ends, end the story finally.[=0x000A=][=0x000A=]When play begins: say [=0x0022=]Thanks to your cruel stepmother, you[=0x0027=]re not going anywhere until the lentils and peas are sorted.[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]put peas in square tin / put lentils in round tin[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Sand&quot;
             </p>
             </blockquote>
             <!--END CODE-->

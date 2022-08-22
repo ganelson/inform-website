@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,7 +60,7 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§21.5. Building lists</p>
@@ -252,7 +252,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_21_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_21_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_21_1.html" class="standardlink">Start of Chapter 21: Lists</a>
@@ -260,7 +260,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_21_4.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_21_4.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_21_4.html" class="standardlink">Back to §21.4. Testing and iterating over lists</a>
@@ -268,7 +268,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_21_6.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_21_6.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_21_6.html" class="standardlink">Onward to §21.6. Lists of objects</a>
@@ -288,7 +288,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example325'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Robo 1</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example325'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Robo 1</span></b></a><br>
                     A robot which watches and records the player's actions, then tries to repeat them back in the same order when he is switched into play-back mode.</p>
 
                 </td>
@@ -304,7 +304,7 @@
 
         <div class="egpanel" id="example325" style="display: none;">
             <!--START CODE "c8382_325"-->
-            <blockquote class="code"><p class="quoted"><a id="c8382_325"></a><a href="javascript:pasteCode('[=0x0022=]Robo[=0x0022=][=0x000A=][=0x000A=]The Experimentation Chamber is a room. Robo is a man in the Experimentation Chamber. [=0x0022=]Robo, your prototype tin companion, stands awkwardly beside you. In the middle of his chest is a red enamel button[if the red button is switched on], currently depressed[otherwise], currently un-depressed[end if].[=0x0022=][=0x000A=][=0x000A=]The red button is a device. It is part of Robo. Instead of pushing the red button: if the red button is switched off, try switching on the red button; otherwise try switching off the red button.[=0x000A=][=0x000A=]After switching on the red button:[=0x000A=][=0x0009=]say [=0x0022=]CLICK! Robo is now in play-back mode.[=0x0022=][=0x000A=][=0x000A=]After switching off the red button:[=0x000A=][=0x0009=]say [=0x0022=]CLACK! Robo is now in observation mode.[=0x0022=][=0x000A=][=0x000A=]Definition: Robo is watching if the red button is switched off.[=0x000A=][=0x000A=]The current instruction set is a list of stored actions that varies.[=0x000A=][=0x000A=]After doing something when Robo is watching and Robo can see the player:[=0x000A=][=0x0009=]now the actor is Robo;[=0x000A=][=0x0009=]add the current action to the current instruction set;[=0x000A=][=0x0009=]now the actor is the player;[=0x000A=][=0x0009=]say [=0x0022=]Robo watches you [the current action][one of], his yellow eyes lamp-like and observant[or]. In his metal head, gears whirr[or], his brushed-copper handlebar moustaches twitching[or] impassively[at random].[=0x0022=];[=0x000A=][=0x0009=]continue the action.[=0x000A=][=0x000A=]Every turn when Robo is not watching:[=0x000A=][=0x0009=]if the number of entries in the current instruction set is 0:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]Robo has run out of behavior and grinds to an (expectant) halt.[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]now the red button is switched off;[=0x000A=][=0x0009=]otherwise:[=0x000A=][=0x0009=][=0x0009=]let the next task be entry 1 of the current instruction set;[=0x000A=][=0x0009=][=0x0009=]try the next task;[=0x000A=][=0x0009=][=0x0009=]remove entry 1 from the current instruction set.[=0x000A=][=0x000A=]The red block and the blue cylinder are things in the Experimentation Chamber. The counter is a supporter in the Experimentation Chamber. The counter is scenery.[=0x000A=][=0x000A=]Report Robo examining Robo:[=0x000A=][=0x0009=]say [=0x0022=]Robo examines each of his hands in turn, then each of his legs (bending over mostly double in the middle to do this).[=0x0022=] instead.[=0x000A=][=0x000A=]Report Robo examining the player:[=0x000A=][=0x0009=]say [=0x0022=]Robo stares at you, unblinkingly, for several seconds together[if a random chance of 1 in 7 succeeds]. His left moustache-bar twitches infinitesimally upward[end if].[=0x0022=] instead.[=0x000A=][=0x000A=]Report Robo taking the cylinder:[=0x000A=][=0x0009=]say [=0x0022=][one of][Robo] needs several attempts to get his metal fingers around [the cylinder] -- they are not designed for grasping small objects elegantly. But at last he succeeds[or]Once again, Robo struggles a bit before picking up [the cylinder][stopping].[=0x0022=] instead.[=0x000A=][=0x000A=]Test me with [=0x0022=]z / take cylinder / take block / put cylinder on counter / put block on counter / x robo / x me / get block / drop block / press red button / z / z / z / z / z / z / z / z / z / z[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Robo&quot;
+            <blockquote class="code"><p class="quoted"><a id="c8382_325"></a><a href="javascript:pasteCode('[=0x0022=]Robo[=0x0022=][=0x000A=][=0x000A=]The Experimentation Chamber is a room. Robo is a man in the Experimentation Chamber. [=0x0022=]Robo, your prototype tin companion, stands awkwardly beside you. In the middle of his chest is a red enamel button[if the red button is switched on], currently depressed[otherwise], currently un-depressed[end if].[=0x0022=][=0x000A=][=0x000A=]The red button is a device. It is part of Robo. Instead of pushing the red button: if the red button is switched off, try switching on the red button; otherwise try switching off the red button.[=0x000A=][=0x000A=]After switching on the red button:[=0x000A=][=0x0009=]say [=0x0022=]CLICK! Robo is now in play-back mode.[=0x0022=][=0x000A=][=0x000A=]After switching off the red button:[=0x000A=][=0x0009=]say [=0x0022=]CLACK! Robo is now in observation mode.[=0x0022=][=0x000A=][=0x000A=]Definition: Robo is watching if the red button is switched off.[=0x000A=][=0x000A=]The current instruction set is a list of stored actions that varies.[=0x000A=][=0x000A=]After doing something when Robo is watching and Robo can see the player:[=0x000A=][=0x0009=]now the actor is Robo;[=0x000A=][=0x0009=]add the current action to the current instruction set;[=0x000A=][=0x0009=]now the actor is the player;[=0x000A=][=0x0009=]say [=0x0022=]Robo watches you [the current action][one of], his yellow eyes lamp-like and observant[or]. In his metal head, gears whirr[or], his brushed-copper handlebar moustaches twitching[or] impassively[at random].[=0x0022=];[=0x000A=][=0x0009=]continue the action.[=0x000A=][=0x000A=]Every turn when Robo is not watching:[=0x000A=][=0x0009=]if the number of entries in the current instruction set is 0:[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]Robo has run out of behavior and grinds to an (expectant) halt.[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]now the red button is switched off;[=0x000A=][=0x0009=]otherwise:[=0x000A=][=0x0009=][=0x0009=]let the next task be entry 1 of the current instruction set;[=0x000A=][=0x0009=][=0x0009=]try the next task;[=0x000A=][=0x0009=][=0x0009=]remove entry 1 from the current instruction set.[=0x000A=][=0x000A=]The red block and the blue cylinder are things in the Experimentation Chamber. The counter is a supporter in the Experimentation Chamber. The counter is scenery.[=0x000A=][=0x000A=]Report Robo examining Robo:[=0x000A=][=0x0009=]say [=0x0022=]Robo examines each of his hands in turn, then each of his legs (bending over mostly double in the middle to do this).[=0x0022=] instead.[=0x000A=][=0x000A=]Report Robo examining the player:[=0x000A=][=0x0009=]say [=0x0022=]Robo stares at you, unblinkingly, for several seconds together[if a random chance of 1 in 7 succeeds]. His left moustache-bar twitches infinitesimally upward[end if].[=0x0022=] instead.[=0x000A=][=0x000A=]Report Robo taking the cylinder:[=0x000A=][=0x0009=]say [=0x0022=][one of][Robo] needs several attempts to get his metal fingers around [the cylinder] -- they are not designed for grasping small objects elegantly. But at last he succeeds[or]Once again, Robo struggles a bit before picking up [the cylinder][stopping].[=0x0022=] instead.[=0x000A=][=0x000A=]Test me with [=0x0022=]z / take cylinder / take block / put cylinder on counter / put block on counter / x robo / x me / get block / drop block / press red button / z / z / z / z / z / z / z / z / z / z[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Robo&quot;
             </p>
             </blockquote>
             <!--END CODE-->

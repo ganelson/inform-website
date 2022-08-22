@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,7 +60,7 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§15.2. Numbers and real numbers</p>
@@ -140,7 +140,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_15_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_15_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_15_1.html" class="standardlink">Start of Chapter 15: Numbers and Equations</a>
@@ -148,7 +148,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_15_1.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_15_1.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_15_1.html" class="standardlink">Back to §15.1. How do we measure things?</a>
@@ -156,7 +156,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_15_3.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_15_3.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_15_3.html" class="standardlink">Onward to §15.3. Real number conversions</a>
@@ -176,7 +176,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example4'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Alias</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example4'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Alias</span></b></a><br>
                     A telephone with phone numbers of the standard American seven-digit length.</p>
 
                 </td>
@@ -193,7 +193,7 @@
         <div class="egpanel" id="example4" style="display: none;">
             <p>Seven-digit telephone numbers are too long for Inform to handle when compiling to the Z-Machine, but they will work under Glulx. To have this example succeed, make sure that you have selected the Glulx option in your settings menu.</p>
             <!--START CODE "c4516_4"-->
-            <blockquote class="code"><p class="quoted"><a id="c4516_4"></a><a href="javascript:pasteCode('[=0x0022=]Alias[=0x0022=][=0x000A=][=0x000A=]A telephone is a kind of thing. Understand [=0x0022=]phone[=0x0022=] or [=0x0022=]telephone[=0x0022=] as a telephone.[=0x000A=][=0x000A=]A phone number is a kind of value. 999-9999 specifies a phone number.[=0x000A=][=0x000A=][Now we borrow some techniques from the Understanding chapter to set up dialing actions:][=0x000A=][=0x000A=]Understand [=0x0022=]dial [phone number] on [telephone][=0x0022=] as dialing it on. Understand [=0x0022=]dial [phone number] on [something][=0x0022=] as dialing it on.[=0x000A=][=0x000A=]Understand the commands [=0x0022=]phone[=0x0022=] or [=0x0022=]telephone[=0x0022=] or [=0x0022=]call[=0x0022=] as [=0x0022=]dial[=0x0022=].[=0x000A=][=0x000A=]Understand [=0x0022=]call [text][=0x0022=] or [=0x0022=]phone [text][=0x0022=] or [=0x0022=]dial [text][=0x0022=] or [=0x0022=]telephone [text][=0x0022=] as a mistake ([=0x0022=]That[=0x0027=]s not a number you know.[=0x0022=]).[=0x000A=][=0x000A=]Dialing it on is an action applying to one phone number and one thing.[=0x000A=][=0x000A=]Report dialing it on:[=0x000A=][=0x0009=]say [=0x0022=]You dial [the phone number understood].[=0x0022=][=0x000A=][=0x000A=][This much is enough to let us dial telephone numbers and have Inform report that we[=0x0027=]ve done so; it doesn[=0x0027=]t actually provide a telephone system such that we could reach and converse with other characters (but see the other telephone examples in the recipe book for more on how one might do that).][=0x000A=][=0x000A=][We[=0x0027=]ll set up a little political espionage scenario from which our player can make calls:][=0x000A=][=0x000A=]The Senator[=0x0027=]s Junior Suite is a room. [=0x0022=]The Senator appears, unfortunately, to have very precise habits: little in the room has been moved from its usual place; the trash can is empty; the bed has been remade[if the blue paper is unexamined]. There may in fact be nothing to find here[end if].[=0x0022=][=0x000A=][=0x000A=]The bed is an enterable scenery supporter in the Junior Suite.[=0x000A=][=0x000A=]The player is wearing a housekeeping uniform and a brunette wig. The player carries a telephone called a Nokia.[=0x000A=][=0x000A=][Borrowing again from the chapter on Understanding, we might arrange things so that the player knows and can call a few standard numbers with such syntax as CALL HOME:][=0x000A=][=0x000A=]Understand [=0x0022=]home[=0x0022=] as 555-9200.[=0x000A=][=0x000A=][And what if we[=0x0027=]d like to have the player learn some phone numbers during the game?][=0x000A=][=0x000A=]A thing can be examined or unexamined. Carry out examining something: now the noun is examined.[=0x000A=][=0x000A=]Understand [=0x0022=]Stephen[=0x0022=] as 555-2513 when the blue paper is examined.[=0x000A=][=0x000A=][This will understand CALL STEPHEN once the paper is examined; before that, the player will just get the [=0x0022=]That[=0x0027=]s not a number you know[=0x0022=] response that Inform uses for all attempts to call unknown names.][=0x000A=][=0x000A=][We[=0x0027=]d better plant this paper for the player to find:][=0x000A=][=0x000A=]The blue paper is in the drawer. The description of the blue paper is [=0x0022=]It reads: [=0x0027=]Call Stephen - 555-2513[=0x0027=].[=0x0022=][=0x000A=][=0x000A=]The drawer is part of the dresser. It is closed and openable. The dresser is in The Senator[=0x0027=]s Junior Suite. The lamp is on the dresser. The description of the dresser is [=0x0022=]The single drawer is [if the drawer is open]open[otherwise]shut[end if].[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]dial 555-9999 / call home on the telephone / phone the president / call stephen / open drawer / read paper / call stephen / put phone in drawer / close drawer / call stephen[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Alias&quot;
+            <blockquote class="code"><p class="quoted"><a id="c4516_4"></a><a href="javascript:pasteCode('[=0x0022=]Alias[=0x0022=][=0x000A=][=0x000A=]A telephone is a kind of thing. Understand [=0x0022=]phone[=0x0022=] or [=0x0022=]telephone[=0x0022=] as a telephone.[=0x000A=][=0x000A=]A phone number is a kind of value. 999-9999 specifies a phone number.[=0x000A=][=0x000A=][Now we borrow some techniques from the Understanding chapter to set up dialing actions:][=0x000A=][=0x000A=]Understand [=0x0022=]dial [phone number] on [telephone][=0x0022=] as dialing it on. Understand [=0x0022=]dial [phone number] on [something][=0x0022=] as dialing it on.[=0x000A=][=0x000A=]Understand the commands [=0x0022=]phone[=0x0022=] or [=0x0022=]telephone[=0x0022=] or [=0x0022=]call[=0x0022=] as [=0x0022=]dial[=0x0022=].[=0x000A=][=0x000A=]Understand [=0x0022=]call [text][=0x0022=] or [=0x0022=]phone [text][=0x0022=] or [=0x0022=]dial [text][=0x0022=] or [=0x0022=]telephone [text][=0x0022=] as a mistake ([=0x0022=]That[=0x0027=]s not a number you know.[=0x0022=]).[=0x000A=][=0x000A=]Dialing it on is an action applying to one phone number and one thing.[=0x000A=][=0x000A=]Report dialing it on:[=0x000A=][=0x0009=]say [=0x0022=]You dial [the phone number understood].[=0x0022=][=0x000A=][=0x000A=][This much is enough to let us dial telephone numbers and have Inform report that we[=0x0027=]ve done so; it doesn[=0x0027=]t actually provide a telephone system such that we could reach and converse with other characters (but see the other telephone examples in the recipe book for more on how one might do that).][=0x000A=][=0x000A=][We[=0x0027=]ll set up a little political espionage scenario from which our player can make calls:][=0x000A=][=0x000A=]The Senator[=0x0027=]s Junior Suite is a room. [=0x0022=]The Senator appears, unfortunately, to have very precise habits: little in the room has been moved from its usual place; the trash can is empty; the bed has been remade[if the blue paper is unexamined]. There may in fact be nothing to find here[end if].[=0x0022=][=0x000A=][=0x000A=]The bed is an enterable scenery supporter in the Junior Suite.[=0x000A=][=0x000A=]The player is wearing a housekeeping uniform and a brunette wig. The player carries a telephone called a Nokia.[=0x000A=][=0x000A=][Borrowing again from the chapter on Understanding, we might arrange things so that the player knows and can call a few standard numbers with such syntax as CALL HOME:][=0x000A=][=0x000A=]Understand [=0x0022=]home[=0x0022=] as 555-9200.[=0x000A=][=0x000A=][And what if we[=0x0027=]d like to have the player learn some phone numbers during the game?][=0x000A=][=0x000A=]A thing can be examined or unexamined. Carry out examining something: now the noun is examined.[=0x000A=][=0x000A=]Understand [=0x0022=]Stephen[=0x0022=] as 555-2513 when the blue paper is examined.[=0x000A=][=0x000A=][This will understand CALL STEPHEN once the paper is examined; before that, the player will just get the [=0x0022=]That[=0x0027=]s not a number you know[=0x0022=] response that Inform uses for all attempts to call unknown names.][=0x000A=][=0x000A=][We[=0x0027=]d better plant this paper for the player to find:][=0x000A=][=0x000A=]The blue paper is in the drawer. The description of the blue paper is [=0x0022=]It reads: [=0x0027=]Call Stephen - 555-2513[=0x0027=].[=0x0022=][=0x000A=][=0x000A=]The drawer is part of the dresser. It is closed and openable. The dresser is in The Senator[=0x0027=]s Junior Suite. The lamp is on the dresser. The description of the dresser is [=0x0022=]The single drawer is [if the drawer is open]open[otherwise]shut[end if].[=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]dial 555-9999 / call home on the telephone / phone the president / call stephen / open drawer / read paper / call stephen / put phone in drawer / close drawer / call stephen[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Alias&quot;
             </p>
             </blockquote>
             <!--END CODE-->

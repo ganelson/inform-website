@@ -28,11 +28,7 @@ benefit of Mr Google:
 
 ### The Change Log
 
-Inform 7 has come a long way since its origins in the early 2000s, and it's
-built on a software stack which goes back in part to 1992. The itemised list
-of changes and bug fixes, version by version, makes for a worthy but long and
-repetitive read concerning the long-gone past: a little like the Anglo-Saxon
-Chronicle, but without the occasional surprise of a comet or invasion. Still,
-you can find it here if you need to check on which versions fix which bugs.
+At one time, changes to Inform were logged on the website, but they now
+live in the GitHub repository for the source code. See:
 
-[Changes to Inform](/changes/CI_1_1.html)
+[Version history](https://github.com/ganelson/inform/blob/master/notes/version_history.md)

@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,7 +60,7 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§16.10. Adding and removing rows</p>
@@ -210,7 +210,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_16_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_16_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_16_1.html" class="standardlink">Start of Chapter 16: Tables</a>
@@ -218,7 +218,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_16_9.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_16_9.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_16_9.html" class="standardlink">Back to §16.9. Blank rows</a>
@@ -226,7 +226,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_16_11.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_16_11.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_16_11.html" class="standardlink">Onward to §16.11. Sorting</a>
@@ -246,7 +246,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example423'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Odyssey</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example423'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Odyssey</span></b></a><br>
                     A person who follows a path predetermined and stored in a table, and who can be delayed if the player tries to interact with her.</p>
 
                 </td>
@@ -262,7 +262,7 @@
 
         <div class="egpanel" id="example423" style="display: none;">
             <!--START CODE "c5142_423"-->
-            <blockquote class="code"><p class="quoted"><a id="c5142_423"></a><a href="javascript:pasteCode('[=0x0022=]Odyssey[=0x0022=][=0x000A=][=0x000A=]Corinth is a room. Athens is east of Corinth. Epidaurus is southeast of Corinth and east of Mycenae. Mycenae is south of Corinth. Olympia is west of Mycenae. Argos is south of Mycenae. Thebes is northwest of Athens. Pylos is south of Olympia. Sparta is east of Pylos and south of Argos. Delphi is northwest of Thebes.[=0x000A=][=0x000A=]Athena is a woman in Athens.[=0x000A=][=0x000A=][Athena will proceed, unless delayed, through a list of locations stored in a simple table. Rather than using Inform[=0x0027=]s route-finding abilities ([=0x0022=]the best route from...[=0x0022=]), we simply move Athena from one location to the next, not even using the going action: she moves in mysterious ways, as befits a goddess.][=0x000A=][=0x000A=]Table of Athena[=0x0027=]s Movement[=0x000A=]destination[=0x000A=]Thebes[=0x000A=]Delphi[=0x000A=]Thebes[=0x000A=]Athens[=0x000A=]Corinth[=0x000A=]Mycenae[=0x000A=][=0x000A=]Every turn when Athena is active:[=0x000A=][=0x0009=]repeat through the Table of Athena[=0x0027=]s Movement:[=0x000A=][=0x0009=][=0x0009=]let last space be the location of Athena;[=0x000A=][=0x0009=][=0x0009=]if Athena can be seen by the player, say [=0x0022=]Athena heads to [the destination entry].[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]move Athena to destination entry;[=0x000A=][=0x0009=][=0x0009=]if Athena can be seen by the player, say [=0x0022=]Athena arrives from [the last space].[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]blank out the whole row;[=0x000A=][=0x0009=][=0x0009=]break.[=0x000A=][=0x000A=][By blanking out the table line by line, we make sure that we never lose our place in the path.][=0x000A=][=0x000A=][Since we want the player to be able to talk to Athena, we need a way to stall her in her path, as well.][=0x000A=][=0x000A=]Athena can be active or passive. Athena is active.[=0x000A=][=0x000A=]Before doing something to Athena:[=0x000A=][=0x0009=]now Athena is passive;[=0x000A=][=0x0009=]say [=0x0022=]Athena waits around patiently, though you can tell she would like to leave...[=0x0022=][=0x000A=][=0x000A=]Instead of telling Athena about something:[=0x000A=][=0x0009=]say [=0x0022=]She watches you patiently as though to say that she already knows.[=0x0022=][=0x000A=][=0x000A=]Instead of asking Athena about something:[=0x000A=][=0x0009=]say [=0x0022=]Her response is inscrutably ancient and Greek. Afterwards you remember only the flash of bright eyes.[=0x0022=][=0x000A=][=0x000A=][Finally, we do need to wake Athena up again if she has become passive. The following rule will occur after the movement rule just because of code ordering, though we could make matters more explicit if we needed to:][=0x000A=][=0x000A=]Every turn when Athena is passive:[=0x000A=][=0x0009=]now Athena is active.[=0x000A=][=0x000A=]Test me with [=0x0022=]east / northwest / wait / examine athena / wait[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Odyssey&quot;
+            <blockquote class="code"><p class="quoted"><a id="c5142_423"></a><a href="javascript:pasteCode('[=0x0022=]Odyssey[=0x0022=][=0x000A=][=0x000A=]Corinth is a room. Athens is east of Corinth. Epidaurus is southeast of Corinth and east of Mycenae. Mycenae is south of Corinth. Olympia is west of Mycenae. Argos is south of Mycenae. Thebes is northwest of Athens. Pylos is south of Olympia. Sparta is east of Pylos and south of Argos. Delphi is northwest of Thebes.[=0x000A=][=0x000A=]Athena is a woman in Athens.[=0x000A=][=0x000A=][Athena will proceed, unless delayed, through a list of locations stored in a simple table. Rather than using Inform[=0x0027=]s route-finding abilities ([=0x0022=]the best route from...[=0x0022=]), we simply move Athena from one location to the next, not even using the going action: she moves in mysterious ways, as befits a goddess.][=0x000A=][=0x000A=]Table of Athena[=0x0027=]s Movement[=0x000A=]destination[=0x000A=]Thebes[=0x000A=]Delphi[=0x000A=]Thebes[=0x000A=]Athens[=0x000A=]Corinth[=0x000A=]Mycenae[=0x000A=][=0x000A=]Every turn when Athena is active:[=0x000A=][=0x0009=]repeat through the Table of Athena[=0x0027=]s Movement:[=0x000A=][=0x0009=][=0x0009=]let last space be the location of Athena;[=0x000A=][=0x0009=][=0x0009=]if Athena can be seen by the player, say [=0x0022=]Athena heads to [the destination entry].[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]move Athena to destination entry;[=0x000A=][=0x0009=][=0x0009=]if Athena can be seen by the player, say [=0x0022=]Athena arrives from [the last space].[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]blank out the whole row;[=0x000A=][=0x0009=][=0x0009=]break.[=0x000A=][=0x000A=][By blanking out the table line by line, we make sure that we never lose our place in the path.][=0x000A=][=0x000A=][Since we want the player to be able to talk to Athena, we need a way to stall her in her path, as well.][=0x000A=][=0x000A=]Athena can be active or passive. Athena is active.[=0x000A=][=0x000A=]Before doing something to Athena:[=0x000A=][=0x0009=]now Athena is passive;[=0x000A=][=0x0009=]say [=0x0022=]Athena waits around patiently, though you can tell she would like to leave...[=0x0022=][=0x000A=][=0x000A=]Instead of telling Athena about something:[=0x000A=][=0x0009=]say [=0x0022=]She watches you patiently as though to say that she already knows.[=0x0022=][=0x000A=][=0x000A=]Instead of asking Athena about something:[=0x000A=][=0x0009=]say [=0x0022=]Her response is inscrutably ancient and Greek. Afterwards you remember only the flash of bright eyes.[=0x0022=][=0x000A=][=0x000A=][Finally, we do need to wake Athena up again if she has become passive. The following rule will occur after the movement rule just because of code ordering, though we could make matters more explicit if we needed to:][=0x000A=][=0x000A=]Every turn when Athena is passive:[=0x000A=][=0x0009=]now Athena is active.[=0x000A=][=0x000A=]Test me with [=0x0022=]east / northwest / wait / examine athena / wait[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Odyssey&quot;
             </p>
             </blockquote>
             <!--END CODE-->

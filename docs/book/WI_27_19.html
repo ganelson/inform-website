@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,7 +60,7 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§27.19. Longer extracts of Inform 6 code</p>
@@ -147,7 +147,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_27_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_27_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_27_1.html" class="standardlink">Start of Chapter 27: Extensions</a>
@@ -155,7 +155,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_27_18.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_27_18.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_27_18.html" class="standardlink">Back to §27.18. Making and testing use options</a>
@@ -163,7 +163,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_27_20.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_27_20.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_27_20.html" class="standardlink">Onward to §27.20. Primitive Inform 6 declarations of rules</a>
@@ -183,7 +183,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example394'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Status line with centered text, the hard way</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example394'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Status line with centered text, the hard way</span></b></a><br>
                     A status line which has only the name of the location, centered.</p>
 
                 </td>
@@ -200,7 +200,7 @@
         <div class="egpanel" id="example394" style="display: none;">
             <p>Making major changes to display features, such as the construction of the status line, sometimes requires that we rely on Inform 6 in bulk; here is how we might produce the Trinity-style status line, with the location centered at the top center of the screen.</p>
             <!--START CODE "c9214_394"-->
-            <blockquote class="code"><p class="quoted"><a id="c9214_394"></a><a href="javascript:pasteCode('[=0x0022=]Corner of No and Where[=0x0022=][=0x000A=][=0x000A=]No is a room. Where is west of No.[=0x000A=][=0x000A=]Rule for constructing the status line:[=0x000A=][=0x0009=]print the location in the center of the status line;[=0x000A=][=0x0009=]rule succeeds.[=0x000A=][=0x000A=]To print the location in the center of the status line:[=0x000A=][=0x0009=](- PrintCenteredStatus(); -).[=0x000A=][=0x000A=]Include (-[=0x000A=][=0x000A=]Array printed_text --[=0x003E=] 64;[=0x000A=][=0x000A=][ PrintCenteredStatus i j;[=0x000A=][=0x0009=]@set_cursor 1 0;[=0x000A=][=0x0009=]i = 0-[=0x003E=]33;[=0x000A=][=0x0009=]spaces(i);[=0x000A=][=0x0009=]@output_stream 3 printed_text;[=0x000A=][=0x0009=]print (name) location;[=0x000A=][=0x0009=]@output_stream -3;[=0x000A=][=0x0009=]j = (i - (printed_text--[=0x003E=]0))/2;[=0x000A=][=0x0009=]@set_cursor 1 j;[=0x000A=][=0x0009=]print (name) location;[=0x000A=][=0x0009=]spaces j-1;[=0x000A=]];[=0x000A=][=0x000A=]-)[=0x000A=][=0x000A=]Test me with [=0x0022=]w / e[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Corner of No and Where&quot;
+            <blockquote class="code"><p class="quoted"><a id="c9214_394"></a><a href="javascript:pasteCode('[=0x0022=]Corner of No and Where[=0x0022=][=0x000A=][=0x000A=]No is a room. Where is west of No.[=0x000A=][=0x000A=]Rule for constructing the status line:[=0x000A=][=0x0009=]print the location in the center of the status line;[=0x000A=][=0x0009=]rule succeeds.[=0x000A=][=0x000A=]To print the location in the center of the status line:[=0x000A=][=0x0009=](- PrintCenteredStatus(); -).[=0x000A=][=0x000A=]Include (-[=0x000A=][=0x000A=]Array printed_text --[=0x003E=] 64;[=0x000A=][=0x000A=][ PrintCenteredStatus i j;[=0x000A=][=0x0009=]@set_cursor 1 0;[=0x000A=][=0x0009=]i = 0-[=0x003E=]33;[=0x000A=][=0x0009=]spaces(i);[=0x000A=][=0x0009=]@output_stream 3 printed_text;[=0x000A=][=0x0009=]print (name) location;[=0x000A=][=0x0009=]@output_stream -3;[=0x000A=][=0x0009=]j = (i - (printed_text--[=0x003E=]0))/2;[=0x000A=][=0x0009=]@set_cursor 1 j;[=0x000A=][=0x0009=]print (name) location;[=0x000A=][=0x0009=]spaces j-1;[=0x000A=]];[=0x000A=][=0x000A=]-)[=0x000A=][=0x000A=]Test me with [=0x0022=]w / e[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Corner of No and Where&quot;
             </p>
             </blockquote>
             <!--END CODE-->

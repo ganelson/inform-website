@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,7 +60,7 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§12.19. Changing visibility</p>
@@ -95,7 +95,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_12_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_12_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_12_1.html" class="standardlink">Start of Chapter 12: Advanced Actions</a>
@@ -103,7 +103,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_12_18.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_12_18.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_12_18.html" class="standardlink">Back to §12.18. Changing reachability</a>
@@ -111,7 +111,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_12_20.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_12_20.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_12_20.html" class="standardlink">Onward to §12.20. Stored actions</a>
@@ -131,7 +131,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example237'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Flashlight</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example237'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">Flashlight</span></b></a><br>
                     Visibility set so that looking under objects produces no result unless the player has a light source to shine there (regardless of the light level of the room).</p>
 
                 </td>
@@ -147,7 +147,7 @@
 
         <div class="egpanel" id="example237" style="display: none;">
             <!--START CODE "c3647_237"-->
-            <blockquote class="code"><p class="quoted"><a id="c3647_237"></a><a href="javascript:pasteCode('[=0x0022=]Flashlight[=0x0022=][=0x000A=][=0x000A=]The Schoolhouse is a room. [=0x0022=]Though normally comfortable, the room is dark and menacing during the storm; rain sheets on the windows, and you can barely see the flash of the lighthouse only a few miles away.[=0x0022=][=0x000A=][=0x000A=]The cabinet is a fixed in place openable container in the Schoolhouse. The hurricane lantern is a thing in the Schoolhouse. [=0x0022=]A hurricane lantern hangs from a peg.[=0x0022=] The lantern is lit.[=0x000A=][=0x000A=]Visibility rule when looking under something:[=0x000A=][=0x0009=]if the player is carrying a lit thing (called lamp):[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]You shine [the lamp] under [the noun]...[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]there is sufficient light;[=0x000A=][=0x0009=]there is insufficient light.[=0x000A=][=0x000A=]There is a marble. The marble can be found or lost. The marble is lost.[=0x000A=][=0x000A=]Instead of looking under the cabinet when the marble is lost:[=0x000A=][=0x0009=]move the marble to the player;[=0x000A=][=0x0009=]now the marble is found;[=0x000A=][=0x0009=]say [=0x0022=]Billy[=0x0027=]s lost marble! So that[=0x0027=]s where it got to![=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]look under cabinet / get lantern / look under cabinet[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;Flashlight&quot;
+            <blockquote class="code"><p class="quoted"><a id="c3647_237"></a><a href="javascript:pasteCode('[=0x0022=]Flashlight[=0x0022=][=0x000A=][=0x000A=]The Schoolhouse is a room. [=0x0022=]Though normally comfortable, the room is dark and menacing during the storm; rain sheets on the windows, and you can barely see the flash of the lighthouse only a few miles away.[=0x0022=][=0x000A=][=0x000A=]The cabinet is a fixed in place openable container in the Schoolhouse. The hurricane lantern is a thing in the Schoolhouse. [=0x0022=]A hurricane lantern hangs from a peg.[=0x0022=] The lantern is lit.[=0x000A=][=0x000A=]Visibility rule when looking under something:[=0x000A=][=0x0009=]if the player is carrying a lit thing (called lamp):[=0x000A=][=0x0009=][=0x0009=]say [=0x0022=]You shine [the lamp] under [the noun]...[=0x0022=];[=0x000A=][=0x0009=][=0x0009=]there is sufficient light;[=0x000A=][=0x0009=]there is insufficient light.[=0x000A=][=0x000A=]There is a marble. The marble can be found or lost. The marble is lost.[=0x000A=][=0x000A=]Instead of looking under the cabinet when the marble is lost:[=0x000A=][=0x0009=]move the marble to the player;[=0x000A=][=0x0009=]now the marble is found;[=0x000A=][=0x0009=]say [=0x0022=]Billy[=0x0027=]s lost marble! So that[=0x0027=]s where it got to![=0x0022=][=0x000A=][=0x000A=]Test me with [=0x0022=]look under cabinet / get lantern / look under cabinet[=0x0022=].[=0x000A=][=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;Flashlight&quot;
             </p>
             </blockquote>
             <!--END CODE-->

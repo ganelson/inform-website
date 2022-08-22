@@ -9,10 +9,10 @@
             function showExtra(id, imid) {
                 if (document.getElementById(id).style.display == 'block') {
                     document.getElementById(id).style.display = 'none';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
                 } else {
                     document.getElementById(id).style.display = 'block';
-                    document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                    document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
                 }
             }
             function onLoaded() {
@@ -36,11 +36,11 @@
             }
             function openExtra(id, imid) {
                 document.getElementById(id).style.display = 'block';
-                document.getElementById(imid).src = '/assets/images/doc_images/extraclose.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extraclose.png';
             }
             function closeExtra(id, imid) {
                 document.getElementById(id).style.display = 'none';
-                document.getElementById(imid).src = '/assets/images/doc_images/extra.png';
+                document.getElementById(imid).src = 'https:/ganelson.github.io/inform-website/assets/images/doc_images/extra.png';
             }
     </script>
 </head>
@@ -60,7 +60,7 @@
             myProject.createNewProject(title, code);
         }
     </script>
-        <p class="sectionheading"><a href="/index.html">Inform 7 Home Page</a> / <a href="/doc/">Documentation</a></p>
+        <p class="sectionheading"><a href="https://ganelson.github.io/inform-website/index.html">Inform 7 Home Page</a> / <a href="https://ganelson.github.io/inform-website/doc/">Documentation</a></p>
         <hr>
 
     <p class="sectionheading">§7.7. The other four senses</p>
@@ -81,7 +81,7 @@
         <table>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_7_1.html" class="standardlink"><img alt="arrow-up.png" src="/assets/images/doc_images/arrow-up.png"></a>
+                    <a href="WI_7_1.html" class="standardlink"><img alt="arrow-up.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-up.png"></a>
                 </td>
                 <td>
                     <a href="WI_7_1.html" class="standardlink">Start of Chapter 7: Basic Actions</a>
@@ -89,7 +89,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_7_6.html" class="standardlink"><img alt="arrow-left.png" src="/assets/images/doc_images/arrow-left.png"></a>
+                    <a href="WI_7_6.html" class="standardlink"><img alt="arrow-left.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-left.png"></a>
                 </td>
                 <td>
                     <a href="WI_7_6.html" class="standardlink">Back to §7.6. Reading and talking</a>
@@ -97,7 +97,7 @@
             </tr>
             <tr>
                 <td class="roadsigndirection">
-                    <a href="WI_7_8.html" class="standardlink"><img alt="arrow-right.png" src="/assets/images/doc_images/arrow-right.png"></a>
+                    <a href="WI_7_8.html" class="standardlink"><img alt="arrow-right.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/arrow-right.png"></a>
                 </td>
                 <td>
                     <a href="WI_7_8.html" class="standardlink">Onward to §7.8. Rules applying to more than one action</a>
@@ -117,7 +117,7 @@
 
                 </td>
                 <td class="egnamecell">
-                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example263'); return false;"><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">The Art of Noise</span></b></a><br>
+                    <p class="egcuetext"><a href="#" class="eglink" onclick="showExample('example263'); return false;"><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><img class="asterisk" alt="*" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/asterisk.png" /><b><span class="egbanner">Example</span><span class="egname">The Art of Noise</span></b></a><br>
                     Things are all assigned their own noise (or silence). Listening to the room in general reports on all the things that are currently audible.</p>
 
                 </td>
@@ -134,7 +134,7 @@
         <div class="egpanel" id="example263" style="display: none;">
             <p>This example involves redesigning the LISTEN command, removing its built-in function and replacing that with something more ambitious. We will learn more about how to do this later on.</p>
             <!--START CODE "c1410_263"-->
-            <blockquote class="code"><p class="quoted"><a id="c1410_263"></a><a href="javascript:pasteCode('[=0x0022=]The Art of Noise[=0x0022=][=0x000A=][=0x000A=]A thing has some text called sound. The sound of a thing is usually [=0x0022=]silence[=0x0022=].[=0x000A=][=0x000A=]The report listening rule is not listed in the report listening to rules.[=0x000A=][=0x000A=]Carry out listening to something:[=0x000A=][=0x0009=]say [=0x0022=]From [the noun] you hear [the sound of the noun].[=0x0022=][=0x000A=][=0x000A=]Instead of listening to a room:[=0x000A=][=0x0009=]if an audible thing can be touched by the player, say [=0x0022=]You hear [the list of audible things which can be touched by the player].[=0x0022=];[=0x000A=][=0x0009=]otherwise say [=0x0022=]Nothing of note.[=0x0022=][=0x000A=][=0x000A=]Definition: a thing is audible if the sound of it is not [=0x0022=]silence[=0x0022=].[=0x000A=][=0x000A=]Before printing the name of something audible while listening to a room:[=0x000A=][=0x0009=]say [=0x0022=][sound] from the [=0x0022=][=0x000A=][=0x000A=]The Sharper Image is a room. The pet rock is a thing in the Sharper Image. The toy car is a thing in the Sharper Image. The sound of the car is [=0x0022=]whirring and zooming[=0x0022=]. The plastic widget is a thing in the Sharper Image. The sound of the plastic widget is [=0x0022=]bleeps and bloops[=0x0022=]. The pointless gadget is a thing in Sharper Image. The sound of the pointless gadget is [=0x0022=]buzzbuzzbuzz[=0x0022=].[=0x000A=][=0x000A=]The soundproof case is a transparent openable container in the Sharper Image. It is closed and fixed in place.[=0x000A=][=0x000A=]Test me with [=0x0022=]listen / listen to rock / listen to car / get all / open case / put all in case / listen / close case / listen / listen to car[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="/assets/images/doc_images/paste.png"></a> &quot;The Art of Noise&quot;
+            <blockquote class="code"><p class="quoted"><a id="c1410_263"></a><a href="javascript:pasteCode('[=0x0022=]The Art of Noise[=0x0022=][=0x000A=][=0x000A=]A thing has some text called sound. The sound of a thing is usually [=0x0022=]silence[=0x0022=].[=0x000A=][=0x000A=]The report listening rule is not listed in the report listening to rules.[=0x000A=][=0x000A=]Carry out listening to something:[=0x000A=][=0x0009=]say [=0x0022=]From [the noun] you hear [the sound of the noun].[=0x0022=][=0x000A=][=0x000A=]Instead of listening to a room:[=0x000A=][=0x0009=]if an audible thing can be touched by the player, say [=0x0022=]You hear [the list of audible things which can be touched by the player].[=0x0022=];[=0x000A=][=0x0009=]otherwise say [=0x0022=]Nothing of note.[=0x0022=][=0x000A=][=0x000A=]Definition: a thing is audible if the sound of it is not [=0x0022=]silence[=0x0022=].[=0x000A=][=0x000A=]Before printing the name of something audible while listening to a room:[=0x000A=][=0x0009=]say [=0x0022=][sound] from the [=0x0022=][=0x000A=][=0x000A=]The Sharper Image is a room. The pet rock is a thing in the Sharper Image. The toy car is a thing in the Sharper Image. The sound of the car is [=0x0022=]whirring and zooming[=0x0022=]. The plastic widget is a thing in the Sharper Image. The sound of the plastic widget is [=0x0022=]bleeps and bloops[=0x0022=]. The pointless gadget is a thing in Sharper Image. The sound of the pointless gadget is [=0x0022=]buzzbuzzbuzz[=0x0022=].[=0x000A=][=0x000A=]The soundproof case is a transparent openable container in the Sharper Image. It is closed and fixed in place.[=0x000A=][=0x000A=]Test me with [=0x0022=]listen / listen to rock / listen to car / get all / open case / put all in case / listen / close case / listen / listen to car[=0x0022=].[=0x000A=]\n')"><img alt="paste.png" src="https:/ganelson.github.io/inform-website/assets/images/doc_images/paste.png"></a> &quot;The Art of Noise&quot;
             </p>
             </blockquote>
             <!--END CODE-->
