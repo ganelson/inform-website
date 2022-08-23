@@ -86,3 +86,10 @@ first, so that you have a working `indoc`. Then:
 	make books
 
 and wait for a few seconds.
+
+The mystery file `book_nav.html` at the root of this repository is what
+defines the navigation bar at the top of the manual pages.
+
+Indoc is otherwise configured for this run by the file 
+newwebsite `resources/Documentation/indoc-instructions.txt` in the main
+Inform repository. Note that the "platform" for these purposes is `newwebsite`.
