@@ -19,8 +19,8 @@ influential programming languages according to the TIOBE index. Created in April
 News items appear below, and a copy of the [Inform language documentation is also on this website](doc/).
 Other useful resources on Inform include:
 
-* [The latest release of Inform, Version 10.1.1 (21 August 2022)](https://github.com/ganelson/inform/releases/tag/v10.1.1).
-Apps for MacOS and Windows are now available from that link, with Linux soon to follow.
+* [The latest release of Inform](https://github.com/ganelson/inform/releases/latest).
+Apps for MacOS, Windows and Linux are available from this link.
 * [Proposals for evolution of Inform](https://github.com/ganelson/inform-evolution).
 * [The source code for Inform at GitHub](https://github.com/ganelson/inform).
 * [The source code published as a literate program](https://ganelson.github.io/inform/).
@@ -43,5 +43,4 @@ some of the best writing about the genre today, and also hosts many more links.
 
 *Note*: The Inform 7 website is migrating to be served by Github Pages rather
 than Dreamhost, as at present. The pages here are under construction for now
-and may exhibit all kinds of glitches. [The original inform7.com](http://inform7.com)
-will remain online until the domain name is transferred here.
+and may exhibit all kinds of glitches.
