@@ -22,9 +22,9 @@ progress in maintaining the program.
 The [current state of the source code for Inform](https://github.com/ganelson/inform)
 sometimes contains bug fixes which haven't yet made it into a numbered release. If
 you're a command-line user of Inform and are confident in compiling your own tools,
-feel free. The [pending release notes file](https://github.com/ganelson/inform/notes/release/pending.md)
+feel free. The [pending release notes file](https://github.com/ganelson/inform/blob/master/notes/working_notes.md)
 usually shows the bug fixes currently waiting for the next release.
 
-Until 2019, the Inform project used a [Mantis-powered bug tracker](http://inform7.com/mantis),
-but this has now closed. All issues on that tracker were migrated to Jira, though
-their ID numbers changed in the process.
+Until 2019, the Inform project used a Mantis-powered bug tracker, but this has
+now closed. All issues on that tracker were migrated to Jira, though their
+ID numbers changed in the process.
