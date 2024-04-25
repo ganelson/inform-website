@@ -27,6 +27,12 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Include in processing.
+# The following items will be processed, despite files starting with a dot
+# being skipped by default.
+include:
+  - .well-known
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
